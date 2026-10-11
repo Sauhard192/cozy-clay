@@ -1,0 +1,180 @@
+/* Hero — mobile first; 48rem compact desktop, 64rem full desktop. */
+
+.hero-panel {
+  --panel-color: var(--color-surface-vanilla);
+  margin: var(--space-5) var(--layout-page-inset) 0;
+  position: relative;
+  background-color: var(--panel-color);
+  border-radius: var(--radius-panel) var(--radius-panel) 2.5rem 2.5rem;
+}
+
+.hero-content {
+  padding: var(--space-24) var(--space-3) 0;
+}
+
+.hero-copy {
+  text-align: center;
+}
+
+.hero-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  margin-bottom: var(--space-6);
+}
+
+.hero-eyebrow .icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.hero-description {
+  font-size: var(--font-size-subtitle);
+  line-height: var(--line-height-subtitle);
+  margin-top: var(--space-4);
+}
+
+.hero-action {
+  margin-top: var(--space-12);
+}
+
+.hero-collage {
+  position: relative;
+  margin: var(--space-24) auto 0;
+  height: 7.5rem;
+  width: clamp(70%,75%,95%);
+}
+
+.photo-card {
+  position: absolute;
+  width: 46%;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+}
+
+.photo-card-first {
+  top: 0;
+  transform: rotate(14deg);
+  z-index: 2;
+  left: var(--space-6);
+}
+
+.photo-card-second {
+  top: 1.625rem;
+  transform: rotate(-13deg);
+  right: 0;
+}
+
+.handmade {
+  bottom: -1rem;
+  right: -.375rem;
+  transform: rotate(-26deg);
+  position: absolute;
+}
+
+.petal-note {
+  position: absolute;
+  right: -.15rem;
+  top: -.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-small);
+  line-height: 1.05;
+  background: var(--color-vanilla-200);
+  mask: url('/assets/shapes/shape-8-petal.svg') center / contain no-repeat;
+  transform: rotate(-12deg);
+  z-index: 3;
+  width: 6rem;
+  height: 6rem;
+}
+
+.hero-panel::after {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .hero-panel {
+    border-radius: var(--radius-panel) var(--radius-panel) 0 0;
+    margin-top: var(--space-8);
+    background-image: linear-gradient(color-mix(in srgb, var(--color-brown-800) 3%, transparent) 0.0625rem, transparent 0.0625rem), linear-gradient(90deg, color-mix(in srgb, var(--color-brown-800) 3%, transparent) 0.0625rem, transparent 0.0625rem);
+    background-size: 5rem 5rem;
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    align-items: center;
+    padding: var(--space-10) calc(var(--layout-content-inset) - var(--layout-page-inset)) var(--space-16);
+    gap: var(--space-6);
+    min-height: 32.5rem;
+  }
+
+  .hero-copy {
+    text-align: left;
+  }
+
+  .hero-eyebrow {
+    justify-content: flex-start;
+    margin-bottom: var(--space-10);
+  }
+
+  .hero-eyebrow .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .hero-description {
+    margin-top: var(--space-6);
+  }
+
+  .hero-action {
+    margin-top: var(--space-12);
+  }
+
+  .hero-collage {
+    width: 100%;
+    margin: 0;
+    max-width: 24rem;
+    height: 19rem;
+    justify-self: end;
+  }
+
+  .photo-card {
+    width: 51%;
+  }
+
+  .photo-card-first {
+    left: 0;
+    top: 1.5rem;
+  }
+
+  .photo-card-second {
+    top: 4rem;
+  }
+
+  .petal-note {
+    width: 7.25rem;
+    height: 7.25rem;
+    top: .5rem;
+    right: -.5rem;
+    font-size: var(--font-size-tag);
+  }
+
+  .hero-panel::after {
+    display: block;
+  }
+}
+
+@media (min-width: 64rem) {
+  .hero-content {
+    gap: var(--space-10);
+  }
+}
+

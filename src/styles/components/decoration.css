@@ -1,0 +1,78 @@
+/* decoration — mobile first; layout breakpoints: 768px and 1024px. */
+
+.scallop-bottom::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% - .125rem);
+  height: var(--scallop-depth);
+  background: radial-gradient(ellipse 50% 100% at 50% 0, var(--panel-color) calc(100% - .025rem), transparent 100%) 0 0 / var(--scallop-width) var(--scallop-depth) repeat-x;
+  pointer-events: none;
+}
+
+.scallop-both::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% - .125rem);
+  height: var(--scallop-depth);
+  background: radial-gradient(ellipse 50% 100% at 50% 0, var(--panel-color) calc(100% - .025rem), transparent 100%) 0 0 / var(--scallop-width) var(--scallop-depth) repeat-x;
+  pointer-events: none;
+}
+
+.scallop-top::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(100% - .125rem);
+  height: var(--scallop-depth);
+  background: radial-gradient(ellipse 50% 100% at 50% 100%, var(--panel-color) calc(100% - .025rem), transparent 100%) 0 0 / var(--scallop-width) var(--scallop-depth) repeat-x;
+  pointer-events: none;
+}
+
+.scallop-both::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(100% - .125rem);
+  height: var(--scallop-depth);
+  background: radial-gradient(ellipse 50% 100% at 50% 100%, var(--panel-color) calc(100% - .025rem), transparent 100%) 0 0 / var(--scallop-width) var(--scallop-depth) repeat-x;
+  pointer-events: none;
+}
+
+.bookmark {
+  padding: .5rem .75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-tag);
+  line-height: var(--line-height-tag);
+  letter-spacing: .02em;
+  white-space: nowrap;
+  position: relative;
+  isolation: isolate;
+  background: transparent;
+  mask: none;
+  padding-inline: var(--space-4);
+}
+
+.bookmark .icon {
+  width: .625rem;
+  height: .625rem;
+}
+
+.bookmark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--color-decoration);
+  mask: url('/assets/shapes/bookmark-tag-1.svg') center / 100% 100% no-repeat;
+}
+

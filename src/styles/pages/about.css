@@ -1,0 +1,28 @@
+/* about — shared creator panel, with generous page spacing. */
+
+body:has(.about-page) {
+  background-color: var(--color-surface-vanilla);
+  background-image:
+    linear-gradient(var(--pattern-line-color) .0625rem, transparent .0625rem),
+    linear-gradient(90deg, var(--pattern-line-color) .0625rem, transparent .0625rem);
+  background-size: var(--about-grid-size, var(--pattern-grid-size)) var(--about-grid-size, var(--pattern-grid-size));
+  background-position: var(--about-grid-x, 0rem) var(--about-grid-y, 0rem);
+  background-attachment: var(--about-grid-attachment, scroll);
+}
+
+.about-page .creator-panel {
+  background: var(--color-surface-page);
+}
+
+.about-page .creator-section {
+  margin-block-start: clamp(var(--space-12), 6vw, var(--space-24));
+  margin-block-end: calc(var(--space-32) + var(--creator-adjacent-edge-depth) - .125rem);
+}
+
+
+@media (min-width: 1024px) {
+  .about-page .creator-section {
+    margin-block-start: var(--space-12);
+    margin-block-end: clamp(var(--space-24), 12vw, 14rem);
+  }
+}

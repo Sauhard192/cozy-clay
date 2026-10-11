@@ -1,0 +1,244 @@
+/* Components — mobile first; 48rem compact desktop, 64rem full desktop. */
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  border: 0;
+}
+
+.icon {
+  display: inline-block;
+  flex-shrink: 0;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background: currentColor;
+  mask: var(--icon-url) center / contain no-repeat;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--button-min-height);
+  min-height: var(--button-min-height);
+  background: transparent;
+  padding: var(--space-2);
+  transition: transform var(--motion-duration-release) var(--motion-ease-squish);
+}
+
+.icon-button .icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.scallop-bottom::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% - .125rem);
+  height: var(--scallop-depth);
+  background: radial-gradient(ellipse 50% 100% at 50% 0, var(--panel-color) calc(100% - .025rem), transparent 100%) 0 0 / var(--scallop-size) 100% repeat-x;
+  pointer-events: none;
+}
+
+.scallop-both::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% - .125rem);
+  height: var(--scallop-depth);
+  background: radial-gradient(ellipse 50% 100% at 50% 0, var(--panel-color) calc(100% - .025rem), transparent 100%) 0 0 / var(--scallop-size) 100% repeat-x;
+  pointer-events: none;
+}
+
+.scallop-top::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(100% - .125rem);
+  height: var(--scallop-depth);
+  background: radial-gradient(ellipse 50% 100% at 50% 100%, var(--panel-color) calc(100% - .025rem), transparent 100%) 0 0 / var(--scallop-size) 100% repeat-x;
+  pointer-events: none;
+}
+
+.scallop-both::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(100% - .125rem);
+  height: var(--scallop-depth);
+  background: radial-gradient(ellipse 50% 100% at 50% 100%, var(--panel-color) calc(100% - .025rem), transparent 100%) 0 0 / var(--scallop-size) 100% repeat-x;
+  pointer-events: none;
+}
+
+.primary-button {
+  width: var(--button-primary-width);
+  min-height: var(--button-min-height);
+  flex-shrink: 0;
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--space-2) var(--space-6);
+  font-size: var(--font-size-button);
+  line-height: var(--line-height-button);
+  font-weight: 700;
+  letter-spacing: var(--tracking-button);
+
+  color: var(--color-text-inverse);
+  white-space: nowrap;
+  transition: transform var(--motion-duration-release) var(--motion-ease-squish);
+}
+
+.primary-button::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: calc(var(--space-2) * -1) 0;
+  background: var(--color-surface-inverse);
+  mask: url('/assets/shapes/button-rectangle.svg') center / 100% 100% no-repeat;
+}
+
+.primary-button-outline {
+  color: var(--color-text-primary);
+}
+
+.primary-button-outline::before {
+  mask-image: url('/assets/shapes/button-rectangle-outline.svg');
+}
+
+.secondary-button {
+  width: var(--button-primary-width);
+  min-height: var(--button-min-height);
+  flex-shrink: 0;
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--space-2) var(--space-6);
+  font-size: var(--font-size-button);
+  line-height: var(--line-height-button);
+  font-weight: 700;
+  letter-spacing: var(--tracking-button);
+
+  color: var(--color-text-inverse);
+  white-space: nowrap;
+  transition: transform var(--motion-duration-release) var(--motion-ease-squish);
+}
+
+.secondary-button::before {
+  content: '';
+  position: absolute;
+  inset: calc(var(--space-2) * -1) 0;
+  background: currentColor;
+  mask: url('/assets/shapes/button-rectangle-outline.svg') center / 100% 100% no-repeat;
+}
+
+.secondary-button .icon {
+  display: none;
+}
+
+.bookmark {
+  padding: .5rem .75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-tag);
+  line-height: var(--line-height-tag);
+  letter-spacing: .02em;
+  white-space: nowrap;
+  position: relative;
+  isolation: isolate;
+  background: transparent;
+  mask: none;
+  padding-inline: var(--space-4);
+}
+
+.bookmark .icon {
+  width: .625rem;
+  height: .625rem;
+}
+
+.circle-button {
+  background: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  min-height: var(--button-min-height);
+  padding: var(--space-3);
+  transition: transform var(--motion-duration-release) var(--motion-ease-squish);
+}
+
+.circle-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-text-accent-orange);
+  mask: url('/assets/shapes/button-circle.svg') center / contain no-repeat;
+}
+
+.circle-button:disabled {
+  cursor: default;
+  opacity: .55;
+}
+
+
+.bookmark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--color-decoration);
+  mask: url('/assets/shapes/bookmark-tag-1.svg') center / 100% 100% no-repeat;
+}
+
+@media (min-width: 48rem) {
+  .circle-button {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  .secondary-button {
+    padding: 0;
+    gap: var(--space-3);
+    margin: 0;
+    min-height: var(--button-primary-height);
+    white-space: nowrap;
+  }
+
+  .secondary-button::before {
+    display: none;
+  }
+
+  .secondary-button .icon {
+    display: inline-block;
+  }
+
+  .scallop-bottom {
+    --scallop-size: 11.111111%;
+  }
+
+  .scallop-both {
+    --scallop-size: 11.111111%;
+  }
+
+  .scallop-top {
+    --scallop-size: 11.111111%;
+  }
+}
+

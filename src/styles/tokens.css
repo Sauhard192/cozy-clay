@@ -1,0 +1,194 @@
+/* Palette, semantic colors, typography, spacing, and component dimensions. */
+:root {
+  /* --color-white: #FAFAFAFF;
+  --color-vanilla-100: #F8F4E1FF;
+  --color-vanilla-200: #FFF3BFFF;
+  --color-vanilla-300: #FFDF88FF;
+  --color-orange-500: #FF9845FF;
+  --color-brown-800: #432616FF;
+  --color-red-500: #FF4733FF;
+  --color-yellow-500: #FFC519FF;
+   --color-purple-300: #9AADF6FF;
+  --color-leaf-green-300: #ACC572FF;
+  --color-leaf-green-400: #68A42CFF;
+  --color-leaf-green-500: #4F8E10FF; */
+
+  --color-white: #FFFDFCFF;
+
+  --color-vanilla-100: #FFF8E8FF;
+  --color-vanilla-200: #FFEFB6FF;
+  --color-vanilla-300: #FFD86FFF;
+
+  --color-orange-500: #FF8A3DFF;
+  --color-brown-800: #4A2818FF;
+
+  --color-red-500: #FF5548FF;
+  --color-yellow-500: #FFC928FF;
+  --color-purple-300: #A7A8FFFF;
+
+  --color-leaf-green-300: #B7D77BFF;
+  --color-leaf-green-400: #78B93DFF;
+  --color-leaf-green-500: #559B1FFF;
+
+  --color-text-inverse: var(--color-vanilla-100);
+  --color-text-inverse-accent: var(--color-vanilla-300);
+  --color-text-primary: var(--color-brown-800);
+  --color-text-accent-orange: var(--color-orange-500);
+  --color-text-accent-green: var(--color-leaf-green-400);
+  --color-surface-page: var(--color-vanilla-100);
+  --color-surface-inverse: var(--color-brown-800);
+  --color-surface-green: var(--color-leaf-green-300);
+  --color-surface-vanilla: var(--color-vanilla-300);
+  --color-surface-card: var(--color-white);
+  --color-decoration: var(--color-yellow-500);
+  --color-focus: var(--color-brown-800);
+  --color-action-secondary: var(--color-text-primary);
+  --color-products-photo-frame: var(--color-surface-page);
+  --color-products-filter-surface: color-mix(in srgb, var(--color-surface-green) 24%, var(--color-surface-page));
+  --color-products-filter-border: var(--color-surface-green);
+  --color-products-filter-active: var(--color-surface-inverse);
+  --color-products-sort-selected: color-mix(in srgb, var(--color-text-inverse) 14%, var(--color-surface-inverse));
+  --color-product-badge-new: var(--color-red-500);
+  --color-product-badge-new-text: var(--color-text-primary);
+  --color-product-badge-bestseller: var(--color-vanilla-200);
+
+  --font-family-display: 'Cherry Bomb One', cursive;
+  --font-family-body: 'Quicksand', sans-serif;
+
+  --font-size-display: clamp(3.25rem, 2rem + 6.154vw, 4rem);
+  --font-size-section-heading: clamp(2.5rem, 2.5rem + 1.961vw, 3.5rem);
+  --font-size-small-heading: 2rem;
+  --font-size-subheading: 1rem;
+  --font-size-title: clamp(1.125rem, 1.015rem + .49vw, 1.25rem);
+  --font-size-subtitle: 1rem;
+  --font-size-button: 1rem;
+  --font-size-body: 1rem;
+  --font-size-small: .875rem;
+  --font-size-tag: var(--font-size-small);
+
+  /* quicksand */
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+
+
+  --line-height-display: 1;
+  --line-height-section-heading: 1;
+  --line-height-small-heading: 1.3333;
+  --line-height-subheading: 1.25;
+  --line-height-title: 1.25;
+  --line-height-subtitle: 1.6667;
+  --line-height-button: 1.4286;
+  --line-height-body: 1.6;
+  --line-height-tag: 1.2;
+
+  --tracking-body: .02em;
+  --tracking-button: .015em;
+
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  --flower-side-large-size: 10rem;
+  --flower-side-medium-size: 9rem;
+
+  --layout-panel-padding-inline: calc(var(--space-6) - var(--border-width));
+  --layout-page-inset: .75rem;
+  --layout-content-inset: 1.5rem;
+  --layout-max-width: 100rem;
+  --layout-columns: 4;
+  --layout-grid-gap: var(--space-4);
+  --scallop-count: 5;
+
+  --card-width: 11.5rem;
+  --card-gap: 1.5rem;
+  --carousel-edge-fade-width: 2rem;
+  --card-hover-scale: 1.015;
+  --card-hover-offset: -.25rem;
+  --card-hover-shadow: .5rem .625rem 0 var(--shadow-color);
+
+  --radius-sort-menu: 1.75rem;
+  --sort-option-min-height: 2.75rem;
+  --radius-card: 1.25rem;
+  --radius-panel: 1.5rem;
+
+  --pattern-scale: clamp(2.25rem, 5vw, 5rem);
+  --scallop-width: calc(var(--pattern-scale) * 2);
+  --scallop-depth: var(--pattern-scale);
+  --pattern-grid-size: var(--pattern-scale);
+  --pattern-line-color: color-mix(in srgb, var(--color-text-primary) 3%, transparent);
+
+  --shadow-offset: .375rem;
+  --shadow-color: color-mix(in srgb, var(--color-brown-800) 14%, transparent);
+  --shadow-paper: var(--shadow-offset) var(--shadow-offset) 0 var(--shadow-color);
+
+  --border-width: .125rem;
+
+  --button-min-height: 3rem;
+  --button-primary-width: 12rem;
+
+  --icon-size: 1.25rem;
+  --layer-header: 10;
+  --layer-menu: 20;
+}
+
+
+
+/* Desktop */
+@media (min-width: 768px) {
+  :root {
+    --font-size-display: clamp(4rem, 2.5rem + 3.125vw, 4.5rem);
+    --layout-columns: 8;
+    --layout-grid-gap: var(--space-6);
+    --scallop-count: 7;
+    --font-size-small-heading: 2rem;
+    --font-size-title: 1.25rem;
+    --font-size-subtitle: 1rem;
+    --font-size-button: 1rem;
+    --font-size-body: 1rem;
+    --font-size-tag: var(--font-size-small);
+
+    --line-height-small-heading: 1;
+    --line-height-title: 1.25;
+    --line-height-subtitle: 1.5;
+    --line-height-button: 1.5;
+    --line-height-body: 1.6667;
+    --line-height-tag: 1.2;
+
+    --layout-page-inset: 1.5rem;
+    --layout-content-inset: clamp(3rem, 8.9vw, 8rem);
+
+    --card-width: 15rem;
+    --card-gap: 1.5rem;
+    
+    --radius-card: 1.5rem;
+    --radius-panel: 2rem;
+    
+    
+    --shadow-offset: .5rem;
+  }
+}
+
+:root {
+  --motion-duration-press: 90ms;
+  --motion-duration-release: 260ms;
+  --motion-ease-squish: cubic-bezier(.34, 1.56, .64, 1);
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --font-size-display: clamp(3rem, 1.633rem + 3.848vw, 5rem);
+    --layout-panel-padding-inline: clamp(var(--space-8), 4.5vw, var(--space-16));
+    --layout-columns: 12;
+    --scallop-count: 9;
+  }
+}

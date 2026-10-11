@@ -1,0 +1,71 @@
+/* card — mobile first; layout breakpoints: 768px and 1024px. */
+
+.collection-card {
+  flex: 0 0 var(--card-width);
+  min-width: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-3);
+  border-radius: var(--radius-card);
+  background: var(--color-surface-card);
+  box-shadow: var(--shadow-paper);
+  scroll-snap-align: start;
+  transition: transform 100ms ease-in-out, box-shadow 200ms ease-out;
+}
+
+.collection-card__image {
+  flex-shrink: 0;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--space-3);
+}
+
+.collection-card h3 {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.collection-card p {
+  font-size: var(--font-size-small);
+  margin-bottom: var(--space-1);
+}
+
+@media (min-width: 768px) {
+  .collection-card {
+    padding: var(--space-5);
+  }
+
+  .collection-card h3 {
+    margin-top: var(--space-4);
+  }
+
+  .collection-card p {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .collection-card {
+    padding: var(--space-4);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .collection-card:hover {
+    transform: translateY(var(--card-hover-offset)) scale(var(--card-hover-scale));
+    box-shadow: var(--card-hover-shadow);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collection-card {
+    transition: none;
+  }
+
+  .collection-card:hover {
+    transform: none;
+  }
+}
+

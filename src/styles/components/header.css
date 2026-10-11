@@ -1,0 +1,308 @@
+/* header — mobile first; layout breakpoints: 768px and 1024px. */
+
+.announcement {
+  position: relative;
+  padding: var(--space-1) var(--space-2) var(--space-2);
+  text-align: center;
+  background: var(--color-orange-500);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.6;
+  min-height: 1.875rem;
+}
+
+.announcement::after {
+  content: '';
+  position: absolute;
+  height: var(--announcement-scallop-depth, .5rem);
+  top: calc(100% - .0625rem);
+  left: 0;
+  right: 0;
+  background: var(--color-orange-500);
+  mask: radial-gradient(ellipse 50% 100% at 50% 0, #000 calc(100% - .02rem), transparent 100%) 0 0 / var(--announcement-scallop-width, 1rem) 100% repeat-x;
+  pointer-events: none;
+}
+
+/* Shared standalone header panel; only the background is clipped. */
+.page-header {
+  position: relative;
+  isolation: isolate;
+  margin: var(--space-5) var(--layout-page-inset) 0;
+  border-radius: var(--radius-panel);
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: inherit;
+  clip-path: inset(0 round var(--radius-panel));
+  background-color: var(--color-surface-vanilla);
+  background-image:
+    linear-gradient(var(--pattern-line-color) .0625rem, transparent .0625rem),
+    linear-gradient(90deg, var(--pattern-line-color) .0625rem, transparent .0625rem);
+  background-size: var(--pattern-grid-size) var(--pattern-grid-size);
+}
+
+/* Home's separate header sits over the hero's continuous background. */
+.site-header--overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.site-header--overlay::before {
+  content: none;
+}
+
+.sticky-header[data-scrolled="true"] .site-header--overlay::before {
+  content: '';
+}
+
+.site-header,
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-3);
+  gap: .5rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-family-display);
+  letter-spacing: normal;
+  min-height: var(--button-min-height);
+  white-space: nowrap;
+  font-size: 1.375rem;
+}
+
+.brand > span {
+  display: block;
+  line-height: 1;
+  /* Optical correction for Cherry Bomb One's low visual baseline. */
+  transform: translateY(-.08em);
+}
+
+.brand img {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.brand-dot {
+  color: var(--color-text-accent-orange);
+}
+
+.desktop-nav {
+  --nav-underline-duration: 240ms;
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  border: 0;
+  isolation: isolate;
+  background: transparent;
+  color: var(--color-text-inverse);
+  --color-focus: var(--color-text-inverse);
+  z-index: var(--layer-menu);
+  overflow-y: auto;
+}
+
+.mobile-menu::backdrop {
+  background: transparent;
+}
+
+.menu-surface {
+  position: fixed;
+  inset: -.75rem 0;
+  z-index: -1;
+  background: var(--color-surface-inverse);
+  pointer-events: none;
+}
+
+.mobile-menu .announcement {
+  color: var(--color-text-primary);
+}
+
+/* Match the hero panel's outer offset; header contents share the same layout. */
+.menu-header {
+  margin: var(--space-5) var(--layout-page-inset) 0;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-10);
+  min-height: calc(100dvh - 8.5rem);
+  padding: var(--space-12) var(--space-6);
+}
+
+.menu-links a {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-display);
+  line-height: 1;
+  letter-spacing: normal;
+  width: fit-content;
+}
+
+.menu-trigger .icon,
+.menu-header .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.desktop-nav a {
+  --nav-underline-opacity: 0;
+  --nav-underline-scale: .8;
+  position: relative;
+}
+
+.desktop-nav a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 3.75rem;
+  transform: translateX(-50%) scaleX(var(--nav-underline-scale));
+  transform-origin: center;
+  bottom: 0;
+  height: .5rem;
+  background: var(--color-text-accent-orange);
+  opacity: var(--nav-underline-opacity);
+  pointer-events: none;
+  transition: opacity var(--nav-underline-duration) ease-out,
+    transform var(--nav-underline-duration) ease-out;
+  mask: url('/assets/shapes/line-short.svg') center / 100% 100% no-repeat;
+}
+
+.desktop-nav a[aria-current],
+.desktop-nav a:focus-visible {
+  --nav-underline-opacity: 1;
+  --nav-underline-scale: 1;
+}
+
+@media (min-width: 1024px) {
+  .page-header {
+    margin-top: var(--space-8);
+  }
+
+  .announcement {
+    font-size: var(--font-size-small);
+    padding-block: var(--space-1);
+    min-height: 2rem;
+  }
+
+  .site-header {
+    gap: var(--space-4);
+    padding: var(--space-3) var(--space-6);
+    min-height: 5rem;
+  }
+
+  .brand {
+    font-size: 1.25rem;
+  }
+
+  .brand img {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-10);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .menu-trigger .icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .desktop-nav a {
+    min-height: var(--button-min-height);
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-trigger {
+    display: none;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .menu-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: .25em;
+  }
+
+  .desktop-nav:has(a:hover) a:not(:hover) {
+    --nav-underline-opacity: 0;
+    --nav-underline-scale: .8;
+  }
+
+  .desktop-nav a:hover {
+    --nav-underline-opacity: 1;
+    --nav-underline-scale: 1;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .desktop-nav a::after {
+    transition: none;
+  }
+}
+
+/* Animate the icon separately from the button's shared press feedback. */
+.menu-close .icon {
+  transition: transform var(--motion-duration-release) var(--motion-ease-squish);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .mobile-menu[open] .menu-close .icon {
+    animation: menu-close-enter 320ms cubic-bezier(.34, 1.56, .64, 1);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .menu-close:hover .icon {
+    transform: rotate(90deg);
+  }
+}
+
+.menu-close:active .icon {
+  transform: rotate(90deg) scale(.85);
+}
+
+@keyframes menu-close-enter {
+  from {
+    opacity: 0;
+    transform: rotate(-90deg) scale(.65);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-close .icon {
+    transition: none;
+  }
+  .menu-close:is(:hover, :active) .icon {
+    transform: none;
+  }
+}

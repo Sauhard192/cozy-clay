@@ -1,0 +1,11 @@
+/* icon — mobile first; layout breakpoints: 768px and 1024px. */
+
+.icon {
+  display: inline-block;
+  flex-shrink: 0;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background: currentColor;
+  mask: var(--icon-url) center / contain no-repeat;
+}
+

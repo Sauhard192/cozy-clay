@@ -1,0 +1,93 @@
+.custom-cursor {
+  --cursor-size: 1.25rem;
+  --cursor-hover-size: 1.5rem;
+  --cursor-transition: 240ms;
+  --cursor-follow-time: 55ms;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: 2147483647;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.custom-cursor.is-visible {
+  opacity: 1;
+}
+
+.custom-cursor__rotation {
+  position: absolute;
+  left: calc(var(--cursor-size) / -2);
+  top: calc(var(--cursor-size) / -2);
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  animation: cursor-rotate 24s linear infinite;
+  animation-play-state: paused;
+}
+
+.custom-cursor.is-visible .custom-cursor__rotation {
+  animation-play-state: running;
+}
+
+.custom-cursor__shape {
+  position: absolute;
+  inset: 0;
+  transform-origin: center;
+  transition: transform var(--cursor-transition) ease-in-out,
+    opacity var(--cursor-transition) ease-in-out;
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+.custom-cursor__shape--four {
+  background: var(--color-text-primary);
+  mask-image: url('/assets/shapes/shape-4-petal.svg');
+  transform: scale(1);
+  opacity: 1;
+}
+
+.custom-cursor.is-on-dark .custom-cursor__shape--four {
+  background: var(--color-text-inverse);
+}
+
+.custom-cursor__shape--eight {
+  inset: calc((var(--cursor-size) - var(--cursor-hover-size)) / 2);
+  background: var(--color-text-accent-orange);
+  mask-image: url('/assets/shapes/shape-8-petal.svg');
+  transform: scale(0);
+  opacity: 0;
+}
+
+.custom-cursor.is-interactive .custom-cursor__shape--four {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.custom-cursor.is-interactive .custom-cursor__shape--eight {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@keyframes cursor-rotate {
+  to { transform: rotate(360deg); }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html.has-custom-cursor,
+  html.has-custom-cursor * {
+    cursor: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .custom-cursor__rotation {
+    animation: none;
+  }
+
+  .custom-cursor__shape {
+    transition: none;
+  }
+}

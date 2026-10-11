@@ -1,0 +1,345 @@
+{
+  "products": [
+    {
+      "id": "piece-001",
+      "name": "Momo fomo",
+      "price": 100,
+      "categoryId": "sticker",
+      "categoryName": "Sticker",
+      "image": "category-fridge-magnets.png",
+      "imageAlt": "Temporary photo: pastel clay vase magnets on a fridge",
+      "addedAt": "2026-09-14"
+    },
+    {
+      "id": "piece-002",
+      "name": "Pet keychain",
+      "price": {
+        "min": 450,
+        "max": 500
+      },
+      "categoryId": "keychain",
+      "categoryName": "Keychain",
+      "image": "category-worry-stones.png",
+      "imageAlt": "Temporary photo: decorated clay worry stones",
+      "addedAt": "2026-09-19",
+      "tag": "bestseller"
+    },
+    {
+      "id": "piece-003",
+      "name": "Couple Miniature",
+      "price": {
+        "min": 1600,
+        "max": 1800
+      },
+      "categoryId": "miniature",
+      "categoryName": "Miniature",
+      "image": "category-fridge-magnets.png",
+      "imageAlt": "Temporary photo: pastel clay vase magnets on a fridge",
+      "addedAt": "2026-09-17",
+      "tag": "new"
+    },
+    {
+      "id": "piece-004",
+      "name": "Momo Magnet",
+      "price": {
+        "min": 400,
+        "max": 450
+      },
+      "categoryId": "fridge-magnet",
+      "categoryName": "Fridge Magnet",
+      "image": "category-keychains.png",
+      "imageAlt": "Temporary photo: a smiling dumpling keychain",
+      "addedAt": "2026-09-20",
+      "tag": "bestseller"
+    },
+    {
+      "id": "piece-005",
+      "name": "Buff momo",
+      "price": 40,
+      "categoryId": "sticker",
+      "categoryName": "Sticker",
+      "image": "category-miniature.png",
+      "imageAlt": "Temporary photo: a handmade miniature held against green leaves",
+      "addedAt": "2026-09-22",
+      "tag": "bestseller"
+    },
+    {
+      "id": "piece-006",
+      "name": "Paw pal",
+      "price": 450,
+      "categoryId": "worry-stone",
+      "categoryName": "Worry Stone",
+      "image": "category-miniature.png",
+      "imageAlt": "Temporary photo: a handmade miniature held against green leaves",
+      "addedAt": "2026-09-01"
+    },
+    {
+      "id": "piece-007",
+      "name": "Mushroom",
+      "price": 350,
+      "categoryId": "earrings",
+      "categoryName": "Earrings",
+      "image": "category-fridge-magnets.png",
+      "imageAlt": "Temporary photo: pastel clay vase magnets on a fridge",
+      "addedAt": "2026-09-24",
+      "tag": "bestseller"
+    },
+    {
+      "id": "piece-008",
+      "name": "Momo 😊",
+      "price": {
+        "min": 350,
+        "max": 350
+      },
+      "categoryId": "keychain",
+      "categoryName": "Keychain",
+      "image": "category-worry-stones.png",
+      "imageAlt": "Temporary photo: decorated clay worry stones",
+      "addedAt": "2026-09-30"
+    },
+    {
+      "id": "piece-009",
+      "name": "Hungry mind",
+      "price": 40,
+      "categoryId": "sticker",
+      "categoryName": "Sticker",
+      "image": "category-stickers.png",
+      "imageAlt": "Temporary photo: Mini Me sticker sheets beside a phone",
+      "addedAt": "2026-09-19",
+      "tag": "new"
+    },
+    {
+      "id": "piece-010",
+      "name": "Lali ❤️",
+      "price": 450,
+      "categoryId": "earrings",
+      "categoryName": "Earrings",
+      "image": "category-keychains.png",
+      "imageAlt": "Temporary photo: a smiling dumpling keychain",
+      "addedAt": "2026-09-08"
+    },
+    {
+      "id": "piece-011",
+      "name": "Cookie",
+      "price": 40,
+      "categoryId": "sticker",
+      "categoryName": "Sticker",
+      "image": "category-worry-stones.png",
+      "imageAlt": "Temporary photo: decorated clay worry stones",
+      "addedAt": "2026-09-15",
+      "tag": "new"
+    },
+    {
+      "id": "piece-012",
+      "name": "Mini me head",
+      "price": 450,
+      "categoryId": "keychain",
+      "categoryName": "Keychain",
+      "image": "category-earrings.png",
+      "imageAlt": "Temporary photo: a display of handmade clay earrings",
+      "addedAt": "2026-09-18"
+    },
+    {
+      "id": "piece-013",
+      "name": "Mini me (half body)",
+      "price": 700,
+      "categoryId": "keychain",
+      "categoryName": "Keychain",
+      "image": "category-fridge-magnets.png",
+      "imageAlt": "Temporary photo: pastel clay vase magnets on a fridge",
+      "addedAt": "2026-09-20",
+      "tag": "new"
+    },
+    {
+      "id": "piece-014",
+      "name": "Phone charm",
+      "price": 300,
+      "categoryId": "phone-charm",
+      "categoryName": "Phone Charm",
+      "image": "category-fridge-magnets.png",
+      "imageAlt": "Temporary photo: pastel clay vase magnets on a fridge",
+      "addedAt": "2026-09-08"
+    },
+    {
+      "id": "piece-015",
+      "name": "Pet miniature",
+      "price": 450,
+      "categoryId": "miniature",
+      "categoryName": "Miniature",
+      "image": "category-stickers.png",
+      "imageAlt": "Temporary photo: Mini Me sticker sheets beside a phone",
+      "addedAt": "2026-09-05"
+    },
+    {
+      "id": "piece-016",
+      "name": "Friends time",
+      "price": 40,
+      "categoryId": "sticker",
+      "categoryName": "Sticker",
+      "image": "category-fridge-magnets.png",
+      "imageAlt": "Temporary photo: pastel clay vase magnets on a fridge",
+      "addedAt": "2026-09-12"
+    },
+    {
+      "id": "piece-017",
+      "name": "Couple mini me",
+      "price": 1400,
+      "categoryId": "keychain",
+      "categoryName": "Keychain",
+      "image": "category-worry-stones.png",
+      "imageAlt": "Temporary photo: decorated clay worry stones",
+      "addedAt": "2026-09-17",
+      "tag": "bestseller"
+    },
+    {
+      "id": "piece-018",
+      "name": "Sunflower 🌻",
+      "price": 400,
+      "categoryId": "earrings",
+      "categoryName": "Earrings",
+      "image": "category-worry-stones.png",
+      "imageAlt": "Temporary photo: decorated clay worry stones",
+      "addedAt": "2026-09-04",
+      "tag": "new"
+    },
+    {
+      "id": "piece-019",
+      "name": "Mini me (mix n match)",
+      "price": 100,
+      "categoryId": "sticker",
+      "categoryName": "Sticker",
+      "image": "category-phone-charms.png",
+      "imageAlt": "Temporary photo: pastel clay phone charms",
+      "addedAt": "2026-09-30"
+    },
+    {
+      "id": "piece-020",
+      "name": "Mini vase",
+      "price": 400,
+      "categoryId": "fridge-magnet",
+      "categoryName": "Fridge Magnet",
+      "image": "category-phone-charms.png",
+      "imageAlt": "Temporary photo: pastel clay phone charms",
+      "addedAt": "2026-09-07",
+      "tag": "new"
+    },
+    {
+      "id": "piece-021",
+      "name": "Samosa",
+      "price": 350,
+      "categoryId": "keychain",
+      "categoryName": "Keychain",
+      "image": "category-keychains.png",
+      "imageAlt": "Temporary photo: a smiling dumpling keychain",
+      "addedAt": "2026-09-25"
+    },
+    {
+      "id": "piece-022",
+      "name": "Lucky",
+      "price": 400,
+      "categoryId": "earrings",
+      "categoryName": "Earrings",
+      "image": "category-keychains.png",
+      "imageAlt": "Temporary photo: a smiling dumpling keychain",
+      "addedAt": "2026-09-22",
+      "tag": "new"
+    },
+    {
+      "id": "piece-023",
+      "name": "Dumpling",
+      "price": 350,
+      "categoryId": "keychain",
+      "categoryName": "Keychain",
+      "image": "category-stickers.png",
+      "imageAlt": "Temporary photo: Mini Me sticker sheets beside a phone",
+      "addedAt": "2026-09-29",
+      "tag": "new"
+    },
+    {
+      "id": "piece-024",
+      "name": "Worry mouse",
+      "price": 450,
+      "categoryId": "worry-stone",
+      "categoryName": "Worry Stone",
+      "image": "category-stickers.png",
+      "imageAlt": "Temporary photo: Mini Me sticker sheets beside a phone",
+      "addedAt": "2026-09-26"
+    },
+    {
+      "id": "piece-025",
+      "name": "Nepal flag",
+      "price": 40,
+      "categoryId": "sticker",
+      "categoryName": "Sticker",
+      "image": "category-worry-stones.png",
+      "imageAlt": "Temporary photo: decorated clay worry stones",
+      "addedAt": "2026-09-12",
+      "tag": "new"
+    },
+    {
+      "id": "piece-026",
+      "name": "Yomari",
+      "price": 300,
+      "categoryId": "keychain",
+      "categoryName": "Keychain",
+      "image": "category-worry-stones.png",
+      "imageAlt": "Temporary photo: decorated clay worry stones",
+      "addedAt": "2026-09-16"
+    },
+    {
+      "id": "piece-027",
+      "name": "Bear 🤎",
+      "price": 400,
+      "categoryId": "keychain",
+      "categoryName": "Keychain",
+      "image": "category-fridge-magnets.png",
+      "imageAlt": "Temporary photo: pastel clay vase magnets on a fridge",
+      "addedAt": "2026-09-09",
+      "tag": "bestseller"
+    },
+    {
+      "id": "piece-028",
+      "name": "Mini me",
+      "price": {
+        "min": 800,
+        "max": 900
+      },
+      "categoryId": "miniature",
+      "categoryName": "Miniature",
+      "image": "category-phone-charms.png",
+      "imageAlt": "Temporary photo: pastel clay phone charms",
+      "addedAt": "2026-09-20"
+    },
+    {
+      "id": "piece-029",
+      "name": "Kdrama world",
+      "price": 100,
+      "categoryId": "sticker",
+      "categoryName": "Sticker",
+      "image": "category-miniature.png",
+      "imageAlt": "Temporary photo: a handmade miniature held against green leaves",
+      "addedAt": "2026-09-13"
+    },
+    {
+      "id": "piece-030",
+      "name": "Too much filling",
+      "price": 450,
+      "categoryId": "worry-stone",
+      "categoryName": "Worry Stone",
+      "image": "category-keychains.png",
+      "imageAlt": "Temporary photo: a smiling dumpling keychain",
+      "addedAt": "2026-09-20",
+      "tag": "new"
+    },
+    {
+      "id": "piece-031",
+      "name": "Cutie",
+      "price": 40,
+      "categoryId": "sticker",
+      "categoryName": "Sticker",
+      "image": "category-worry-stones.png",
+      "imageAlt": "Temporary photo: decorated clay worry stones",
+      "addedAt": "2026-09-15"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+/* Creator — mobile first; 48rem compact desktop, 64rem full desktop. */
+
+.creator-copy h2 span {
+  color: var(--color-text-accent-orange);
+}
+
+.creator-section {
+  margin: 4.5rem var(--layout-page-inset) 6rem;
+}
+
+.creator-panel {
+  padding: var(--space-8) var(--space-4);
+  border: var(--border-width) solid var(--color-text-primary);
+  border-radius: var(--radius-panel);
+  box-shadow: 0 var(--shadow-offset) 0 var(--shadow-color);
+  padding-top: var(--space-8);
+}
+
+.creator-portrait {
+  position: relative;
+  margin: 0 auto;
+  width: min(100%, 19rem);
+}
+
+.creator-portrait > img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 52%;
+  mask: url('/assets/shapes/shape-8-petal.svg') center / contain no-repeat;
+}
+
+.creator-tag::before {
+  mask-image: url('/assets/shapes/bookmark-tag-3.svg');
+}
+
+.creator-tag {
+  bottom: .5rem;
+  right: .5rem;
+  transform: rotate(12deg);
+  position: absolute;
+}
+
+.creator-copy {
+  margin-top: var(--space-12);
+}
+
+.creator-copy h2 {
+  text-align: center;
+}
+
+.creator-divider {
+  display: block;
+  margin: var(--space-6) 0;
+  background: var(--color-text-accent-orange);
+  mask: url('/assets/shapes/line-short.svg') center / 100% 100% no-repeat;
+  mask-image: url('/assets/shapes/line-long.svg');
+  height: .25rem;
+}
+
+.creator-copy > p {
+  margin-top: var(--space-5);
+}
+
+.creator-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-20);
+}
+
+.creator-actions > span {
+  font-weight: 700;
+}
+
+.whatsapp-link .icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (min-width: 48rem) {
+  .creator-section {
+    margin: 14rem var(--layout-content-inset) 14rem;
+  }
+
+  .creator-panel {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    align-items: center;
+    border-width: 0.1875rem;
+    gap: var(--space-8);
+    padding: var(--space-8);
+  }
+
+  .creator-portrait {
+    width: 100%;
+    max-width: 28rem;
+  }
+
+  .creator-tag {
+    right: 1rem;
+    bottom: 2rem;
+    transform: rotate(-12deg);
+  }
+
+  .creator-copy {
+    margin-top: var(--space-16);
+    margin: 0;
+  }
+
+  .creator-copy h2 {
+    text-align: left;
+  }
+
+  .creator-divider {
+    display: none;
+  }
+
+  .creator-copy > p {
+    margin-top: var(--space-6);
+  }
+
+  .creator-actions {
+    margin-top: var(--space-6);
+  }
+}
+
+@media (min-width: 64rem) {
+  .creator-panel {
+    gap: var(--space-20);
+    padding: var(--space-16);
+  }
+}
+

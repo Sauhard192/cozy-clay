@@ -1,0 +1,336 @@
+/* home — mobile first; layout breakpoints: 768px and 1024px. */
+
+.page-frame--hero {
+  --home-header-height: calc(var(--button-min-height) + 2 * var(--space-2));
+  position: relative;
+  display: flow-root;
+}
+
+.hero-copy h1 span {
+  color: var(--color-text-accent-orange);
+}
+
+.hero-panel {
+  --panel-color: var(--color-surface-vanilla);
+  margin: var(--space-5) var(--layout-page-inset) 0;
+  padding-block-start: var(--home-header-height);
+  position: relative;
+
+  isolation: isolate;
+  border-radius: var(--radius-panel) var(--radius-panel) 0 0;
+}
+
+/* One masked background carries the panel color and grid into its scallops. */
+.hero-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 calc(-1 * var(--scallop-depth));
+  z-index: -1;
+  pointer-events: none;
+  border-radius: var(--radius-panel) var(--radius-panel) 0 0;
+  background-color: var(--panel-color);
+  background-image:
+    linear-gradient(var(--pattern-line-color) .0625rem, transparent .0625rem),
+    linear-gradient(90deg, var(--pattern-line-color) .0625rem, transparent .0625rem);
+  background-size: var(--pattern-grid-size) var(--pattern-grid-size);
+  mask:
+    linear-gradient(#000, #000) top / 100% calc(100% - var(--scallop-depth) + .125rem) no-repeat,
+    radial-gradient(
+      ellipse 50% 100% at 50% 0,
+      #000 calc(100% - .025rem),
+      transparent 100%
+    ) bottom left / var(--scallop-width) var(--scallop-depth) repeat-x;
+  mask-composite: add;
+}
+
+.hero-panel::after {
+  content: none;
+}
+
+.hero-content {
+  padding: var(--space-24) var(--space-3) 0;
+  display: grid;
+  grid-template-columns: repeat(var(--layout-columns), minmax(0, 1fr));
+}
+
+.hero-copy {
+  text-align: center;
+}
+
+.hero-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  margin-bottom: var(--space-6);
+}
+
+.hero-eyebrow .icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.hero-description {
+  font-size: var(--font-size-subtitle);
+  line-height: var(--line-height-subtitle);
+  margin-top: var(--space-4);
+}
+
+.hero-action {
+  margin-top: var(--space-12);
+}
+
+.hero-collage {
+  position: relative;
+  /* Let the artwork extend slightly beyond the scallop tips. */
+  margin: var(--space-16) auto calc(-1 * (var(--scallop-depth) + var(--space-4)));
+  width: min(75%, 24rem);
+  aspect-ratio: 1.4;
+  height: auto;
+  z-index: 1;
+}
+
+.photo-card {
+  position: absolute;
+  width: 46%;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+}
+
+.photo-card-first {
+  top: 0;
+  transform: rotate(14deg);
+  z-index: 2;
+  left: var(--space-6);
+}
+
+.photo-card-second {
+  top: 1.625rem;
+  transform: rotate(-13deg);
+  right: 0;
+}
+
+.handmade {
+  bottom: -1rem;
+  right: -.375rem;
+  transform: rotate(-26deg);
+  position: absolute;
+}
+
+.petal-note {
+  position: absolute;
+  right: -.15rem;
+  top: -.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-small);
+  line-height: 1.05;
+  background: var(--color-vanilla-200);
+  mask: url('/assets/shapes/shape-8-petal.svg') center / contain no-repeat;
+  transform: rotate(-12deg);
+  z-index: 3;
+  width: 6rem;
+  height: 6rem;
+}
+
+.categories-section {
+  position: relative;
+  padding-bottom: 9.5rem;
+  /* Clear the fitted hero scallops, then leave a consistent heading gap. */
+  --hero-edge-depth: calc((min(100vw, var(--layout-max-width)) - 2 * var(--layout-page-inset)) / var(--scallop-count) / 2);
+  padding-top: calc(var(--hero-artwork-overhang, var(--hero-edge-depth)) + var(--space-16));
+}
+
+.flower {
+  position: absolute;
+  width: 5rem;
+  pointer-events: none;
+  transform-origin: center;
+}
+
+.flower-sun {
+  width: 4rem;
+  transform: rotate(-45deg);
+  top: 3.5rem;
+  right: -.5rem;
+}
+
+.flower-purple {
+  width: 4.5rem;
+  transform: rotate(45deg);
+  left: -.5rem;
+  bottom: 2.5rem;
+}
+
+.featured-panel {
+  --panel-color: var(--color-surface-green);
+  position: relative;
+  margin-inline: var(--layout-page-inset);
+  padding: var(--space-16) 0;
+  background: var(--panel-color);
+}
+
+.featured-panel .carousel__track {
+  --carousel-inset: var(--space-6);
+}
+
+.featured-heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+  margin-inline: var(--space-6);
+  margin-bottom: var(--space-12);
+}
+
+.featured-panel .circle-button {
+  color: var(--color-text-inverse);
+}
+
+.featured-panel .circle-button::before {
+  background: var(--color-text-inverse);
+}
+
+.hero-copy, .hero-collage {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+
+  .categories-section {
+    padding-bottom: 12rem;
+  }
+
+  .flower {
+    width: 12rem;
+  }
+
+  .flower-sun {
+    width: var(--flower-side-medium-size);
+    top: -1rem;
+    right: calc(-1.5rem - max(0rem, (100vw - var(--layout-max-width)) / 2));
+  }
+
+  .flower-purple {
+    width: var(--flower-side-large-size);
+    bottom: 3.5rem;
+    left: calc(-1.5rem - max(0rem, (100vw - var(--layout-max-width)) / 2));
+  }
+
+  .featured-panel {
+    padding-top: var(--space-24);
+    padding-bottom: var(--space-24);
+  }
+
+  .hero-content {
+    padding-inline: calc(var(--layout-content-inset) - var(--layout-page-inset));
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .categories-section {
+    padding-top: 11.5rem;
+  }
+
+  .hero-panel {
+    border-radius: var(--radius-panel) var(--radius-panel) 0 0;
+    margin-top: var(--space-8);
+
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: repeat(var(--layout-columns), minmax(0, 1fr));
+    align-items: center;
+    padding: var(--space-10) calc(var(--layout-content-inset) - var(--layout-page-inset)) var(--space-16);
+    gap: var(--space-6);
+    min-height: 32.5rem;
+  }
+
+  .hero-copy {
+    text-align: left;
+  }
+
+  .hero-eyebrow {
+    justify-content: flex-start;
+    margin-bottom: var(--space-10);
+  }
+
+  .hero-eyebrow .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .hero-description {
+    margin-top: var(--space-6);
+  }
+
+  .hero-action {
+    margin-top: var(--space-16);
+  }
+
+  .hero-collage {
+    width: 100%;
+    margin: 0;
+    max-width: 24rem;
+    aspect-ratio: 1.55;
+    height: 19rem;
+    justify-self: end;
+  }
+
+  .photo-card {
+    width: 51%;
+  }
+
+  .photo-card-first {
+    left: 0;
+    top: 1.5rem;
+  }
+
+  .photo-card-second {
+    top: 4rem;
+  }
+
+  .petal-note {
+    width: 7.25rem;
+    height: 7.25rem;
+    top: .5rem;
+    right: -.5rem;
+    font-size: var(--font-size-tag);
+  }
+
+  .featured-panel .carousel__track {
+    --carousel-inset: calc(var(--layout-content-inset) - var(--layout-page-inset));
+  }
+
+  .featured-heading {
+    text-align: left;
+    flex-direction: row;
+    margin-bottom: var(--space-12);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-4);
+    margin-inline: calc(var(--layout-content-inset) - var(--layout-page-inset));
+  }
+  .hero-content {
+    gap: var(--space-10);
+  }
+
+  .hero-copy {
+    grid-column: 1 / span 6;
+  }
+
+  .hero-collage {
+    grid-column: 7 / span 6;
+  }
+}
+

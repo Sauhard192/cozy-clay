@@ -1,0 +1,37 @@
+/* category-card — mobile first; layout breakpoints: 768px and 1024px. */
+
+.category-card__link {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-radius: var(--space-3);
+}
+
+.category-card__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.category-card .category-card__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.category-card__preparation {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-accent-green);
+  font-weight: var(--font-weight-bold);
+  margin-top: auto;
+  padding-top: var(--space-5);
+}
+
+.category-card__preparation .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+

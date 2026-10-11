@@ -1,0 +1,56 @@
+/* Interactions — mobile first; 48rem compact desktop, 64rem full desktop. */
+
+@media (hover: hover) and (pointer: fine) {
+  .collection-card:hover {
+    transform: translateY(var(--card-hover-offset)) scale(var(--card-hover-scale));
+    box-shadow: var(--card-hover-shadow);
+  }
+
+  .primary-button:hover,
+  .circle-button:not(:disabled):hover,
+  .icon-button:hover,
+  .secondary-button:hover {
+    transform: scale(1.04);
+  }
+
+  .social-links a:hover,
+  .menu-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: .25em;
+  }
+
+  .desktop-nav a:hover::after {
+    opacity: 1;
+  }
+}
+
+.primary-button:active,
+.circle-button:not(:disabled):active,
+.icon-button:active,
+.secondary-button:active {
+  transform: scale(.93, .89);
+  transition-duration: var(--motion-duration-press);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .collection-card,
+  .primary-button,
+  .circle-button,
+  .icon-button,
+  .secondary-button {
+    transition: none;
+  }
+
+  .collection-card:hover,
+  .primary-button:is(:hover, :active),
+  .circle-button:is(:hover, :active),
+  .icon-button:is(:hover, :active),
+  .secondary-button:is(:hover, :active) {
+    transform: none;
+  }
+}
+

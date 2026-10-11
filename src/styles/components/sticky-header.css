@@ -1,0 +1,43 @@
+/* Banner and header share one measured, direction-aware pinned shell. */
+
+.sticky-header {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: var(--layer-header);
+  transition: transform var(--motion-duration-release) ease-out;
+}
+
+.sticky-header[data-sticky="true"] {
+  position: fixed;
+}
+
+.sticky-header[data-hidden="true"] {
+  transform: translateY(calc(-100% - var(--space-2)));
+  visibility: hidden;
+  transition: transform var(--motion-duration-release) ease-in,
+    visibility 0s var(--motion-duration-release);
+}
+
+/* Keep the modal's fixed positioning independent of the slide transform. */
+.sticky-header:has(dialog[open]),
+.sticky-header:has(:focus-visible) {
+  transform: none;
+  visibility: visible;
+}
+
+.sticky-header__frame {
+  display: flow-root;
+  max-width: var(--layout-max-width);
+  margin-inline: auto;
+}
+
+.sticky-header__space {
+  height: var(--space-8);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sticky-header,
+  .sticky-header[data-hidden="true"] {
+    transition: none;
+  }
+}

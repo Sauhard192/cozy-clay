@@ -1,0 +1,21 @@
+/* section-heading — mobile first; layout breakpoints: 768px and 1024px. */
+
+.eyebrow {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-3);
+}
+
+.section-heading {
+  margin: 0 var(--layout-content-inset) var(--space-10);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    text-align: left;
+    margin-bottom: var(--space-12);
+  }
+}
+

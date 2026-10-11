@@ -1,0 +1,145 @@
+/* Palette, semantic colors, typography, spacing, and component dimensions. */
+:root {
+  --color-white: #FAFAFAFF;
+  --color-vanilla-100: #F8F4E1FF;
+  --color-vanilla-200: #FFF3BFFF;
+  --color-vanilla-300: #FFDF88FF;
+  --color-orange-500: #FF9845FF;
+  --color-brown-800: #432616FF;
+  --color-red-500: #FF4733FF;
+  --color-yellow-500: #FFC519FF;
+   --color-purple-300: #9AADF6FF;
+  --color-leaf-green-300: #ACC572FF;
+  --color-leaf-green-400: #68A42CFF;
+  --color-leaf-green-500: #4F8E10FF;
+
+  --color-text-inverse: var(--color-vanilla-100);
+  --color-text-inverse-accent: var(--color-vanilla-300);
+  --color-text-primary: var(--color-brown-800);
+  --color-text-accent-orange: var(--color-orange-500);
+  --color-text-accent-green: var(--color-leaf-green-400);
+  --color-surface-page: var(--color-vanilla-100);
+  --color-surface-inverse: var(--color-brown-800);
+  --color-surface-green: var(--color-leaf-green-300);
+  --color-surface-vanilla: var(--color-vanilla-300);
+  --color-surface-card: var(--color-white);
+  --color-decoration: var(--color-yellow-500);
+  --color-focus: var(--color-brown-800);
+
+  --font-family-display: 'Cherry Bomb One', cursive;
+  --font-family-body: 'Quicksand', sans-serif;
+
+  --font-size-display: clamp(3rem, 3rem + 1vw, 4rem);
+  --font-size-h1: clamp(2.5rem, 2.5rem + 1.961vw, 3.5rem);
+  --font-size-h2: 2rem;
+  --font-size-subheading: 1rem;
+  --font-size-title: clamp(1.125rem, 1.015rem + .49vw, 1.25rem);
+  --font-size-subtitle: 1rem;
+  --font-size-button: 1rem;
+  --font-size-body: 1rem;
+  --font-size-small: .875rem;
+  --font-size-tag: var(--font-size-small);
+
+  /* quicksand */
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+
+
+  --line-height-display: 1;
+  --line-height-h1: 1;
+  --line-height-h2: 1.3333;
+  --line-height-subheading: 1.25;
+  --line-height-title: 1.25;
+  --line-height-subtitle: 1.6667;
+  --line-height-button: 1.4286;
+  --line-height-body: 1.6;
+  --line-height-tag: 1.2;
+
+  --tracking-body: .02em;
+  --tracking-button: .015em;
+
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  --layout-page-inset: .75rem;
+  --layout-content-inset: 1.5rem;
+  --layout-max-width: 100rem;
+
+  --card-width: 11.5rem;
+  --card-gap: 1.5rem;
+  --card-hover-scale: 1.015;
+  --card-hover-offset: -.25rem;
+  --card-hover-shadow: .5rem .625rem 0 var(--shadow-color);
+
+  --radius-card: 1.5rem;
+  --radius-panel: 1.5rem;
+
+  --scallop-size: 20%;
+  --scallop-depth: 2.1rem;
+
+  --shadow-offset: .375rem;
+  --shadow-color: color-mix(in srgb, var(--color-brown-800) 14%, transparent);
+  --shadow-paper: var(--shadow-offset) var(--shadow-offset) 0 var(--shadow-color);
+
+  --border-width: .125rem;
+
+  --button-min-height: 3rem;
+  --button-primary-width: 12rem;
+
+  --icon-size: 1.25rem;
+  --layer-menu: 20;
+}
+
+
+
+/* Desktop */
+@media (min-width: 48rem) {
+  :root {
+    --font-size-display: clamp(3rem, 5.714vw, 5rem);
+    --font-size-h1: 3.5rem;
+    --font-size-h2: 2rem;
+    --font-size-title: 1.25rem;
+    --font-size-subtitle: 1rem;
+    --font-size-button: 1rem;
+    --font-size-body: 1rem;
+    --font-size-tag: var(--font-size-small);
+
+    --line-height-h2: 1;
+    --line-height-title: 1.25;
+    --line-height-subtitle: 1.5;
+    --line-height-button: 1.5;
+    --line-height-body: 1.6667;
+    --line-height-tag: 1.2;
+
+    --layout-page-inset: 1.5rem;
+    --layout-content-inset: clamp(3rem, 8.9vw, 8rem);
+
+    --card-width: 15rem;
+    --card-gap: 1.5rem;
+    
+    --radius-card: 2rem;
+    --radius-panel: 2rem;
+    
+    --scallop-size: 10.7%;
+    --scallop-depth: 4.75rem;
+    
+    --shadow-offset: .5rem;
+  }
+}
+
+:root {
+  --motion-duration-press: 90ms;
+  --motion-duration-release: 260ms;
+  --motion-ease-squish: cubic-bezier(.34, 1.56, .64, 1);
+}

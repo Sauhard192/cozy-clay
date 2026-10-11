@@ -1,0 +1,65 @@
+/* carousel — mobile first; layout breakpoints: 768px and 1024px. */
+
+.carousel__track {
+  --carousel-inset: var(--layout-content-inset);
+  --carousel-fade-start: 0rem;
+  --carousel-fade-end: 0rem;
+  list-style: none;
+  margin: calc(-1 * var(--space-4)) 0;
+  padding: var(--space-4) var(--carousel-inset) calc(var(--space-3) + var(--space-4));
+  display: flex;
+  align-items: stretch;
+  gap: var(--card-gap);
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scroll-padding-inline: var(--carousel-inset);
+}
+
+.carousel[data-variant="categories"] .carousel__track {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    rgb(0 0 0 / .5) calc(var(--carousel-fade-start) * .4),
+    rgb(0 0 0 / .85) calc(var(--carousel-fade-start) * .7),
+    #000 var(--carousel-fade-start),
+    #000 calc(100% - var(--carousel-fade-end)),
+    rgb(0 0 0 / .85) calc(100% - var(--carousel-fade-end) * .7),
+    rgb(0 0 0 / .5) calc(100% - var(--carousel-fade-end) * .4),
+    transparent 100%
+  );
+}
+
+/* Scroll state controls each edge independently without blocking interaction. */
+.carousel__track[data-fade-start="true"] {
+  --carousel-fade-start: var(--carousel-edge-fade-width);
+}
+
+.carousel__track[data-fade-end="true"] {
+  --carousel-fade-end: var(--carousel-edge-fade-width);
+}
+
+.carousel__track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel__track:focus-visible {
+  outline-offset: -0.1875rem;
+}
+
+.carousel__controls {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-5);
+  margin-top: var(--space-8);
+}
+
+
+@media (min-width: 768px) {
+  .carousel__controls {
+    margin-top: var(--space-10);
+  }
+
+}
+

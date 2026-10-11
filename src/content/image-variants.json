@@ -1,0 +1,186 @@
+{
+  "category-earrings.png": [
+    {
+      "src": "/assets/optimized/category-earrings-200-901e51d485.webp",
+      "width": 200,
+      "bytes": 10550
+    },
+    {
+      "src": "/assets/optimized/category-earrings-400-6244497dd3.webp",
+      "width": 400,
+      "bytes": 29802
+    },
+    {
+      "src": "/assets/optimized/category-earrings-432-b80de5851a.webp",
+      "width": 432,
+      "bytes": 38588
+    }
+  ],
+  "category-fridge-magnets.png": [
+    {
+      "src": "/assets/optimized/category-fridge-magnets-200-b8e68a2a52.webp",
+      "width": 200,
+      "bytes": 2760
+    },
+    {
+      "src": "/assets/optimized/category-fridge-magnets-400-d42f960fd2.webp",
+      "width": 400,
+      "bytes": 7452
+    },
+    {
+      "src": "/assets/optimized/category-fridge-magnets-435-280cae549a.webp",
+      "width": 435,
+      "bytes": 8636
+    }
+  ],
+  "category-keychains.png": [
+    {
+      "src": "/assets/optimized/category-keychains-200-cd9635b8bb.webp",
+      "width": 200,
+      "bytes": 5504
+    },
+    {
+      "src": "/assets/optimized/category-keychains-400-f8bfaaa58e.webp",
+      "width": 400,
+      "bytes": 12828
+    },
+    {
+      "src": "/assets/optimized/category-keychains-432-9b717ac4cf.webp",
+      "width": 432,
+      "bytes": 14318
+    }
+  ],
+  "category-miniature.png": [
+    {
+      "src": "/assets/optimized/category-miniature-200-6cb68edadf.webp",
+      "width": 200,
+      "bytes": 10902
+    },
+    {
+      "src": "/assets/optimized/category-miniature-400-4f6938e168.webp",
+      "width": 400,
+      "bytes": 22684
+    },
+    {
+      "src": "/assets/optimized/category-miniature-432-447f3d303d.webp",
+      "width": 432,
+      "bytes": 24684
+    }
+  ],
+  "category-phone-charms.png": [
+    {
+      "src": "/assets/optimized/category-phone-charms-200-e1863baa63.webp",
+      "width": 200,
+      "bytes": 11008
+    },
+    {
+      "src": "/assets/optimized/category-phone-charms-400-c7680bc827.webp",
+      "width": 400,
+      "bytes": 27078
+    },
+    {
+      "src": "/assets/optimized/category-phone-charms-432-2986999f59.webp",
+      "width": 432,
+      "bytes": 30132
+    }
+  ],
+  "category-stickers.png": [
+    {
+      "src": "/assets/optimized/category-stickers-200-686c61a097.webp",
+      "width": 200,
+      "bytes": 14366
+    },
+    {
+      "src": "/assets/optimized/category-stickers-400-cae0144259.webp",
+      "width": 400,
+      "bytes": 47840
+    },
+    {
+      "src": "/assets/optimized/category-stickers-432-fbc2c84b06.webp",
+      "width": 432,
+      "bytes": 56458
+    }
+  ],
+  "category-worry-stones.png": [
+    {
+      "src": "/assets/optimized/category-worry-stones-200-31fd20e644.webp",
+      "width": 200,
+      "bytes": 11072
+    },
+    {
+      "src": "/assets/optimized/category-worry-stones-400-e01c636cce.webp",
+      "width": 400,
+      "bytes": 28824
+    },
+    {
+      "src": "/assets/optimized/category-worry-stones-432-81f9043332.webp",
+      "width": 432,
+      "bytes": 32428
+    }
+  ],
+  "hero-perfect-surprise.png": [
+    {
+      "src": "/assets/optimized/hero-perfect-surprise-240-fb34b26b28.webp",
+      "width": 240,
+      "bytes": 17952
+    },
+    {
+      "src": "/assets/optimized/hero-perfect-surprise-480-3f8d939a01.webp",
+      "width": 480,
+      "bytes": 45066
+    },
+    {
+      "src": "/assets/optimized/hero-perfect-surprise-720-d219bd031b.webp",
+      "width": 720,
+      "bytes": 72742
+    }
+  ],
+  "hero-made-for-you.png": [
+    {
+      "src": "/assets/optimized/hero-made-for-you-240-ee869d0e15.webp",
+      "width": 240,
+      "bytes": 10950
+    },
+    {
+      "src": "/assets/optimized/hero-made-for-you-480-1f8f830592.webp",
+      "width": 480,
+      "bytes": 22718
+    },
+    {
+      "src": "/assets/optimized/hero-made-for-you-720-9cc7b95f90.webp",
+      "width": 720,
+      "bytes": 35260
+    }
+  ],
+  "creator.webp": [
+    {
+      "src": "/assets/optimized/creator-360-b06b224bc6.webp",
+      "width": 360,
+      "bytes": 13850
+    },
+    {
+      "src": "/assets/optimized/creator-720-b17f2f30ae.webp",
+      "width": 720,
+      "bytes": 42090
+    }
+  ],
+  "logo.png": [
+    {
+      "src": "/assets/optimized/logo-96-2263ba4a82.webp",
+      "width": 96,
+      "bytes": 1896
+    },
+    {
+      "src": "/assets/optimized/logo-144-21b052243e.webp",
+      "width": 144,
+      "bytes": 3036
+    }
+  ],
+  "nepal.png": [
+    {
+      "src": "/assets/optimized/nepal-48-84ec57903e.webp",
+      "width": 48,
+      "bytes": 1354
+    }
+  ]
+}

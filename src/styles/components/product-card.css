@@ -1,0 +1,40 @@
+/* product-card — mobile first; layout breakpoints: 768px and 1024px. */
+
+.product-card__photo {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.product-card__badge {
+  position: absolute;
+  top: var(--space-2);
+  right: calc(-1 * var(--space-1));
+  border-radius: var(--space-1);
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  background: var(--color-product-badge-bestseller);
+}
+
+.product-card__badge--new {
+  background: var(--color-product-badge-new);
+  color: var(--color-product-badge-new-text);
+}
+
+.product-card .product-card__category {
+  color: var(--color-text-accent-green);
+  font-weight: var(--font-weight-bold);
+  margin-top: var(--space-5);
+}
+
+.product-card h3 {
+  margin-top: var(--space-1);
+}
+
+.product-card .product-card__price {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-bold);
+  margin-top: auto;
+}
+
