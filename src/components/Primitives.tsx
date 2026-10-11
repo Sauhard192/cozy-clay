@@ -1,3 +1,4 @@
+import { siteUrl } from '../utils/paths';
 import { getImageProps } from '../content/images';
 import type { CSSProperties, ReactNode, MouseEventHandler } from 'react';
 export function Icon({
@@ -12,7 +13,7 @@ export function Icon({
       aria-hidden="true"
       className={`icon ${className}`}
       style={
-        { '--icon-url': `url('/assets/icon/${name}.svg')` } as CSSProperties
+        { '--icon-url': `url('${siteUrl(`/assets/icon/${name}.svg`)}')` } as CSSProperties
       }
     />
   );
@@ -29,7 +30,7 @@ export function Brand({
   return (
     <a
       className={`brand ${inverse ? 'brand-inverse' : ''}`}
-      href={href}
+      href={siteUrl(href)}
       onClick={onClick}
       aria-label="CozyClay home"
     >
@@ -60,7 +61,7 @@ export function ShapeButton({
 }) {
   return (
     <a
-      href={href}
+      href={siteUrl(href)}
       target={newTab ? '_blank' : undefined}
       rel={newTab ? 'noopener noreferrer' : undefined}
       className={`primary-button ${outline ? 'primary-button-outline' : ''} ${className}`}

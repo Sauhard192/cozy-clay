@@ -1,3 +1,4 @@
+import { SHOW_PRODUCTS_HERO } from '../content/site';
 import { useLayoutEffect, useRef } from 'react';
 import { Announcement, Header } from './Header';
 import type { SitePage } from '../content/site';
@@ -24,7 +25,7 @@ export function StickyHeader({
       const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
       const height = node.getBoundingClientRect().height;
       const announcementHeight = node.querySelector('.announcement')!.getBoundingClientRect().height;
-      space.style.height = `${(page === 'home' || page === 'products' ? announcementHeight : height) / rem}rem`;
+      space.style.height = `${(page === 'home' || (page === 'products' && SHOW_PRODUCTS_HERO) ? announcementHeight : height) / rem}rem`;
       document.documentElement.style.setProperty('--sticky-header-clearance', `${enabled ? height / rem : 0}rem`);
     };
     const update = () => {

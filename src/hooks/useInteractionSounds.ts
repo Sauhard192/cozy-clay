@@ -1,3 +1,4 @@
+import { siteUrl } from '../utils/paths';
 import { useCallback, useEffect, useRef } from 'react';
 import type { RefObject } from 'react';
 
@@ -17,7 +18,7 @@ export function useInteractionSounds(enabled: RefObject<boolean>) {
 
   useEffect(() => {
     players.current = [1, 2].map((number) => {
-      const audio = new Audio(`/assets/audio/bubble-pop-${number}.mp3`);
+      const audio = new Audio(siteUrl(`/assets/audio/bubble-pop-${number}.mp3`));
       audio.preload = 'auto';
       audio.volume = POP_VOLUME;
       return audio;

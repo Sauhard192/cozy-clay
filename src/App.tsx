@@ -1,3 +1,5 @@
+import { siteUrl } from './utils/paths';
+import { SHOW_PRODUCTS_HERO } from './content/site';
 import { useNavigation } from './hooks/useNavigation';
 import { useEffect } from 'react';
 import { Creator } from './components/Creator';
@@ -40,7 +42,7 @@ function Hero() {
           </h1>
           <p className="hero-description">{site.hero.description}</p>
           <div className="hero-action">
-            <ShapeButton href="/products">View All Products</ShapeButton>
+            <ShapeButton href={siteUrl('/products')}>View All Products</ShapeButton>
           </div>
         </div>
         <div className="hero-collage">
@@ -93,7 +95,7 @@ function Collections() {
       >
         <img
           className="flower flower-sun"
-          src="/assets/asset/flower-2.svg"
+          src={siteUrl('/assets/asset/flower-2.svg')}
           alt=""
           width="192"
           height="192"
@@ -110,7 +112,7 @@ function Collections() {
         />
         <img
           className="flower flower-purple"
-          src="/assets/asset/flower-1.svg"
+          src={siteUrl('/assets/asset/flower-1.svg')}
           alt=""
           width="192"
           height="192"
@@ -126,7 +128,7 @@ function Collections() {
             <p className="eyebrow">Choose Your Favorite</p>
             <h2 id="featured-title">Popular around here</h2>
           </div>
-          <a className="secondary-button" href="/products">
+          <a className="secondary-button" href={siteUrl('/products')}>
             See All Pieces <Icon name="arrow-right" />
           </a>
         </div>
@@ -145,7 +147,7 @@ function Footer() {
     <footer id="contact" className="footer-panel scallop-top" tabIndex={-1}>
       <div className="footer-upper">
         <div>
-          <a href="/" className="footer-wordmark" aria-label="CozyClay home">
+          <a href={siteUrl('/')} className="footer-wordmark" aria-label="CozyClay home">
             cozyclay<span>.</span>
           </a>
           <p className="footer-tagline">
@@ -241,7 +243,7 @@ export default function App() {
       </a>
       <StickyHeader key={`header-${page}`} page={page} />
       <div
-        className={`page-frame ${page === 'home' || page === 'products' ? 'page-frame--hero' : ''}`}
+        className={`page-frame ${page === 'home' || (page === 'products' && SHOW_PRODUCTS_HERO) ? 'page-frame--hero' : ''}`}
       >
         <main id="main" tabIndex={-1}>
           {page === 'products' ? (

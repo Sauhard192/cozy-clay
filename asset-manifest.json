@@ -271,5 +271,7 @@
   "public/assets/asset/flowers.svg": "/Users/jhelliiii/Downloads/flowers.svg",
   "public/assets/asset/flowers-once.svg": "Derived from /Users/jhelliiii/Downloads/flowers.svg: original 10-second CSS animation, one iteration with final-state fill; reduced motion skips to the final frame.",
   "public/assets/audio/bubble-pop-1.mp3": "/Users/jhelliiii/Downloads/universfield-bubble-pop-02-293341.mp3",
-  "public/assets/audio/bubble-pop-2.mp3": "/Users/jhelliiii/Downloads/universfield-bubble-pop-04-323580.mp3"
+  "public/assets/audio/bubble-pop-2.mp3": "/Users/jhelliiii/Downloads/universfield-bubble-pop-04-323580.mp3",
+  "public/assets/products-hero-yomari.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-65257e6b-d64f-4a8e-b258-8e5982edd110.png",
+  "public/assets/products-hero-dumplings.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-a88c3cb5-0005-40db-8d92-576ce9aab2aa.png"
 }

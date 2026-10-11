@@ -1,3 +1,4 @@
+import { siteUrl } from '../utils/paths';
 import { useEffect, useRef, useState } from 'react';
 import { Icon, ShapeButton } from '../components/Primitives';
 import { getSiteContent } from '../content/site';
@@ -21,7 +22,7 @@ function FlowerIllustration() {
     <div ref={container} className="say-hello__illustration" aria-hidden="true">
       {visible && (
         <img
-          src="/assets/asset/flowers-once.svg"
+          src={siteUrl('/assets/asset/flowers-once.svg')}
           width="479"
           height="412"
           alt=""
@@ -73,8 +74,8 @@ export function SayHello() {
           </a>
         </nav>
       </div>
-      <img className="flower say-hello__flower say-hello__flower-left" src="/assets/asset/flower-1.svg" width="68" height="103" alt="" />
-      <img className="flower say-hello__flower say-hello__flower-right" src="/assets/asset/flower-4.svg" width="61" height="102" alt="" />
+      <img className="flower say-hello__flower say-hello__flower-left" src={siteUrl('/assets/asset/flower-1.svg')} width="68" height="103" alt="" />
+      <img className="flower say-hello__flower say-hello__flower-right" src={siteUrl('/assets/asset/flower-4.svg')} width="61" height="102" alt="" />
     </section>
   );
 }

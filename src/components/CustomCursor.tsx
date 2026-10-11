@@ -1,3 +1,4 @@
+import { siteUrl } from '../utils/paths';
 import { useEffect } from 'react';
 
 const interactive =
@@ -151,7 +152,7 @@ export function CustomCursor() {
     Promise.all(
       ['shape-4-petal.svg', 'shape-8-petal.svg'].map((name) => {
         const image = new Image();
-        image.src = `/assets/shapes/${name}`;
+        image.src = siteUrl(`/assets/shapes/${name}`);
         return image.decode();
       }),
     )

@@ -1,3 +1,6 @@
+// Retain the Products hero for later reactivation.
+export const SHOW_PRODUCTS_HERO = false;
+
 import { getBestsellers } from './products';
 export type { Product } from './products';
 

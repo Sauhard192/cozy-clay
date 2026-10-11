@@ -1,3 +1,4 @@
+import { siteUrl } from '../utils/paths';
 import { getImageProps, cardImageSizes } from '../content/images';
 import type { CategoryCardContent, Product } from '../content/site';
 import { formatPrice } from '../content/products';
@@ -6,7 +7,7 @@ import { Icon } from './Primitives';
 export function CategoryCard({ category }: { category: CategoryCardContent }) {
   return (
     <li className="collection-card category-card">
-      <a className="category-card__link" href={`/products?category=${category.categoryId}`}>
+      <a className="category-card__link" href={siteUrl(`/products?category=${category.categoryId}`)}>
         <img
           className="collection-card__image"
           {...getImageProps(category.image, cardImageSizes)}
@@ -19,7 +20,7 @@ export function CategoryCard({ category }: { category: CategoryCardContent }) {
         <h3 className="category-card__title">
           <img
             className="category-card__icon"
-            src={`/assets/icon/image-icons/${category.categoryIcon}`}
+            src={siteUrl(`/assets/icon/image-icons/${category.categoryIcon}`)}
             alt=""
             width="32"
             height="32"
@@ -59,7 +60,19 @@ export function ProductCard({
         />
         {showBadge && product.tag && (
           <span className={`product-card__badge product-card__badge--${product.tag}`}>
-            {product.tag === 'new' ? 'New' : 'Bestseller'}
+            {product.tag === 'new' && (
+              <img
+                className="product-card__badge-shape"
+                src={siteUrl('/assets/shapes/bookmark-tag-2.svg')}
+                alt=""
+                aria-hidden="true"
+                width="48"
+                height="24"
+              />
+            )}
+            <span className="product-card__badge-label">
+              {product.tag === 'new' ? 'New' : 'Bestseller'}
+            </span>
           </span>
         )}
       </div>

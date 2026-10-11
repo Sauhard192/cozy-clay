@@ -23,6 +23,7 @@
   --color-brown-800: #4A2818FF;
 
   --color-red-500: #FF5548FF;
+  --color-red-800: #881D12FF;
   --color-yellow-500: #FFC928FF;
   --color-purple-300: #A7A8FFFF;
 
@@ -43,14 +44,16 @@
   --color-decoration: var(--color-yellow-500);
   --color-focus: var(--color-brown-800);
   --color-action-secondary: var(--color-text-primary);
-  --color-products-photo-frame: var(--color-surface-page);
   --color-products-filter-surface: color-mix(in srgb, var(--color-surface-green) 24%, var(--color-surface-page));
   --color-products-filter-border: var(--color-surface-green);
   --color-products-filter-active: var(--color-surface-inverse);
   --color-products-sort-selected: color-mix(in srgb, var(--color-text-inverse) 14%, var(--color-surface-inverse));
   --color-product-badge-new: var(--color-red-500);
-  --color-product-badge-new-text: var(--color-text-primary);
-  --color-product-badge-bestseller: var(--color-vanilla-200);
+  --color-product-badge-new-border: var(--color-brown-800);
+  --color-product-badge-new-text: var(--color-white);
+  --color-product-badge-bestseller: var(--color-surface-page);
+  --color-product-badge-bestseller-border: var(--color-decoration);
+  --color-product-badge-bestseller-text: var(--color-text-primary);
 
   --font-family-display: 'Cherry Bomb One', cursive;
   --font-family-body: 'Quicksand', sans-serif;
@@ -116,7 +119,11 @@
   --card-hover-offset: -.25rem;
   --card-hover-shadow: .5rem .625rem 0 var(--shadow-color);
 
-  --radius-sort-menu: 1.75rem;
+  --radius-product-badge: .625rem;
+  --radius-focus: .5rem;
+  --radius-pill: 999rem;
+  --radius-sort-menu: 1.5rem;
+  --radius-sort-option: calc(var(--radius-sort-menu) - var(--space-2));
   --sort-option-min-height: 2.75rem;
   --radius-card: 1.25rem;
   --radius-panel: 1.5rem;
@@ -132,6 +139,8 @@
   --shadow-paper: var(--shadow-offset) var(--shadow-offset) 0 var(--shadow-color);
 
   --border-width: .125rem;
+  --border-width-product-badge: .125rem;
+  --product-badge-height: 2rem;
 
   --button-min-height: 3rem;
   --button-primary-width: 12rem;

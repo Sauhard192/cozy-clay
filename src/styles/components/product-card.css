@@ -6,30 +6,76 @@
 }
 
 .product-card__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--product-badge-height);
   position: absolute;
   top: var(--space-2);
   right: calc(-1 * var(--space-1));
   border-radius: var(--space-1);
   padding: var(--space-1) var(--space-2);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-body);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-primary);
   background: var(--color-product-badge-bestseller);
 }
 
+.product-card__badge--bestseller {
+  top: var(--space-2);
+  right: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  border: var(--border-width) solid var(--color-product-badge-bestseller-border);
+  border-radius: var(--radius-product-badge);
+  background: var(--color-product-badge-bestseller);
+  color: var(--color-product-badge-bestseller-text);
+  font-family: var(--font-family-body);
+  line-height: 1;
+}
+
 .product-card__badge--new {
-  background: var(--color-product-badge-new);
+  top: var(--space-2);
+  right: calc(-1 * (var(--card-padding) + var(--space-2)));
+  width: calc(2 * var(--product-badge-height));
+  height: var(--product-badge-height);
+  /* Center within the solid ribbon body, beyond its 15% notch. */
+  padding: 0 0 0 calc(.3 * var(--product-badge-height));
+  line-height: 1;
+  border-radius: 0;
+  background: transparent;
   color: var(--color-product-badge-new-text);
+  font-family: var(--font-family-display);
+  isolation: isolate;
+
+  -webkit-text-stroke: 0.3rem var(--color-red-800);
+  paint-order: stroke fill;
+}
+
+.product-card__badge--new .product-card__badge-label {
+  transform: translateY(calc(-.5 * var(--border-width)));
+}
+
+.product-card__badge-shape {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  pointer-events: none;
 }
 
 .product-card .product-card__category {
   color: var(--color-text-accent-green);
   font-weight: var(--font-weight-bold);
   margin-top: var(--space-5);
+  margin-bottom: var(--space-0);
 }
 
 .product-card h3 {
   margin-top: var(--space-1);
+  margin-bottom: var(--space-4);
 }
 
 .product-card .product-card__price {

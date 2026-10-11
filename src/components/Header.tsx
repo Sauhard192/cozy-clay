@@ -1,3 +1,5 @@
+import { siteUrl } from '../utils/paths';
+import { SHOW_PRODUCTS_HERO } from '../content/site';
 import { navigate } from '../hooks/useNavigation';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import type { KeyboardEvent } from 'react';
@@ -14,10 +16,10 @@ export function Announcement() {
   );
 }
 export function Header({ page = 'home' }: { page?: SitePage }) {
-  const homeHref = '/';
+  const homeHref = siteUrl('/');
   const resolveHref = (href: string) => {
-    if (href === '#home') return '/';
-    return page !== 'home' && href.startsWith('#') ? `/${href}` : href;
+    if (href === '#home') return siteUrl('/');
+    return siteUrl(page !== 'home' && href.startsWith('#') ? `/${href}` : href);
   };
   const dialog = useRef<HTMLDialogElement>(null);
   const trigger = useRef<HTMLButtonElement>(null);
@@ -169,7 +171,7 @@ export function Header({ page = 'home' }: { page?: SitePage }) {
   return (
     <>
       <header
-        className={`site-header page-header ${page === 'home' || page === 'products' ? 'site-header--overlay' : ''}`}
+        className={`site-header page-header ${page === 'home' || (page === 'products' && SHOW_PRODUCTS_HERO) ? 'site-header--overlay' : ''}`}
       >
         <Brand href={homeHref} />
         <nav className="desktop-nav" aria-label="Main navigation">

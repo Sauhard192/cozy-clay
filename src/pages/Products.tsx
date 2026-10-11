@@ -1,5 +1,6 @@
+import { siteUrl } from '../utils/paths';
 import { useEffect, useRef, useState } from 'react';
-import { getCategoryProducts, getSiteContent } from '../content/site';
+import { getCategoryProducts, getSiteContent, SHOW_PRODUCTS_HERO } from '../content/site';
 import { selectProducts } from '../content/products';
 import type { ProductSort } from '../content/products';
 import { getImageProps } from '../content/images';
@@ -46,7 +47,8 @@ export function Products({ search }: { search: string }) {
   }
 
   return (
-    <div className="products-page">
+    <div className={`products-page${SHOW_PRODUCTS_HERO ? '' : ' products-page--catalogue-first'}`}>
+      {SHOW_PRODUCTS_HERO && (
       <section className="hero-panel products-hero scallop-bottom" aria-labelledby="products-title">
         <div className="products-hero__content">
           <div className="products-hero__copy">
@@ -55,28 +57,35 @@ export function Products({ search }: { search: string }) {
             <p className="products-hero__description">{hero.description}</p>
           </div>
           <div className="products-hero__photos">
-            {['clay-charm.webp', 'dumpling-pair.webp'].map((image, index) => (
-              <div className={`products-hero__frame products-hero__frame--${index + 1}`} key={image}>
-                <div className="products-hero__photo">
-                  <img {...getImageProps(image, '(min-width: 1024px) 18rem, 46vw')} alt={index === 0 ? 'A tiny smiling handmade clay yomari' : 'Two smiling clay dumplings on a Cozy Clay card'} width="400" height="400" loading="eager" />
-                </div>
-              </div>
+            {['products-hero-yomari.png', 'products-hero-dumplings.png'].map((image, index) => (
+              <img
+                className={`products-hero__image products-hero__image--${index + 1}`}
+                key={image}
+                {...getImageProps(image, '(min-width: 1024px) 18rem, 46vw')}
+                alt={index === 0 ? 'A tiny smiling handmade clay yomari' : 'Two smiling clay dumplings on a Cozy Clay card'}
+                width="702"
+                height="738"
+                loading="eager"
+                decoding="async"
+              />
             ))}
           </div>
         </div>
-        <img className="flower products-hero__flower products-hero__flower--left" src="/assets/asset/flower-3.svg" width="65" height="102" alt="" />
-        <img className="flower products-hero__flower products-hero__flower--right" src="/assets/asset/flower-2.svg" width="65" height="102" alt="" />
+        <img className="flower products-hero__flower products-hero__flower--left" src={siteUrl('/assets/asset/flower-3.svg')} width="65" height="102" alt="" />
+        <img className="flower products-hero__flower products-hero__flower--right" src={siteUrl('/assets/asset/flower-2.svg')} width="65" height="102" alt="" />
       </section>
+      )}
 
       <section className="products-catalogue" aria-label="Products">
+        {!SHOW_PRODUCTS_HERO && <h1 className="products-catalogue__title heading-1">Our Products</h1>}
         <div className="products-toolbar">
           <div className="category-filters" role="group" aria-label="Filter products by category">
             <button className="category-filter" aria-pressed={category === 'all'} onClick={() => update('category', 'all')}>
-              <img src="/assets/icon/image-icons/category-all.png" alt="" width="32" height="32" />All
+              <img src={siteUrl('/assets/icon/image-icons/category-all.png')} alt="" width="32" height="32" />All
             </button>
             {categories.map((item) => (
               <button key={item.categoryId} className="category-filter" aria-pressed={category === item.categoryId} onClick={() => update('category', item.categoryId)}>
-                <img src={`/assets/icon/image-icons/${item.categoryIcon}`} alt="" width="32" height="32" />{item.name}
+                <img src={siteUrl(`/assets/icon/image-icons/${item.categoryIcon}`)} alt="" width="32" height="32" />{item.name}
               </button>
             ))}
           </div>
@@ -94,7 +103,7 @@ export function Products({ search }: { search: string }) {
                 {sortOptions.map((item) => (
                   <label key={item.value}>
                     <input type="radio" name="product-sort" value={item.value} checked={sort === item.value} onChange={() => update('sort', item.value)} />
-                    <span>{item.label}</span><span className="products-sort__check" aria-hidden="true">✓</span>
+                    <span>{item.label}</span><Icon name="check" className="products-sort__check" />
                   </label>
                 ))}
               </fieldset>

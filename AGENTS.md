@@ -47,11 +47,11 @@ Fit whole semicircles through PanelPatterns with diameter twice depth; never cro
 
 ## Header, routing and links
 
-Shared Header remains a separate component. On Home and Products it visually overlays the hero grid; reserve its measured height while preserving content spacing. Other pages keep the rounded yellow masked-grid header. The shell/frame has no background.
+Shared Header remains a separate component. On Home (and Products only when SHOW_PRODUCTS_HERO is enabled) it visually overlays the hero grid; reserve its measured height while preserving content spacing. Other pages keep the rounded yellow masked-grid header. The shell/frame has no background.
 
 StickyHeader is **currently disabled by default** (`enabled=false`, App does not override). Preserve that state. Existing optional behavior, when requested/enabled: banner/header pinned together, visible scrolling down, slide out scrolling up, always visible at top/menu/keyboard focus. Disabled mode has no sticky scroll listeners and no sticky anchor clearance. Do not silently re-enable it.
 
-Use `/` for every brand/resolved Home link, not #home or /#home. The Shelf and Home catalogue CTAs open /products. Home category cards link to /products?category=<category-id>; preserve filter/sort query state with History navigation. About Me targets /about; Say Hello and both creator Contact Me buttons target /say-hello. Use the shared SitePage type and useNavigation history handling for internal routes so MusicToggle stays mounted; no routing dependency is installed. Direct routes will need a fallback when hosting is configured.
+Use `/` for every brand/resolved Home link, not #home or /#home. The Shelf and Home catalogue CTAs open /products. Home category cards link to /products?category=<category-id>; preserve filter/sort query state with History navigation. About Me targets /about; Say Hello and both creator Contact Me buttons target /say-hello. Use the shared SitePage type and useNavigation history handling for internal routes so MusicToggle stays mounted; no routing dependency is installed. GitHub Pages builds generate direct-route entry files; keep runtime links/assets base-aware through utils/paths.ts.
 
 Social links, including WhatsApp and the Instagram ShapeButton, use target=_blank with rel=noopener noreferrer. ShapeButton supports newTab. Keep email as mailto and internal navigation in the current tab. Preserve current content destinations and @cozyclay.np casing.
 
@@ -80,9 +80,11 @@ Keep dialog focus trapping/restoration, Escape handling, body scroll lock and an
 
 ## Products page invariants
 
-Use products.json for catalogue edits; products.ts is the future CMS adapter boundary. Keep 31 distinct records and stable IDs. Prices accept a number or { min, max }; format NRs ranges without collapsing equal endpoints. Sort Featured by JSON order, price by minimum, Newest by addedAt. Filters use canonical category IDs in the URL; retain scroll on same-page query updates and restore state on Back/Forward.
+Products currently opens directly to a Products h1 using the shared Heading-1 style, category filters, sorting and visible grid. SHOW_PRODUCTS_HERO=false in content/site.ts preserves the complete hero JSX, CSS and assets without rendering it. Products uses the standalone header and a space-10 catalogue top gap and space-8 below the title while disabled. No scroll reveal gates the product grid. The hero specifications below apply only when re-enabled.
 
-Match Products PDFs and approved uniform 2/3/4-card grid. Blue flower-3 left +45deg and yellow flower-2 right -45deg remain at hero/viewport edges on all sizes, with Home's tablet/desktop size references. Reuse the shared masked/scalloped hero and separate overlaid header. Hero photos use the existing four-petal asset; do not add CSS photo-card frames or captions from Home. Cards keep equal intrinsic heights and non-clickable product surfaces. New/Bestseller are mutually exclusive; Home hides badges and shows all bestsellers.
+Use products.json for catalogue edits; products.ts is the future CMS adapter boundary. Keep 31 distinct records and stable IDs. Prices accept a number or { min, max }; format NRs ranges without collapsing equal endpoints. The selected sort option uses icon/check.svg via the shared Icon component. Sort Featured by JSON order, price by minimum, Newest by addedAt. Filters use canonical category IDs in the URL; retain scroll on same-page query updates and restore state on Back/Forward.
+
+Match Products PDFs and approved uniform 2/3/4-card grid. Blue flower-3 left +45deg and yellow flower-2 right -45deg remain at hero/viewport edges on all sizes, with Home's tablet/desktop size references. Reuse the shared masked/scalloped hero and separate overlaid header. Products hero uses the supplied complete products-hero-yomari.png and products-hero-dumplings.png assets. Preserve transparency, embedded cream frames, 702/738 proportions and overlapping placement, with left +15deg/right -15deg rotation; do not apply CSS shadows, photo masks, extra frames, image cropping or counter-rotation. Cards keep equal intrinsic heights and non-clickable product surfaces. New/Bestseller are mutually exclusive; Home hides badges and shows all bestsellers.
 
 ## Assets, content and remaining decisions
 
@@ -90,7 +92,7 @@ Record copied/extracted/derived assets in asset-manifest.json; preserve original
 
 Current category preparation time remains 6–7 days. Different times await user values. The catalogue uses user-supplied prices and temporary random photos, tags and dates. Preserve all range objects, including equal endpoints. Home displays every bestseller without badges; Products displays at most one New or Bestseller badge, never a popular tag. Product cards remain non-clickable. Promo/copyright text remains unchanged pending direction. Say Hello copy corrections are approved; the footer's From my desk wording is correct.
 
-CMS, ordering, final photos/tags/dates, static-host fallback/cache setup and deployment remain deferred. Do not invent unavailable product actions or replace supplied assets silently.
+CMS, ordering, final photos/tags/dates, custom cache setup and actual publication remain deferred. Do not invent unavailable product actions or replace supplied assets silently.
 
 ## Background music
 
@@ -99,6 +101,10 @@ Control clicks/taps and keyboard-generated clicks alternate bubble-pop-1.mp3 and
 MusicToggle stays mounted across internal page changes. Attempt autoplay at 3.5% volume; if the browser blocks it, wait for the music-button click. Loop cozy-theme.mp3, pause/resume at the current position, and retain playback choice/time in sessionStorage across refreshes during the current visit. Pause while the tab is hidden and resume on return only when playback is still desired and not blocked. Preserve the audio node when the menu opens; move its button portal into the open dialog for access within the focus trap.
 
 The bottom-right button uses button-circle-fill.svg. The surface stays orange in every state. All icons stay brown: sound-off when paused, sound-on when playing, and refresh on failure. Colors/icons fade over 200ms, disabled for reduced motion. Audio failures show refresh.svg and a Retry background music label; clicking reloads/retries the track. Internal route changes remount route-specific header, patterns and motion with unique component-prefixed keys while keeping audio alive. Keep sibling keys distinct so navigation removes the previous header and spacer instead of accumulating them.
+
+## GitHub Pages configuration
+
+Use npm run build:pages for the /cozy-clay/ deployment and npm run preview:pages to preview it. Normal development remains at /. siteUrl handles runtime assets/links; routePath normalizes deployment-prefixed routes. Vite handles CSS URLs and HTML uses %BASE_URL%. scripts/prepare-pages.mjs generates direct-page index files and .nojekyll. .github/workflows/pages.yml runs only by workflow_dispatch; do not trigger publication without authorization. Follow GITHUB-PAGES.md for user-managed publication.
 
 ## Commands and verification status
 

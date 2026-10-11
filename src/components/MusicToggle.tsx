@@ -1,3 +1,4 @@
+import { siteUrl } from '../utils/paths';
 import { useInteractionSounds } from '../hooks/useInteractionSounds';
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
@@ -146,7 +147,7 @@ export default function MusicToggle() {
     <>
       <audio
         ref={audioRef}
-        src="/assets/audio/cozy-theme.mp3"
+        src={siteUrl('/assets/audio/cozy-theme.mp3')}
         preload="auto"
         loop
         onPlay={() => setIsPlaying(true)}

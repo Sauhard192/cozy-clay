@@ -53,46 +53,22 @@
   justify-self: center;
 }
 
-.products-hero__frame {
+.products-hero__image {
   position: absolute;
   width: 62%;
-  aspect-ratio: 1;
-  filter: drop-shadow(var(--shadow-offset) var(--shadow-offset) 0 var(--shadow-color));
-  transform: rotate(45deg);
+  height: auto;
 }
 
-.products-hero__frame::before,
-.products-hero__photo {
-  mask: url('/assets/shapes/shape-4-petal.svg') center / contain no-repeat;
-}
-
-.products-hero__frame::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--color-products-photo-frame);
-}
-
-.products-hero__photo {
-  position: absolute;
-  inset: var(--space-3);
-}
-
-.products-hero__photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: rotate(-45deg) scale(1.42);
-}
-
-.products-hero__frame--1 {
+.products-hero__image--1 {
   top: 0;
   left: 0;
+  transform: rotate(15deg);
 }
 
-.products-hero__frame--2 {
+.products-hero__image--2 {
   right: 0;
   bottom: 0;
+  transform: rotate(-15deg);
 }
 
 .products-hero__flower {
@@ -114,6 +90,15 @@
 
 .products-catalogue {
   padding: calc(var(--products-edge-depth) + var(--space-16)) var(--layout-page-inset) calc(var(--space-32) + var(--products-edge-depth));
+  margin-top: var(--space-6);
+}
+
+.products-page--catalogue-first .products-catalogue {
+  padding-top: var(--space-10);
+}
+
+.products-catalogue__title {
+  margin-bottom: var(--space-12);
 }
 
 .products-toolbar {
@@ -128,9 +113,14 @@
   display: flex;
   gap: var(--space-3);
   overflow-x: auto;
+  scrollbar-width: none;
   width: 100%;
   padding: var(--space-2) var(--space-1);
   scroll-snap-type: x proximity;
+}
+
+.category-filters::-webkit-scrollbar {
+  display: none;
 }
 
 .category-filter {
@@ -204,7 +194,7 @@
   gap: var(--space-2);
   min-height: var(--sort-option-min-height);
   padding: var(--space-2);
-  border-radius: var(--space-2);
+  border-radius: var(--radius-sort-option);
   cursor: pointer;
   font-size: var(--font-size-small);
 }
@@ -256,10 +246,6 @@
 
 .products-grid .product-card__price {
   font-variant-numeric: tabular-nums;
-  width: fit-content;
-  padding: var(--space-1) var(--space-2);
-  border-radius: var(--space-2);
-  background: var(--color-surface-page);
 }
 
 @media (min-width: 768px) {
@@ -289,11 +275,6 @@
   .category-filters {
     flex-wrap: wrap;
     overflow: visible;
-  }
-
-  .products-grid .product-card__price {
-    padding: 0;
-    background: transparent;
   }
 
   .products-grid {

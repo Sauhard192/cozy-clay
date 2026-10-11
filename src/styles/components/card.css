@@ -1,12 +1,13 @@
 /* card — mobile first; layout breakpoints: 768px and 1024px. */
 
 .collection-card {
+  --card-padding: var(--space-3);
   flex: 0 0 var(--card-width);
   min-width: 0;
   height: auto;
   display: flex;
   flex-direction: column;
-  padding: var(--space-3);
+  padding: var(--card-padding);
   border-radius: var(--radius-card);
   background: var(--color-surface-card);
   box-shadow: var(--shadow-paper);
@@ -34,7 +35,7 @@
 
 @media (min-width: 768px) {
   .collection-card {
-    padding: var(--space-5);
+    --card-padding: var(--space-5);
   }
 
   .collection-card h3 {
@@ -48,7 +49,7 @@
 
 @media (min-width: 1024px) {
   .collection-card {
-    padding: var(--space-4);
+    --card-padding: var(--space-4);
   }
 }
 

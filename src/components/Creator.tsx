@@ -1,3 +1,4 @@
+import { siteUrl } from '../utils/paths';
 import { getSiteContent } from '../content/site';
 import { getImageProps } from '../content/images';
 import { Icon, ShapeButton } from './Primitives';
@@ -41,7 +42,7 @@ export function Creator({ standalone = false }: { standalone?: boolean }) {
             <p key={p.slice(0, 20)}>{p}</p>
           ))}
           <div className="creator-actions">
-            <ShapeButton href="/say-hello">
+            <ShapeButton href={siteUrl('/say-hello')}>
               Contact Me
             </ShapeButton>
             <span>OR</span>
@@ -59,7 +60,7 @@ export function Creator({ standalone = false }: { standalone?: boolean }) {
       </div>
       <img
         className="flower creator-flower creator-flower-left"
-        src="/assets/asset/flower-1.svg"
+        src={siteUrl('/assets/asset/flower-1.svg')}
         alt=""
         aria-hidden="true"
         width="68"
@@ -67,7 +68,7 @@ export function Creator({ standalone = false }: { standalone?: boolean }) {
       />
       <img
         className="flower creator-flower creator-flower-right"
-        src="/assets/asset/flower-4.svg"
+        src={siteUrl('/assets/asset/flower-4.svg')}
         alt=""
         aria-hidden="true"
         width="61"

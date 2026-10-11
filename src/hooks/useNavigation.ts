@@ -1,19 +1,20 @@
+import { routePath, siteUrl } from '../utils/paths';
 import { useEffect, useLayoutEffect, useState } from 'react';
 
 const navigationEvent = 'cozy:navigate';
 const routes = new Set(['/', '/about', '/say-hello', '/products']);
 
 export function navigate(href: string) {
-  const url = new URL(href, window.location.href);
+  const url = new URL(siteUrl(href), window.location.href);
   if (
     url.origin !== location.origin ||
-    !routes.has(url.pathname.replace(/\/$/, '') || '/')
+    !routes.has(routePath(url.pathname) ?? '')
   ) {
     location.assign(href);
     return;
   }
   history.replaceState({ ...history.state, scrollY: window.scrollY }, '');
-  const preserveScroll = url.pathname === location.pathname;
+  const preserveScroll = routePath(url.pathname) === routePath(location.pathname);
   history.pushState({ scrollY: preserveScroll ? window.scrollY : 0, preserveScroll }, '', url);
   window.dispatchEvent(new Event(navigationEvent));
 }
@@ -45,11 +46,11 @@ export function useNavigation() {
       const url = new URL(anchor.href);
       if (
         url.origin !== location.origin ||
-        !routes.has(url.pathname.replace(/\/$/, '') || '/')
+        !routes.has(routePath(url.pathname) ?? '')
       )
         return;
       // Preserve native same-page section links and their smooth scrolling.
-      if (url.pathname === location.pathname && url.hash) return;
+      if (routePath(url.pathname) === routePath(location.pathname) && url.hash) return;
       event.preventDefault();
       navigate(anchor.href);
     };
@@ -84,5 +85,5 @@ export function useNavigation() {
       if (!history.state?.preserveScroll) document.getElementById('main')?.focus({ preventScroll: true });
     }
   }, [route]);
-  return new URL(route.href).pathname;
+  return routePath(new URL(route.href).pathname) ?? '/';
 }

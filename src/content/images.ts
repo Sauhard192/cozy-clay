@@ -1,3 +1,4 @@
+import { siteUrl } from '../utils/paths';
 import variants from './image-variants.json';
 
 type ImageVariant = { src: string; width: number; bytes: number };
@@ -9,11 +10,11 @@ export const cardImageSizes = '(min-width: 768px) 12.5rem, 10rem';
 
 export function getImageProps(filename: string, sizes: string) {
   const candidates = images[filename];
-  if (!candidates) return { src: `/assets/${filename}` };
+  if (!candidates) return { src: siteUrl(`/assets/${filename}`) };
 
   return {
-    src: candidates[candidates.length - 1].src,
-    srcSet: candidates.map(({ src, width }) => `${src} ${width}w`).join(', '),
+    src: siteUrl(candidates[candidates.length - 1].src),
+    srcSet: candidates.map(({ src, width }) => `${siteUrl(src)} ${width}w`).join(', '),
     sizes,
   };
 }
