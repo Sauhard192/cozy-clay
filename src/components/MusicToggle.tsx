@@ -14,21 +14,24 @@ export default function MusicToggle() {
   const blocked = useRef(false);
   const request = useRef(0);
   const savedTime = useRef(0);
+  const lastSavedAt = useRef(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [failed, setFailed] = useState(false);
   const [host] = useState(() => document.createElement('div'));
 
   const save = () => {
+    const value = JSON.stringify({
+      playing: desired.current,
+      time: audioRef.current?.currentTime || savedTime.current,
+    });
+    lastSavedAt.current = Date.now();
     try {
-      sessionStorage.setItem(
-        STORAGE_KEY,
-        JSON.stringify({
-          playing: desired.current,
-          time: audioRef.current?.currentTime || savedTime.current,
-        }),
-      );
+      localStorage.setItem(STORAGE_KEY, value);
     } catch {
-      /* Playback still works when storage is unavailable. */
+      // Keep refresh persistence when durable storage is unavailable.
+      try { sessionStorage.setItem(STORAGE_KEY, value); } catch {
+        /* Playback still works when storage is unavailable. */
+      }
     }
   };
   const play = async () => {
@@ -55,17 +58,24 @@ export default function MusicToggle() {
   useEffect(() => {
     const audio = audioRef.current!;
     audio.volume = MUSIC_VOLUME;
-    try {
-      const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || 'null');
-      if (saved) {
-        desired.current = saved.playing !== false;
+    // Migrate the previous tab-only preference when no durable choice exists.
+    for (const read of [
+      () => localStorage.getItem(STORAGE_KEY),
+      () => sessionStorage.getItem(STORAGE_KEY),
+    ]) {
+      try {
+        const saved = JSON.parse(read() || 'null');
+        if (!saved || typeof saved.playing !== 'boolean') continue;
+        desired.current = saved.playing;
         savedTime.current = Number.isFinite(saved.time)
           ? Math.max(0, saved.time)
           : 0;
+        break;
+      } catch {
+        /* Try tab storage if durable storage is blocked or malformed. */
       }
-    } catch {
-      /* Start with default playback intent. */
     }
+    save();
     const restore = () => {
       if (
         savedTime.current &&
@@ -88,15 +98,32 @@ export default function MusicToggle() {
         void play();
       }
     };
+    const resumeAfterGesture = (event: MouseEvent) => {
+      if (
+        !event.isTrusted ||
+        !desired.current ||
+        document.hidden ||
+        !audio.paused ||
+        audio.error ||
+        (event.target instanceof Element && event.target.closest('.music-button'))
+      ) return;
+      // The sound button handles its own click; never resume before it toggles.
+      void play();
+    };
+    const progress = () => {
+      if (Date.now() - lastSavedAt.current >= 2000) save();
+    };
+    document.addEventListener('click', resumeAfterGesture, true);
     document.addEventListener('visibilitychange', visibility);
     window.addEventListener('pagehide', save);
-    audio.addEventListener('timeupdate', save);
+    audio.addEventListener('timeupdate', progress);
     return () => {
       save();
       ++request.current;
       audio.pause();
       audio.removeEventListener('loadedmetadata', restore);
-      audio.removeEventListener('timeupdate', save);
+      audio.removeEventListener('timeupdate', progress);
+      document.removeEventListener('click', resumeAfterGesture, true);
       document.removeEventListener('visibilitychange', visibility);
       window.removeEventListener('pagehide', save);
     };

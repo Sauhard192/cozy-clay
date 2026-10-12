@@ -1,0 +1,98 @@
+/* Loading motion lives on inner images, separate from card hover transforms. */
+.page-content {
+  animation: page-enter var(--motion-duration-page-enter) var(--motion-ease-reveal) backwards;
+}
+
+.image-reveal {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: var(--image-aspect-ratio, 1);
+  overflow: hidden;
+  background: var(--color-image-placeholder);
+}
+
+.image-reveal--artwork {
+  background: transparent;
+}
+
+.image-reveal::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(100deg, transparent 25%, var(--color-image-shimmer) 50%, transparent 75%);
+  transform: translateX(-100%);
+}
+
+.image-reveal[data-state="loading"][data-in-view="true"]::after {
+  animation: image-shimmer var(--motion-duration-image-shimmer) linear infinite;
+}
+
+.image-reveal:not([data-state="loading"])::after {
+  display: none;
+}
+
+.image-reveal > .image-reveal__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(var(--motion-image-reveal-scale));
+  transition:
+    opacity var(--motion-duration-image-reveal) var(--motion-ease-reveal),
+    transform var(--motion-duration-image-reveal) var(--motion-ease-reveal);
+}
+
+.image-reveal--artwork > .image-reveal__image {
+  object-fit: contain;
+}
+
+.image-reveal[data-visible="true"] > .image-reveal__image {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.image-reveal[data-cached="true"] > .image-reveal__image {
+  transition-duration: var(--motion-duration-image-cached);
+}
+
+.image-reveal[data-state="error"] > .image-reveal__image {
+  visibility: hidden;
+}
+
+.image-reveal__fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: var(--space-3);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-small);
+  text-align: center;
+  background: var(--color-image-placeholder);
+}
+
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(var(--motion-page-enter-offset)); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes image-shimmer {
+  to { transform: translateX(100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-content,
+  .image-reveal[data-state="loading"][data-in-view="true"]::after {
+    animation: none;
+  }
+
+  .image-reveal > .image-reveal__image {
+    transform: none;
+    transition: none;
+  }
+}

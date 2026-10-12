@@ -1,3 +1,4 @@
+import { RevealImage } from './RevealImage';
 import { siteUrl } from '../utils/paths';
 import { getSiteContent } from '../content/site';
 import { getImageProps } from '../content/images';
@@ -16,7 +17,8 @@ export function Creator({ standalone = false }: { standalone?: boolean }) {
     >
       <div className="creator-panel">
         <div className="creator-portrait">
-          <img
+          <RevealImage
+            className="creator-portrait__image"
             {...getImageProps(
               site.maker.image,
               '(min-width: 1024px) 28rem, (min-width: 768px) 24rem, 19rem',
@@ -26,6 +28,7 @@ export function Creator({ standalone = false }: { standalone?: boolean }) {
             width="720"
             height="900"
             loading={standalone ? 'eager' : 'lazy'}
+            fetchPriority={standalone ? 'high' : 'auto'}
           />
           <span className="bookmark creator-tag">
             Meet The Creator <Icon name="asterisk" />

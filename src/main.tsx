@@ -4,6 +4,21 @@ import { createRoot } from 'react-dom/client';
 import './styles/tokens.css';
 import './styles/site.css';
 import App from './App';
+import { getImageProps, heroImageSizes } from './content/images';
+import { routePath } from './utils/paths';
+
+// Start the main photo while fonts prepare, only on the homepage.
+if (routePath(location.pathname) === '/') {
+  const photo = getImageProps('hero-perfect-surprise.png', heroImageSizes);
+  const preload = document.createElement('link');
+  preload.rel = 'preload';
+  preload.as = 'image';
+  preload.href = photo.src;
+  if ('srcSet' in photo && photo.srcSet) preload.imageSrcset = photo.srcSet;
+  preload.imageSizes = heroImageSizes;
+  preload.fetchPriority = 'high';
+  document.head.append(preload);
+}
 async function start() {
   // Render with the brand fonts ready; recover if fonts fail or take too long.
   await Promise.race([

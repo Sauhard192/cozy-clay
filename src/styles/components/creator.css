@@ -34,12 +34,15 @@
   width: min(100%, 19rem);
 }
 
-.creator-portrait > img {
+.creator-portrait__image {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 52%;
   mask: url('/assets/shapes/shape-8-petal.svg') center / contain no-repeat;
+}
+
+.creator-portrait__image > .image-reveal__image {
+  object-position: center 52%;
 }
 
 .creator-tag::before {

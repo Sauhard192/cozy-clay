@@ -31,6 +31,7 @@ const site = {
   navigation: [ { label: 'Home', href: '#home' }, { label: 'The Shelf', href: '/products' }, { label: 'About Me', href: '/about' }, { label: 'Say Hello', href: '/say-hello' } ],
   hero: { eyebrow: 'Hand made • From Bhaktapur', titleFirst: 'Welcome to', titleSecond: 'Cozy Corner.', description: 'Story of creativity and personal expression.' },
   productsHero: { eyebrow: 'The Complete Collection', titleFirst: 'Things for', titleSecond: 'Your Corner.', description: 'Small-batch clay pieces made to bring a little more joy to the everyday.' },
+  customOrder: { titleFirst: 'Want something', titleSecond: 'more personal?', description: 'Place your custom orders here', buttonLabel: 'Order Yours Now' },
   maker: {
     name: 'Apekshya', image: 'creator.webp', imageAlt: 'Apekshya, the maker behind CozyClay',
     paragraphs: [
@@ -53,7 +54,7 @@ const site = {
       { label: 'TikTok', icon: 'tiktok', href: 'https://www.tiktok.com/@cozyclay.np' },
     ],
   },
-  copyright: '© 2025 cozyclay.store',
+  get copyright() { return `© ${new Date().getFullYear()} cozyclay.store`; },
 };
 // Replace these accessors with a CMS adapter later; components retain the same data shape.
 export function getSiteContent() { return site; }

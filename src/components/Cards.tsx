@@ -1,3 +1,4 @@
+import { RevealImage } from './RevealImage';
 import { siteUrl } from '../utils/paths';
 import { getImageProps, cardImageSizes } from '../content/images';
 import type { CategoryCardContent, Product } from '../content/site';
@@ -8,7 +9,7 @@ export function CategoryCard({ category }: { category: CategoryCardContent }) {
   return (
     <li className="collection-card category-card">
       <a className="category-card__link" href={siteUrl(`/products?category=${category.categoryId}`)}>
-        <img
+        <RevealImage
           className="collection-card__image"
           {...getImageProps(category.image, cardImageSizes)}
           alt={category.imageAlt}
@@ -49,7 +50,7 @@ export function ProductCard({
   return (
     <li className="collection-card product-card">
       <div className="product-card__photo">
-        <img
+        <RevealImage
           className="collection-card__image"
           {...getImageProps(product.image, showBadge ? '(min-width: 1024px) 20vw, (min-width: 768px) 28vw, 44vw' : cardImageSizes)}
           alt={product.imageAlt}

@@ -229,6 +229,7 @@
 .products-grid {
   display: grid;
   grid-template-columns: repeat(var(--layout-columns), minmax(0, 1fr));
+  grid-template-rows: var(--products-row-template);
   grid-auto-rows: 1fr;
   gap: var(--layout-grid-gap);
   list-style: none;

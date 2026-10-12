@@ -48,7 +48,7 @@
 }
 
 .hero-content {
-  padding: var(--space-24) var(--space-3) 0;
+  padding: var(--space-16) var(--space-3) 0;
   display: grid;
   grid-template-columns: repeat(var(--layout-columns), minmax(0, 1fr));
 }
@@ -95,6 +95,12 @@
   width: 46%;
 }
 
+.photo-card__entrance,
+.photo-card__follow {
+  position: relative;
+  width: 100%;
+}
+
 .photo-card img {
   width: 100%;
   height: auto;
@@ -118,6 +124,10 @@
   right: -.375rem;
   transform: rotate(-26deg);
   position: absolute;
+}
+
+.handmade__swing {
+  transform-origin: calc(100% - var(--space-4) - .3125rem) center;
 }
 
 .petal-note {
@@ -144,7 +154,7 @@
   padding-bottom: 9.5rem;
   /* Clear the fitted hero scallops, then leave a consistent heading gap. */
   --hero-edge-depth: calc((min(100vw, var(--layout-max-width)) - 2 * var(--layout-page-inset)) / var(--scallop-count) / 2);
-  padding-top: calc(var(--hero-artwork-overhang, var(--hero-edge-depth)) + var(--space-16));
+  padding-top: calc(var(--hero-artwork-overhang, var(--hero-edge-depth)) + var(--space-24));
 }
 
 .flower {

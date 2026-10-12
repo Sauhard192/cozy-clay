@@ -81,8 +81,12 @@ export function PanelPatterns() {
         ) /
         2;
       const bottoms = Array.from(
-        hero.querySelectorAll('.photo-card img, .handmade, .petal-note'),
-      ).map((element) => element.getBoundingClientRect().bottom);
+        hero.querySelectorAll('.photo-card, .petal-note'),
+      ).map((element) => {
+        // Static frame bounds stay independent of entrance and pointer movement.
+        const tagClearance = element.querySelector('.handmade') ? rem * 2 : 0;
+        return element.getBoundingClientRect().bottom + tagClearance;
+      });
       const overhang = Math.max(
         depth,
         ...bottoms.map((bottom) => bottom - bounds.bottom),

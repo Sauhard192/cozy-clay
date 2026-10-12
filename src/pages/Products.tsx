@@ -1,3 +1,7 @@
+import { CustomOrderPanel } from '../components/CustomOrderPanel';
+import { useProductColumns } from '../hooks/useProductColumns';
+import type { CSSProperties } from 'react';
+import { RevealImage } from '../components/RevealImage';
 import { siteUrl } from '../utils/paths';
 import { useEffect, useRef, useState } from 'react';
 import { getCategoryProducts, getSiteContent, SHOW_PRODUCTS_HERO } from '../content/site';
@@ -23,6 +27,18 @@ export function Products({ search }: { search: string }) {
   const category = categories.some((item) => item.categoryId === categoryValue) ? categoryValue! : 'all';
   const sort = sortOptions.find((item) => item.value === parameters.get('sort'))?.value ?? 'featured';
   const products = selectProducts(category, sort);
+  const columns = useProductColumns();
+  const insertion = Math.min(products.length, columns * 2);
+  const rowsBefore = Math.ceil(insertion / columns);
+  const rowsAfter = Math.ceil((products.length - insertion) / columns);
+  // Product rows share equal fractional heights; the full-width panel gets its own natural row.
+  const gridStyle = {
+    '--products-row-template': [
+      rowsBefore ? `repeat(${rowsBefore}, 1fr)` : '',
+      'auto',
+      rowsAfter ? `repeat(${rowsAfter}, 1fr)` : '',
+    ].filter(Boolean).join(' '),
+  } as CSSProperties;
   const [sortOpen, setSortOpen] = useState(false);
   const sortControl = useRef<HTMLDivElement>(null);
   const sortTrigger = useRef<HTMLButtonElement>(null);
@@ -58,7 +74,8 @@ export function Products({ search }: { search: string }) {
           </div>
           <div className="products-hero__photos">
             {['products-hero-yomari.png', 'products-hero-dumplings.png'].map((image, index) => (
-              <img
+              <RevealImage
+                artwork
                 className={`products-hero__image products-hero__image--${index + 1}`}
                 key={image}
                 {...getImageProps(image, '(min-width: 1024px) 18rem, 46vw')}
@@ -66,6 +83,7 @@ export function Products({ search }: { search: string }) {
                 width="702"
                 height="738"
                 loading="eager"
+                fetchPriority={index === 0 ? 'high' : 'auto'}
                 decoding="async"
               />
             ))}
@@ -111,11 +129,14 @@ export function Products({ search }: { search: string }) {
           </div>
         </div>
         <p className="sr-only" role="status">{products.length} products{category !== 'all' ? ` in ${categories.find((item) => item.categoryId === category)?.name}` : ''}</p>
-        {products.length ? (
-          <ul className="products-grid">
-            {products.map((product) => <ProductCard key={product.id} product={product} showBadge />)}
-          </ul>
-        ) : <p className="empty-message">No pieces in this category yet. Choose another category or All.</p>}
+        {!products.length && <p className="empty-message">No pieces in this category yet. Choose another category or All.</p>}
+        <ul className="products-grid" style={gridStyle}>
+          {products.flatMap((product, index) => [
+            <ProductCard key={product.id} product={product} showBadge />,
+            ...(index === insertion - 1 ? [<CustomOrderPanel key="custom-order" />] : []),
+          ])}
+          {!products.length && <CustomOrderPanel />}
+        </ul>
       </section>
     </div>
   );

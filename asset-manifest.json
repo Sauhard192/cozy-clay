@@ -273,5 +273,11 @@
   "public/assets/audio/bubble-pop-1.mp3": "/Users/jhelliiii/Downloads/universfield-bubble-pop-02-293341.mp3",
   "public/assets/audio/bubble-pop-2.mp3": "/Users/jhelliiii/Downloads/universfield-bubble-pop-04-323580.mp3",
   "public/assets/products-hero-yomari.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-65257e6b-d64f-4a8e-b258-8e5982edd110.png",
-  "public/assets/products-hero-dumplings.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-a88c3cb5-0005-40db-8d92-576ce9aab2aa.png"
+  "public/assets/products-hero-dumplings.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-a88c3cb5-0005-40db-8d92-576ce9aab2aa.png",
+  "public/assets/share-preview.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-60de6381-2ed5-43fb-bad5-c8fc9866c917.png",
+  "src/assets/flowers-interactive.svg": {
+    "source": "public/assets/asset/flowers-once.svg",
+    "changes": "Wrapper around tag for independent interactive scaling; animation preserved."
+  },
+  "public/assets/shapes/button-rectangle-fill.svg": "Derived from public/assets/shapes/button-rectangle.svg: preserveAspectRatio=none so the custom-order button shape fills its box without transparent side gaps."
 }

@@ -1,3 +1,4 @@
+import { HeroCollage } from './components/HeroCollage';
 import { siteUrl } from './utils/paths';
 import { SHOW_PRODUCTS_HERO } from './content/site';
 import { useNavigation } from './hooks/useNavigation';
@@ -9,7 +10,7 @@ import { SayHello } from './pages/SayHello';
 import type { SitePage } from './content/site';
 import { CustomCursor } from './components/CustomCursor';
 import { PanelPatterns } from './components/PanelPatterns';
-import { getImageProps, heroImageSizes } from './content/images';
+import { getImageProps } from './content/images';
 import { StickyHeader } from './components/StickyHeader';
 import { Carousel } from './components/Carousel';
 import { Icon, ShapeButton } from './components/Primitives';
@@ -45,41 +46,7 @@ function Hero() {
             <ShapeButton href={siteUrl('/products')}>View All Products</ShapeButton>
           </div>
         </div>
-        <div className="hero-collage">
-          <figure className="photo-card photo-card-first">
-            <img
-              {...getImageProps('hero-perfect-surprise.png', heroImageSizes)}
-              loading="eager"
-              decoding="async"
-              alt="Perfect Surprise — a collection of hand-sculpted miniature people"
-              width="801"
-              height="1041"
-              fetchPriority="high"
-            />
-            <span className="bookmark handmade">
-              Hand Made <Icon name="asterisk" />
-            </span>
-          </figure>
-          <figure className="photo-card photo-card-second">
-            <img
-              {...getImageProps('hero-made-for-you.png', heroImageSizes)}
-              loading="eager"
-              decoding="async"
-              alt="Made specially for you — a tiny clay cow being painted by hand"
-              width="800"
-              height="1040"
-            />
-          </figure>
-          <div className="petal-note">
-            Good
-            <br />
-            Things
-            <br />
-            Grow
-            <br />
-            Slowly
-          </div>
-        </div>
+        <HeroCollage />
       </div>
     </section>
   );
@@ -245,7 +212,7 @@ export default function App() {
       <div
         className={`page-frame ${page === 'home' || (page === 'products' && SHOW_PRODUCTS_HERO) ? 'page-frame--hero' : ''}`}
       >
-        <main id="main" tabIndex={-1}>
+        <main key={`content-${page}`} id="main" className="page-content" tabIndex={-1}>
           {page === 'products' ? (
             <Products search={window.location.search} />
           ) : page === 'about' ? (

@@ -46,6 +46,12 @@
   --color-action-secondary: var(--color-text-primary);
   --color-products-filter-surface: color-mix(in srgb, var(--color-surface-green) 24%, var(--color-surface-page));
   --color-products-filter-border: var(--color-surface-green);
+  --font-size-custom-order-title: 1.5rem;
+  --color-custom-order-surface: var(--color-surface-vanilla);
+  --color-custom-order-pattern: var(--color-orange-500);
+  --color-custom-order-border: var(--color-surface-card);
+  --color-custom-order-button: var(--color-surface-inverse);
+  --color-custom-order-button-text: var(--color-text-inverse);
   --color-products-filter-active: var(--color-surface-inverse);
   --color-products-sort-selected: color-mix(in srgb, var(--color-text-inverse) 14%, var(--color-surface-inverse));
   --color-product-badge-new: var(--color-red-500);
@@ -96,6 +102,7 @@
   --space-8: 2rem;
   --space-10: 2.5rem;
   --space-12: 3rem;
+  --space-14: 3.5rem;
   --space-16: 4rem;
   --space-20: 5rem;
   --space-24: 6rem;
@@ -159,6 +166,7 @@
     --layout-columns: 8;
     --layout-grid-gap: var(--space-6);
     --scallop-count: 7;
+    --font-size-custom-order-title: 2rem;
     --font-size-small-heading: 2rem;
     --font-size-title: 1.25rem;
     --font-size-subtitle: 1rem;
@@ -188,6 +196,21 @@
 }
 
 :root {
+  --motion-duration-collage-enter: 600ms;
+  --motion-collage-rise: .75rem;
+  --motion-collage-follow-distance: .375rem;
+  --motion-collage-follow-rotation: 1.5;
+  --motion-collage-tag-follow-rotation: 4;
+  --motion-collage-note-follow-rotation: 2;
+  --motion-duration-page-enter: 300ms;
+  --motion-duration-image-reveal: 350ms;
+  --motion-duration-image-cached: 150ms;
+  --motion-duration-image-shimmer: 1400ms;
+  --motion-ease-reveal: cubic-bezier(.23, 1, .32, 1);
+  --motion-page-enter-offset: .5rem;
+  --motion-image-reveal-scale: 1.025;
+  --color-image-placeholder: color-mix(in srgb, var(--color-surface-card) 85%, var(--color-text-primary));
+  --color-image-shimmer: color-mix(in srgb, var(--color-surface-card) 55%, transparent);
   --motion-duration-press: 90ms;
   --motion-duration-release: 260ms;
   --motion-ease-squish: cubic-bezier(.34, 1.56, .64, 1);
