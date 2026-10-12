@@ -30,6 +30,8 @@ The active values in `src/styles/tokens.css` have been revised from the initial 
 | color-vanilla-200 | #FFEFB6FF |
 | color-vanilla-300 | #FFD86FFF |
 | color-orange-500 | #FF8A3DFF |
+| color-brown-300 | #EEC19DFF |
+| color-brown-500 | #AC7C62FF |
 | color-brown-800 | #4A2818FF |
 | color-red-500 | #FF5548FF |
 | color-yellow-500 | #FFC928FF |
