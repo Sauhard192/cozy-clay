@@ -17,13 +17,13 @@ export interface CategoryCardContent {
 }
 export interface Category { id: string; name: string; productId: string }
 const products: CategoryCardContent[] = [
-  { id: 'miniature-example', categoryId: 'miniature', categoryIcon: 'category-miniature.png', name: 'Miniature', image: 'category-miniature.png', imageAlt: 'Handmade miniature wearing a black top and cream skirt, held against green leaves', preparationTime: '6–7 days' },
-  { id: 'earrings-example', categoryId: 'earrings', categoryIcon: 'category-earrings.png', name: 'Earrings', image: 'category-earrings.png', imageAlt: 'A display of tiny clay fruit, flower and mushroom earrings', preparationTime: '6–7 days' },
-  { id: 'magnet-example', categoryId: 'fridge-magnet', categoryIcon: 'category-fridge-magnets.png', name: 'Fridge Magnet', image: 'category-fridge-magnets.png', imageAlt: 'Small pastel clay vase magnets arranged on a fridge', preparationTime: '6–7 days' },
-  { id: 'keychain-placeholder', categoryId: 'keychain', categoryIcon: 'category-key-chains.png', name: 'Key Chains', image: 'category-keychains.png', imageAlt: 'Smiling clay dumpling hanging from a metal keychain', preparationTime: '6–7 days' },
-  { id: 'worry-stone-placeholder', categoryId: 'worry-stone', categoryIcon: 'category-worry-stones.png', name: 'Worry Stone', image: 'category-worry-stones.png', imageAlt: 'Three decorated clay worry stones with spiral thumb indentations', preparationTime: '6–7 days' },
-  { id: 'phone-charms-example', categoryId: 'phone-charm', categoryIcon: 'category-phone-charm.png', name: 'Phone Charms', image: 'category-phone-charms.png', imageAlt: 'Pastel handmade clay characters hanging from colorful phone straps', preparationTime: '6–7 days' },
-  { id: 'stickers-example', categoryId: 'sticker', categoryIcon: 'category-stickers.png', name: 'Stickers', image: 'category-stickers.png', imageAlt: 'Mini Me outfit sticker sheets beside a decorated phone', preparationTime: '6–7 days' },
+  { id: 'miniature-example', categoryId: 'miniature', categoryIcon: 'category-miniature.png', name: 'Miniature', image: 'images/categories/category-miniature.png', imageAlt: 'Handmade miniature wearing a black top and cream skirt, held against green leaves', preparationTime: '6–7 days' },
+  { id: 'earrings-example', categoryId: 'earrings', categoryIcon: 'category-earrings.png', name: 'Earrings', image: 'images/categories/category-earrings.png', imageAlt: 'A display of tiny clay fruit, flower and mushroom earrings', preparationTime: '6–7 days' },
+  { id: 'magnet-example', categoryId: 'fridge-magnet', categoryIcon: 'category-fridge-magnets.png', name: 'Fridge Magnet', image: 'images/categories/category-fridge-magnets.png', imageAlt: 'Small pastel clay vase magnets arranged on a fridge', preparationTime: '6–7 days' },
+  { id: 'keychain-placeholder', categoryId: 'keychain', categoryIcon: 'category-key-chains.png', name: 'Key Chains', image: 'images/categories/category-keychains.png', imageAlt: 'Smiling clay dumpling hanging from a metal keychain', preparationTime: '6–7 days' },
+  { id: 'worry-stone-placeholder', categoryId: 'worry-stone', categoryIcon: 'category-worry-stones.png', name: 'Worry Stone', image: 'images/categories/category-worry-stones.png', imageAlt: 'Three decorated clay worry stones with spiral thumb indentations', preparationTime: '6–7 days' },
+  { id: 'phone-charms-example', categoryId: 'phone-charm', categoryIcon: 'category-phone-charm.png', name: 'Phone Charms', image: 'images/categories/category-phone-charms.png', imageAlt: 'Pastel handmade clay characters hanging from colorful phone straps', preparationTime: '6–7 days' },
+  { id: 'stickers-example', categoryId: 'sticker', categoryIcon: 'category-stickers.png', name: 'Stickers', image: 'images/categories/category-stickers.png', imageAlt: 'Mini Me outfit sticker sheets beside a decorated phone', preparationTime: '6–7 days' },
 ];
 const categories: Category[] = products.map(p => ({ id: p.categoryId, name: p.name, productId: p.id }));
 const site = {
@@ -33,7 +33,7 @@ const site = {
   productsHero: { eyebrow: 'The Complete Collection', titleFirst: 'Things for', titleSecond: 'Your Corner.', description: 'Small-batch clay pieces made to bring a little more joy to the everyday.' },
   customOrder: { titleFirst: 'Want something', titleSecond: 'more personal?', description: 'Place your custom orders here', buttonLabel: 'Order Yours Now' },
   maker: {
-    name: 'Apekshya', image: 'creator.webp', imageAlt: 'Apekshya, the maker behind CozyClay',
+    name: 'Apekshya', image: 'images/creator/apekshya-portrait.webp', imageAlt: 'Apekshya, the maker behind CozyClay',
     paragraphs: [
       'Cozyclay began with a lump of clay, a quiet afternoon in my small dorm, and a need to make things that feel like a small exhale.',
       "Every piece is shaped, painted, and packed by me. They might have tiny differences, but that’s the lovely bit: no two are quite alike. I’m still figuring it out, still making them with my hands, and very happy that you’re here.",

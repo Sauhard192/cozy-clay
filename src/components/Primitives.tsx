@@ -13,7 +13,7 @@ export function Icon({
       aria-hidden="true"
       className={`icon ${className}`}
       style={
-        { '--icon-url': `url('${siteUrl(`/assets/icon/${name}.svg`)}')` } as CSSProperties
+        { '--icon-url': `url('${siteUrl(`/assets/icons/${name}.svg`)}')` } as CSSProperties
       }
     />
   );
@@ -35,7 +35,7 @@ export function Brand({
       aria-label="CozyClay home"
     >
       <img
-        {...getImageProps('logo.png', '3rem')}
+        {...getImageProps('images/brand/logo.png', '3rem')}
         alt=""
         width="48"
         height="48"

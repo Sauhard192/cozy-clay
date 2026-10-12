@@ -1,4 +1,4 @@
-import flowerArtwork from '../assets/flowers-interactive.svg?raw';
+import flowerArtwork from '../assets/flowers/say-hello-flowers-interactive.svg?raw';
 import { siteUrl } from '../utils/paths';
 import { useEffect, useRef, useState } from 'react';
 import { Icon, ShapeButton } from '../components/Primitives';
@@ -152,8 +152,8 @@ export function SayHello() {
           </a>
         </nav>
       </div>
-      <img className="flower say-hello__flower say-hello__flower-left" src={siteUrl('/assets/asset/flower-1.svg')} width="68" height="103" alt="" />
-      <img className="flower say-hello__flower say-hello__flower-right" src={siteUrl('/assets/asset/flower-4.svg')} width="61" height="102" alt="" />
+      <img className="flower say-hello__flower say-hello__flower-left" src={siteUrl('/assets/flowers/flower-purple.svg')} width="68" height="103" alt="" />
+      <img className="flower say-hello__flower say-hello__flower-right" src={siteUrl('/assets/flowers/flower-pink.svg')} width="61" height="102" alt="" />
     </section>
   );
 }

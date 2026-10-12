@@ -1,7 +1,9 @@
 name: Publish GitHub Pages
 
-# Publishing is intentionally manual; pushing changes does not deploy.
+# Deploy main pushes automatically; keep manual runs available.
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:

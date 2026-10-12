@@ -2,282 +2,1610 @@
   "public/assets/shapes/button-rectangle-outline.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/button-rectangle-outline.svg",
   "public/assets/shapes/button-rectangle.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/button-rectangle.svg",
   "public/assets/shapes/button-circle.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/button-circle.svg",
-  "public/assets/shapes/bookmark-tag-2.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/bookmark-tag-2.svg",
-  "public/assets/shapes/bookmark-tag-1.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/bookmark-tag-1.svg",
+  "public/assets/shapes/tag-new.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/bookmark-tag-2.svg",
+  "public/assets/shapes/tag-handmade.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/bookmark-tag-1.svg",
   "public/assets/shapes/shape-4-petal.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/shape-4-petal.svg",
-  "public/assets/shapes/line-long.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/line-long.svg",
-  "public/assets/shapes/line-short.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/line-short.svg",
+  "public/assets/shapes/divider-line.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/line-long.svg",
+  "public/assets/shapes/nav-underline.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/line-short.svg",
   "public/assets/shapes/shape-8-petal.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/shape-8-petal.svg",
-  "public/assets/icon/instagram.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/instagram.svg",
-  "public/assets/icon/arrow-right.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/arrow-right.svg",
-  "public/assets/icon/mail.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/mail.svg",
-  "public/assets/icon/close.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/close.svg",
-  "public/assets/icon/facebook.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/facebook.svg",
-  "public/assets/icon/whatsapp.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/whatsapp.svg",
-  "public/assets/icon/arrow-left.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/arrow-left.svg",
-  "public/assets/icon/asterisk.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/asterisk.svg",
-  "public/assets/icon/menu.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/menu.svg",
-  "public/assets/icon/tiktok.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/tiktok.svg",
-  "public/assets/asset/flower-4.svg": "/Users/jhelliiii/Downloads/cozy clay site/asset/flower-4.svg",
-  "public/assets/asset/flower-1.svg": "/Users/jhelliiii/Downloads/cozy clay site/asset/flower-1.svg",
-  "public/assets/asset/flower-3.svg": "/Users/jhelliiii/Downloads/cozy clay site/asset/flower-3.svg",
-  "public/assets/asset/flower-2.svg": "/Users/jhelliiii/Downloads/cozy clay site/asset/flower-2.svg",
-  "public/assets/miniature.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/category-1.png",
-  "public/assets/earrings.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/category-2.png",
-  "public/assets/fridge-magnets.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/category-3.png",
-  "public/assets/stickers.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/category-4.png",
-  "public/assets/painting-clay.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/image-1.png",
-  "public/assets/miniature-collection.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/image-2.png",
-  "public/assets/dumpling-pair.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/image-3.png",
-  "public/assets/clay-charm.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/image-4.png",
-  "public/assets/logo.png": "/Users/jhelliiii/Downloads/cozy clay site/asset/logo.png",
-  "public/assets/nepal.png": "/Users/jhelliiii/Downloads/cozy clay site/icon/nepal.png",
-  "public/assets/creator.webp": "desktop-Home.pdf: embedded image index 9, extracted with pypdf; 720x900",
-  "public/assets/hero-made-for-you.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-80feff2f-4300-44b2-ba7a-22b83fe2687c.png",
-  "public/assets/hero-perfect-surprise.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-838ca5be-54dd-4910-bd22-7d02df2ab46d.png",
-  "public/assets/category-earrings.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-44147dc4-8af4-4c63-838e-ff672aa05a88.png",
-  "public/assets/category-fridge-magnets.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-bc63081c-0742-4533-8457-569defb26826.png",
-  "public/assets/category-keychains.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-6a7d2e7a-dd79-4f5d-a97a-79c0131a5ce7.png",
-  "public/assets/category-miniature.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-e0bb5b5b-25ba-4995-b196-5607b8b03349.png",
-  "public/assets/category-phone-charms.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-db500544-7f28-4d16-bbd3-a0c4dbf82e16.png",
-  "public/assets/category-stickers.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-9769417b-6fe2-4975-8d45-20b3b66cbf5f.png",
-  "public/assets/category-worry-stones.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-0b8987f5-376c-489f-9610-7aa6e654ee92.png",
+  "public/assets/icons/instagram.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/instagram.svg",
+  "public/assets/icons/arrow-right.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/arrow-right.svg",
+  "public/assets/icons/mail.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/mail.svg",
+  "public/assets/icons/close.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/close.svg",
+  "public/assets/icons/facebook.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/facebook.svg",
+  "public/assets/icons/whatsapp.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/whatsapp.svg",
+  "public/assets/icons/arrow-left.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/arrow-left.svg",
+  "public/assets/icons/asterisk.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/asterisk.svg",
+  "public/assets/icons/menu.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/menu.svg",
+  "public/assets/icons/tiktok.svg": "/Users/jhelliiii/Downloads/cozy clay site/icon/tiktok.svg",
+  "public/assets/flowers/flower-pink.svg": "/Users/jhelliiii/Downloads/cozy clay site/asset/flower-4.svg",
+  "public/assets/flowers/flower-purple.svg": "/Users/jhelliiii/Downloads/cozy clay site/asset/flower-1.svg",
+  "public/assets/flowers/flower-blue.svg": "/Users/jhelliiii/Downloads/cozy clay site/asset/flower-3.svg",
+  "public/assets/flowers/flower-yellow.svg": "/Users/jhelliiii/Downloads/cozy clay site/asset/flower-2.svg",
+  "public/assets/images/categories/miniature.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/category-1.png",
+  "public/assets/images/categories/earrings.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/category-2.png",
+  "public/assets/images/categories/fridge-magnets.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/category-3.png",
+  "public/assets/images/categories/stickers.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/category-4.png",
+  "public/assets/images/hero/painting-clay.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/image-1.png",
+  "public/assets/images/hero/miniature-collection.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/image-2.png",
+  "public/assets/images/hero/dumpling-pair.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/image-3.png",
+  "public/assets/images/hero/clay-charm.webp": "/Users/jhelliiii/Downloads/cozy clay site/images/image-4.png",
+  "public/assets/images/brand/logo.png": "/Users/jhelliiii/Downloads/cozy clay site/asset/logo.png",
+  "public/assets/images/brand/nepal-flag.png": "/Users/jhelliiii/Downloads/cozy clay site/icon/nepal.png",
+  "public/assets/images/creator/apekshya-portrait.webp": "desktop-Home.pdf: embedded image index 9, extracted with pypdf; 720x900",
+  "public/assets/images/hero/hero-made-for-you.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-80feff2f-4300-44b2-ba7a-22b83fe2687c.png",
+  "public/assets/images/hero/hero-perfect-surprise.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-838ca5be-54dd-4910-bd22-7d02df2ab46d.png",
+  "public/assets/images/categories/category-earrings.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-44147dc4-8af4-4c63-838e-ff672aa05a88.png",
+  "public/assets/images/categories/category-fridge-magnets.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-bc63081c-0742-4533-8457-569defb26826.png",
+  "public/assets/images/categories/category-keychains.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-6a7d2e7a-dd79-4f5d-a97a-79c0131a5ce7.png",
+  "public/assets/images/categories/category-miniature.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-e0bb5b5b-25ba-4995-b196-5607b8b03349.png",
+  "public/assets/images/categories/category-phone-charms.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-db500544-7f28-4d16-bbd3-a0c4dbf82e16.png",
+  "public/assets/images/categories/category-stickers.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-9769417b-6fe2-4975-8d45-20b3b66cbf5f.png",
+  "public/assets/images/categories/category-worry-stones.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-0b8987f5-376c-489f-9610-7aa6e654ee92.png",
   "public/assets/shapes/footer-line.svg": "Derived from supplied line-long.svg; preserveAspectRatio none for full-width footer divider.",
-  "public/assets/shapes/bookmark-tag-3.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/bookmark-tag-3.svg",
-  "public/assets/optimized/category-earrings-200-901e51d485.webp": {
-    "source": "public/assets/category-earrings.png",
+  "public/assets/shapes/tag-meet-the-creator.svg": "/Users/jhelliiii/Downloads/cozy clay site/shapes/bookmark-tag-3.svg",
+  "public/assets/images/categories/category-earrings-200-901e51d485.webp": {
+    "source": "public/assets/images/categories/category-earrings.png",
     "width": 200,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-earrings-400-6244497dd3.webp": {
-    "source": "public/assets/category-earrings.png",
+  "public/assets/images/categories/category-earrings-400-6244497dd3.webp": {
+    "source": "public/assets/images/categories/category-earrings.png",
     "width": 400,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-earrings-432-b80de5851a.webp": {
-    "source": "public/assets/category-earrings.png",
+  "public/assets/images/categories/category-earrings-432-b80de5851a.webp": {
+    "source": "public/assets/images/categories/category-earrings.png",
     "width": 432,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-fridge-magnets-200-b8e68a2a52.webp": {
-    "source": "public/assets/category-fridge-magnets.png",
+  "public/assets/images/categories/category-fridge-magnets-200-b8e68a2a52.webp": {
+    "source": "public/assets/images/categories/category-fridge-magnets.png",
     "width": 200,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-fridge-magnets-400-d42f960fd2.webp": {
-    "source": "public/assets/category-fridge-magnets.png",
+  "public/assets/images/categories/category-fridge-magnets-400-d42f960fd2.webp": {
+    "source": "public/assets/images/categories/category-fridge-magnets.png",
     "width": 400,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-fridge-magnets-435-280cae549a.webp": {
-    "source": "public/assets/category-fridge-magnets.png",
+  "public/assets/images/categories/category-fridge-magnets-435-280cae549a.webp": {
+    "source": "public/assets/images/categories/category-fridge-magnets.png",
     "width": 435,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-keychains-200-cd9635b8bb.webp": {
-    "source": "public/assets/category-keychains.png",
+  "public/assets/images/categories/category-keychains-200-cd9635b8bb.webp": {
+    "source": "public/assets/images/categories/category-keychains.png",
     "width": 200,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-keychains-400-f8bfaaa58e.webp": {
-    "source": "public/assets/category-keychains.png",
+  "public/assets/images/categories/category-keychains-400-f8bfaaa58e.webp": {
+    "source": "public/assets/images/categories/category-keychains.png",
     "width": 400,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-keychains-432-9b717ac4cf.webp": {
-    "source": "public/assets/category-keychains.png",
+  "public/assets/images/categories/category-keychains-432-9b717ac4cf.webp": {
+    "source": "public/assets/images/categories/category-keychains.png",
     "width": 432,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-miniature-200-6cb68edadf.webp": {
-    "source": "public/assets/category-miniature.png",
+  "public/assets/images/categories/category-miniature-200-6cb68edadf.webp": {
+    "source": "public/assets/images/categories/category-miniature.png",
     "width": 200,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-miniature-400-4f6938e168.webp": {
-    "source": "public/assets/category-miniature.png",
+  "public/assets/images/categories/category-miniature-400-4f6938e168.webp": {
+    "source": "public/assets/images/categories/category-miniature.png",
     "width": 400,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-miniature-432-447f3d303d.webp": {
-    "source": "public/assets/category-miniature.png",
+  "public/assets/images/categories/category-miniature-432-447f3d303d.webp": {
+    "source": "public/assets/images/categories/category-miniature.png",
     "width": 432,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-phone-charms-200-e1863baa63.webp": {
-    "source": "public/assets/category-phone-charms.png",
+  "public/assets/images/categories/category-phone-charms-200-e1863baa63.webp": {
+    "source": "public/assets/images/categories/category-phone-charms.png",
     "width": 200,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-phone-charms-400-c7680bc827.webp": {
-    "source": "public/assets/category-phone-charms.png",
+  "public/assets/images/categories/category-phone-charms-400-c7680bc827.webp": {
+    "source": "public/assets/images/categories/category-phone-charms.png",
     "width": 400,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-phone-charms-432-2986999f59.webp": {
-    "source": "public/assets/category-phone-charms.png",
+  "public/assets/images/categories/category-phone-charms-432-2986999f59.webp": {
+    "source": "public/assets/images/categories/category-phone-charms.png",
     "width": 432,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-stickers-200-686c61a097.webp": {
-    "source": "public/assets/category-stickers.png",
+  "public/assets/images/categories/category-stickers-200-686c61a097.webp": {
+    "source": "public/assets/images/categories/category-stickers.png",
     "width": 200,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-stickers-400-cae0144259.webp": {
-    "source": "public/assets/category-stickers.png",
+  "public/assets/images/categories/category-stickers-400-cae0144259.webp": {
+    "source": "public/assets/images/categories/category-stickers.png",
     "width": 400,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-stickers-432-fbc2c84b06.webp": {
-    "source": "public/assets/category-stickers.png",
+  "public/assets/images/categories/category-stickers-432-fbc2c84b06.webp": {
+    "source": "public/assets/images/categories/category-stickers.png",
     "width": 432,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-worry-stones-200-31fd20e644.webp": {
-    "source": "public/assets/category-worry-stones.png",
+  "public/assets/images/categories/category-worry-stones-200-31fd20e644.webp": {
+    "source": "public/assets/images/categories/category-worry-stones.png",
     "width": 200,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-worry-stones-400-e01c636cce.webp": {
-    "source": "public/assets/category-worry-stones.png",
+  "public/assets/images/categories/category-worry-stones-400-e01c636cce.webp": {
+    "source": "public/assets/images/categories/category-worry-stones.png",
     "width": 400,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/category-worry-stones-432-81f9043332.webp": {
-    "source": "public/assets/category-worry-stones.png",
+  "public/assets/images/categories/category-worry-stones-432-81f9043332.webp": {
+    "source": "public/assets/images/categories/category-worry-stones.png",
     "width": 432,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/hero-perfect-surprise-240-fb34b26b28.webp": {
-    "source": "public/assets/hero-perfect-surprise.png",
+  "public/assets/images/hero/hero-perfect-surprise-240-fb34b26b28.webp": {
+    "source": "public/assets/images/hero/hero-perfect-surprise.png",
     "width": 240,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/hero-perfect-surprise-480-3f8d939a01.webp": {
-    "source": "public/assets/hero-perfect-surprise.png",
+  "public/assets/images/hero/hero-perfect-surprise-480-3f8d939a01.webp": {
+    "source": "public/assets/images/hero/hero-perfect-surprise.png",
     "width": 480,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/hero-perfect-surprise-720-d219bd031b.webp": {
-    "source": "public/assets/hero-perfect-surprise.png",
+  "public/assets/images/hero/hero-perfect-surprise-720-d219bd031b.webp": {
+    "source": "public/assets/images/hero/hero-perfect-surprise.png",
     "width": 720,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/hero-made-for-you-240-ee869d0e15.webp": {
-    "source": "public/assets/hero-made-for-you.png",
+  "public/assets/images/hero/hero-made-for-you-240-ee869d0e15.webp": {
+    "source": "public/assets/images/hero/hero-made-for-you.png",
     "width": 240,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/hero-made-for-you-480-1f8f830592.webp": {
-    "source": "public/assets/hero-made-for-you.png",
+  "public/assets/images/hero/hero-made-for-you-480-1f8f830592.webp": {
+    "source": "public/assets/images/hero/hero-made-for-you.png",
     "width": 480,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/hero-made-for-you-720-9cc7b95f90.webp": {
-    "source": "public/assets/hero-made-for-you.png",
+  "public/assets/images/hero/hero-made-for-you-720-9cc7b95f90.webp": {
+    "source": "public/assets/images/hero/hero-made-for-you.png",
     "width": 720,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/creator-360-b06b224bc6.webp": {
-    "source": "public/assets/creator.webp",
+  "public/assets/images/creator/apekshya-portrait-360-b06b224bc6.webp": {
+    "source": "public/assets/images/creator/apekshya-portrait.webp",
     "width": 360,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/creator-720-b17f2f30ae.webp": {
-    "source": "public/assets/creator.webp",
+  "public/assets/images/creator/apekshya-portrait-720-b17f2f30ae.webp": {
+    "source": "public/assets/images/creator/apekshya-portrait.webp",
     "width": 720,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/logo-96-2263ba4a82.webp": {
-    "source": "public/assets/logo.png",
+  "public/assets/images/brand/logo-96-2263ba4a82.webp": {
+    "source": "public/assets/images/brand/logo.png",
     "width": 96,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/logo-144-21b052243e.webp": {
-    "source": "public/assets/logo.png",
+  "public/assets/images/brand/logo-144-21b052243e.webp": {
+    "source": "public/assets/images/brand/logo.png",
     "width": 144,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/optimized/nepal-48-84ec57903e.webp": {
-    "source": "public/assets/nepal.png",
+  "public/assets/images/brand/nepal-flag-48-84ec57903e.webp": {
+    "source": "public/assets/images/brand/nepal-flag.png",
     "width": 48,
     "format": "webp",
     "quality": 85,
     "alphaQuality": 100
   },
-  "public/assets/asset/flowers.svg": "/Users/jhelliiii/Downloads/flowers.svg",
-  "public/assets/asset/flowers-once.svg": "Derived from /Users/jhelliiii/Downloads/flowers.svg: original 10-second CSS animation, one iteration with final-state fill; reduced motion skips to the final frame.",
+  "public/assets/flowers/say-hello-flowers.svg": "/Users/jhelliiii/Downloads/flowers.svg",
+  "public/assets/flowers/say-hello-flowers-once.svg": "Derived from /Users/jhelliiii/Downloads/flowers.svg: original 10-second CSS animation, one iteration with final-state fill; reduced motion skips to the final frame.",
   "public/assets/audio/bubble-pop-1.mp3": "/Users/jhelliiii/Downloads/universfield-bubble-pop-02-293341.mp3",
   "public/assets/audio/bubble-pop-2.mp3": "/Users/jhelliiii/Downloads/universfield-bubble-pop-04-323580.mp3",
-  "public/assets/products-hero-yomari.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-65257e6b-d64f-4a8e-b258-8e5982edd110.png",
-  "public/assets/products-hero-dumplings.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-a88c3cb5-0005-40db-8d92-576ce9aab2aa.png",
-  "public/assets/share-preview.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-60de6381-2ed5-43fb-bad5-c8fc9866c917.png",
-  "src/assets/flowers-interactive.svg": {
-    "source": "public/assets/asset/flowers-once.svg",
+  "public/assets/images/hero/products-hero-yomari.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-65257e6b-d64f-4a8e-b258-8e5982edd110.png",
+  "public/assets/images/hero/products-hero-dumplings.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-a88c3cb5-0005-40db-8d92-576ce9aab2aa.png",
+  "public/assets/images/social/cozyclay-share-preview.png": "/var/folders/hg/lmf3hc9d579_srh7rskt5s180000gn/T/codex-clipboard-60de6381-2ed5-43fb-bad5-c8fc9866c917.png",
+  "src/assets/flowers/say-hello-flowers-interactive.svg": {
+    "source": "public/assets/flowers/say-hello-flowers-once.svg",
     "changes": "Wrapper around tag for independent interactive scaling; animation preserved."
   },
-  "public/assets/shapes/button-rectangle-fill.svg": "Derived from public/assets/shapes/button-rectangle.svg: preserveAspectRatio=none so the custom-order button shape fills its box without transparent side gaps."
+  "public/assets/shapes/button-rectangle-fill.svg": "Derived from public/assets/shapes/button-rectangle.svg: preserveAspectRatio=none so the custom-order button shape fills its box without transparent side gaps.",
+  "public/assets/images/products/mini-me-head.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/mini-me.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/mushroom.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/sunflower.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/pet-miniature.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/lali.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/couple-mini-me.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/mini-vase.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/momo-magnet.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/friends-time.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/mini-me-mix-n-match.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/momo.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/cookie.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/pet-keychain.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/paw-pal.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/momo-fomo.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/couple-miniature.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/yomari.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/nepal-flag.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/hungry-mind.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/mini-me-mix-n-match-2.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/cutie.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/kdrama-world.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/worry-mouse.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/phone-charm.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/mini-me-half-body.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/too-much-filling.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/lucky.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/buff-momo.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/bear.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/samosa.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/images/products/dumpling.jpg": "Owner-supplied product photo added directly to public/assets/product-images; original JPEG retained.",
+  "public/assets/icons/image-icons/category-all-96-5af33a3a41.webp": {
+    "source": "public/assets/icons/image-icons/category-all.png",
+    "width": 96,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/icons/image-icons/category-fridge-magnets-96-9549573850.webp": {
+    "source": "public/assets/icons/image-icons/category-fridge-magnets.png",
+    "width": 96,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/icons/image-icons/category-earrings-96-235e71eacf.webp": {
+    "source": "public/assets/icons/image-icons/category-earrings.png",
+    "width": 96,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/icons/image-icons/category-miniature-96-f3893932b7.webp": {
+    "source": "public/assets/icons/image-icons/category-miniature.png",
+    "width": 96,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/icons/image-icons/category-phone-charm-96-18f9e48e05.webp": {
+    "source": "public/assets/icons/image-icons/category-phone-charm.png",
+    "width": 96,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/icons/image-icons/category-key-chains-96-9e23bc8f57.webp": {
+    "source": "public/assets/icons/image-icons/category-key-chains.png",
+    "width": 96,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/icons/image-icons/category-stickers-96-d4320e2d59.webp": {
+    "source": "public/assets/icons/image-icons/category-stickers.png",
+    "width": 96,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/icons/image-icons/category-worry-stones-96-b37f5a5029.webp": {
+    "source": "public/assets/icons/image-icons/category-worry-stones.png",
+    "width": 96,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/brand/logo-240-7b465dab7e.webp": {
+    "source": "public/assets/images/brand/logo.png",
+    "width": 240,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/brand/nepal-flag-240-85861f8ecd.webp": {
+    "source": "public/assets/images/brand/nepal-flag.png",
+    "width": 240,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/category-fridge-magnets-320-bae39c597c.webp": {
+    "source": "public/assets/images/categories/category-fridge-magnets.png",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/category-earrings-320-cdb923b395.webp": {
+    "source": "public/assets/images/categories/category-earrings.png",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/category-keychains-320-ff0cad4d5c.webp": {
+    "source": "public/assets/images/categories/category-keychains.png",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/category-fridge-magnets-435-bae39c597c.webp": {
+    "source": "public/assets/images/categories/category-fridge-magnets.png",
+    "width": 435,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/category-keychains-432-ff0cad4d5c.webp": {
+    "source": "public/assets/images/categories/category-keychains.png",
+    "width": 432,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/category-earrings-432-cdb923b395.webp": {
+    "source": "public/assets/images/categories/category-earrings.png",
+    "width": 432,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/category-miniature-320-78fcfdca8f.webp": {
+    "source": "public/assets/images/categories/category-miniature.png",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/category-phone-charms-320-c90730b3cc.webp": {
+    "source": "public/assets/images/categories/category-phone-charms.png",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/category-stickers-320-a8d5e56a28.webp": {
+    "source": "public/assets/images/categories/category-stickers.png",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/category-miniature-432-78fcfdca8f.webp": {
+    "source": "public/assets/images/categories/category-miniature.png",
+    "width": 432,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/category-phone-charms-432-c90730b3cc.webp": {
+    "source": "public/assets/images/categories/category-phone-charms.png",
+    "width": 432,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/category-stickers-432-a8d5e56a28.webp": {
+    "source": "public/assets/images/categories/category-stickers.png",
+    "width": 432,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/category-worry-stones-320-77fbd22e09.webp": {
+    "source": "public/assets/images/categories/category-worry-stones.png",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/earrings-320-924606b134.webp": {
+    "source": "public/assets/images/categories/earrings.webp",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/fridge-magnets-320-88d71f1aa5.webp": {
+    "source": "public/assets/images/categories/fridge-magnets.webp",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/category-worry-stones-432-77fbd22e09.webp": {
+    "source": "public/assets/images/categories/category-worry-stones.png",
+    "width": 432,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/fridge-magnets-640-88d71f1aa5.webp": {
+    "source": "public/assets/images/categories/fridge-magnets.webp",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/earrings-640-924606b134.webp": {
+    "source": "public/assets/images/categories/earrings.webp",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/miniature-320-4400667cc3.webp": {
+    "source": "public/assets/images/categories/miniature.webp",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/fridge-magnets-725-88d71f1aa5.webp": {
+    "source": "public/assets/images/categories/fridge-magnets.webp",
+    "width": 725,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/miniature-640-4400667cc3.webp": {
+    "source": "public/assets/images/categories/miniature.webp",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/stickers-320-cb73b30ed7.webp": {
+    "source": "public/assets/images/categories/stickers.webp",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/earrings-720-924606b134.webp": {
+    "source": "public/assets/images/categories/earrings.webp",
+    "width": 720,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/creator/apekshya-portrait-320-fe1e1b9e15.webp": {
+    "source": "public/assets/images/creator/apekshya-portrait.webp",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/miniature-720-4400667cc3.webp": {
+    "source": "public/assets/images/categories/miniature.webp",
+    "width": 720,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/stickers-640-cb73b30ed7.webp": {
+    "source": "public/assets/images/categories/stickers.webp",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/clay-charm-320-d2a2f91f9c.webp": {
+    "source": "public/assets/images/hero/clay-charm.webp",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/creator/apekshya-portrait-640-fe1e1b9e15.webp": {
+    "source": "public/assets/images/creator/apekshya-portrait.webp",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/clay-charm-640-d2a2f91f9c.webp": {
+    "source": "public/assets/images/hero/clay-charm.webp",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/creator/apekshya-portrait-720-fe1e1b9e15.webp": {
+    "source": "public/assets/images/creator/apekshya-portrait.webp",
+    "width": 720,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/categories/stickers-720-cb73b30ed7.webp": {
+    "source": "public/assets/images/categories/stickers.webp",
+    "width": 720,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/dumpling-pair-320-a9a6dedf93.webp": {
+    "source": "public/assets/images/hero/dumpling-pair.webp",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/hero-made-for-you-320-e57a8ba64e.webp": {
+    "source": "public/assets/images/hero/hero-made-for-you.png",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/clay-charm-960-d2a2f91f9c.webp": {
+    "source": "public/assets/images/hero/clay-charm.webp",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/dumpling-pair-640-a9a6dedf93.webp": {
+    "source": "public/assets/images/hero/dumpling-pair.webp",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/hero-perfect-surprise-320-59c6d959d0.webp": {
+    "source": "public/assets/images/hero/hero-perfect-surprise.png",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/hero-made-for-you-640-e57a8ba64e.webp": {
+    "source": "public/assets/images/hero/hero-made-for-you.png",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/dumpling-pair-960-a9a6dedf93.webp": {
+    "source": "public/assets/images/hero/dumpling-pair.webp",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/hero-perfect-surprise-640-59c6d959d0.webp": {
+    "source": "public/assets/images/hero/hero-perfect-surprise.png",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/miniature-collection-320-088973db9e.webp": {
+    "source": "public/assets/images/hero/miniature-collection.webp",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/hero-made-for-you-800-e57a8ba64e.webp": {
+    "source": "public/assets/images/hero/hero-made-for-you.png",
+    "width": 800,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/painting-clay-320-caed3c4e07.webp": {
+    "source": "public/assets/images/hero/painting-clay.webp",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/miniature-collection-640-088973db9e.webp": {
+    "source": "public/assets/images/hero/miniature-collection.webp",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/hero-perfect-surprise-801-59c6d959d0.webp": {
+    "source": "public/assets/images/hero/hero-perfect-surprise.png",
+    "width": 801,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/painting-clay-640-caed3c4e07.webp": {
+    "source": "public/assets/images/hero/painting-clay.webp",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/products-hero-dumplings-320-86f06d1862.webp": {
+    "source": "public/assets/images/hero/products-hero-dumplings.png",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/miniature-collection-720-088973db9e.webp": {
+    "source": "public/assets/images/hero/miniature-collection.webp",
+    "width": 720,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/painting-clay-715-caed3c4e07.webp": {
+    "source": "public/assets/images/hero/painting-clay.webp",
+    "width": 715,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/products-hero-yomari-320-6cc2fc7e82.webp": {
+    "source": "public/assets/images/hero/products-hero-yomari.png",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/products-hero-dumplings-640-86f06d1862.webp": {
+    "source": "public/assets/images/hero/products-hero-dumplings.png",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/bear-320-f7d161e830.webp": {
+    "source": "public/assets/images/products/bear.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/products-hero-yomari-640-6cc2fc7e82.webp": {
+    "source": "public/assets/images/hero/products-hero-yomari.png",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/products-hero-dumplings-702-86f06d1862.webp": {
+    "source": "public/assets/images/hero/products-hero-dumplings.png",
+    "width": 702,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/buff-momo-320-b580c69f69.webp": {
+    "source": "public/assets/images/products/buff-momo.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/hero/products-hero-yomari-702-6cc2fc7e82.webp": {
+    "source": "public/assets/images/hero/products-hero-yomari.png",
+    "width": 702,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/bear-640-f7d161e830.webp": {
+    "source": "public/assets/images/products/bear.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/cookie-320-bc490bf2dd.webp": {
+    "source": "public/assets/images/products/cookie.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/buff-momo-640-b580c69f69.webp": {
+    "source": "public/assets/images/products/buff-momo.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/cookie-640-bc490bf2dd.webp": {
+    "source": "public/assets/images/products/cookie.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/bear-960-f7d161e830.webp": {
+    "source": "public/assets/images/products/bear.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/couple-mini-me-320-826bfc1c48.webp": {
+    "source": "public/assets/images/products/couple-mini-me.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/buff-momo-960-b580c69f69.webp": {
+    "source": "public/assets/images/products/buff-momo.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/cookie-960-bc490bf2dd.webp": {
+    "source": "public/assets/images/products/cookie.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/couple-miniature-320-51976504b2.webp": {
+    "source": "public/assets/images/products/couple-miniature.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/couple-mini-me-640-826bfc1c48.webp": {
+    "source": "public/assets/images/products/couple-mini-me.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/cutie-320-1559535139.webp": {
+    "source": "public/assets/images/products/cutie.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/couple-miniature-640-51976504b2.webp": {
+    "source": "public/assets/images/products/couple-miniature.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/couple-mini-me-960-826bfc1c48.webp": {
+    "source": "public/assets/images/products/couple-mini-me.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/cutie-640-1559535139.webp": {
+    "source": "public/assets/images/products/cutie.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/dumpling-320-47f4ea1824.webp": {
+    "source": "public/assets/images/products/dumpling.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/couple-miniature-960-51976504b2.webp": {
+    "source": "public/assets/images/products/couple-miniature.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/friends-time-320-5e95812b7a.webp": {
+    "source": "public/assets/images/products/friends-time.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/dumpling-640-47f4ea1824.webp": {
+    "source": "public/assets/images/products/dumpling.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/cutie-960-1559535139.webp": {
+    "source": "public/assets/images/products/cutie.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/hungry-mind-320-425774c2ac.webp": {
+    "source": "public/assets/images/products/hungry-mind.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/friends-time-640-5e95812b7a.webp": {
+    "source": "public/assets/images/products/friends-time.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/dumpling-960-47f4ea1824.webp": {
+    "source": "public/assets/images/products/dumpling.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/hungry-mind-640-425774c2ac.webp": {
+    "source": "public/assets/images/products/hungry-mind.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/kdrama-world-320-e7f76edbed.webp": {
+    "source": "public/assets/images/products/kdrama-world.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/friends-time-960-5e95812b7a.webp": {
+    "source": "public/assets/images/products/friends-time.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/hungry-mind-960-425774c2ac.webp": {
+    "source": "public/assets/images/products/hungry-mind.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/lali-320-2162c60a67.webp": {
+    "source": "public/assets/images/products/lali.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/kdrama-world-640-e7f76edbed.webp": {
+    "source": "public/assets/images/products/kdrama-world.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/lucky-320-29a0e40c1d.webp": {
+    "source": "public/assets/images/products/lucky.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/lali-640-2162c60a67.webp": {
+    "source": "public/assets/images/products/lali.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/lucky-640-29a0e40c1d.webp": {
+    "source": "public/assets/images/products/lucky.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/kdrama-world-960-e7f76edbed.webp": {
+    "source": "public/assets/images/products/kdrama-world.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-half-body-320-2e7a8d1756.webp": {
+    "source": "public/assets/images/products/mini-me-half-body.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/lali-960-2162c60a67.webp": {
+    "source": "public/assets/images/products/lali.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/lucky-960-29a0e40c1d.webp": {
+    "source": "public/assets/images/products/lucky.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-head-320-e73f7e9cb2.webp": {
+    "source": "public/assets/images/products/mini-me-head.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-mix-n-match-2-320-3456d948ba.webp": {
+    "source": "public/assets/images/products/mini-me-mix-n-match-2.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-half-body-640-2e7a8d1756.webp": {
+    "source": "public/assets/images/products/mini-me-half-body.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-head-640-e73f7e9cb2.webp": {
+    "source": "public/assets/images/products/mini-me-head.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-mix-n-match-2-640-3456d948ba.webp": {
+    "source": "public/assets/images/products/mini-me-mix-n-match-2.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-mix-n-match-2-720-3456d948ba.webp": {
+    "source": "public/assets/images/products/mini-me-mix-n-match-2.jpg",
+    "width": 720,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-head-960-e73f7e9cb2.webp": {
+    "source": "public/assets/images/products/mini-me-head.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-mix-n-match-320-590626a09e.webp": {
+    "source": "public/assets/images/products/mini-me-mix-n-match.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-320-96872c36cc.webp": {
+    "source": "public/assets/images/products/mini-me.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-half-body-960-2e7a8d1756.webp": {
+    "source": "public/assets/images/products/mini-me-half-body.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-vase-320-95ab451177.webp": {
+    "source": "public/assets/images/products/mini-vase.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-640-96872c36cc.webp": {
+    "source": "public/assets/images/products/mini-me.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-mix-n-match-640-590626a09e.webp": {
+    "source": "public/assets/images/products/mini-me-mix-n-match.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-960-96872c36cc.webp": {
+    "source": "public/assets/images/products/mini-me.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-vase-640-95ab451177.webp": {
+    "source": "public/assets/images/products/mini-vase.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/momo-fomo-320-e56223f85d.webp": {
+    "source": "public/assets/images/products/momo-fomo.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-me-mix-n-match-960-590626a09e.webp": {
+    "source": "public/assets/images/products/mini-me-mix-n-match.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/momo-magnet-320-d5de3d69f8.webp": {
+    "source": "public/assets/images/products/momo-magnet.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/momo-fomo-640-e56223f85d.webp": {
+    "source": "public/assets/images/products/momo-fomo.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mini-vase-960-95ab451177.webp": {
+    "source": "public/assets/images/products/mini-vase.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/momo-magnet-640-d5de3d69f8.webp": {
+    "source": "public/assets/images/products/momo-magnet.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/momo-320-3371377cfd.webp": {
+    "source": "public/assets/images/products/momo.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/momo-magnet-960-d5de3d69f8.webp": {
+    "source": "public/assets/images/products/momo-magnet.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mushroom-320-a9edafe1f8.webp": {
+    "source": "public/assets/images/products/mushroom.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/momo-fomo-960-e56223f85d.webp": {
+    "source": "public/assets/images/products/momo-fomo.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/momo-640-3371377cfd.webp": {
+    "source": "public/assets/images/products/momo.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/nepal-flag-320-d4ac1e2426.webp": {
+    "source": "public/assets/images/products/nepal-flag.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mushroom-640-a9edafe1f8.webp": {
+    "source": "public/assets/images/products/mushroom.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/nepal-flag-640-d4ac1e2426.webp": {
+    "source": "public/assets/images/products/nepal-flag.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/momo-960-3371377cfd.webp": {
+    "source": "public/assets/images/products/momo.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/paw-pal-320-aac8d5c4c0.webp": {
+    "source": "public/assets/images/products/paw-pal.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/mushroom-960-a9edafe1f8.webp": {
+    "source": "public/assets/images/products/mushroom.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/paw-pal-640-aac8d5c4c0.webp": {
+    "source": "public/assets/images/products/paw-pal.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/nepal-flag-960-d4ac1e2426.webp": {
+    "source": "public/assets/images/products/nepal-flag.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/pet-keychain-320-d32a69562b.webp": {
+    "source": "public/assets/images/products/pet-keychain.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/pet-miniature-320-55eac6560e.webp": {
+    "source": "public/assets/images/products/pet-miniature.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/pet-keychain-640-d32a69562b.webp": {
+    "source": "public/assets/images/products/pet-keychain.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/paw-pal-960-aac8d5c4c0.webp": {
+    "source": "public/assets/images/products/paw-pal.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/pet-miniature-640-55eac6560e.webp": {
+    "source": "public/assets/images/products/pet-miniature.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/phone-charm-320-8aece66f01.webp": {
+    "source": "public/assets/images/products/phone-charm.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/pet-keychain-960-d32a69562b.webp": {
+    "source": "public/assets/images/products/pet-keychain.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/phone-charm-640-8aece66f01.webp": {
+    "source": "public/assets/images/products/phone-charm.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/pet-miniature-960-55eac6560e.webp": {
+    "source": "public/assets/images/products/pet-miniature.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/samosa-320-6c9c870a83.webp": {
+    "source": "public/assets/images/products/samosa.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/sunflower-320-aca6f22272.webp": {
+    "source": "public/assets/images/products/sunflower.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/samosa-640-6c9c870a83.webp": {
+    "source": "public/assets/images/products/samosa.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/phone-charm-960-8aece66f01.webp": {
+    "source": "public/assets/images/products/phone-charm.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/sunflower-640-aca6f22272.webp": {
+    "source": "public/assets/images/products/sunflower.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/too-much-filling-320-aac8d5c4c0.webp": {
+    "source": "public/assets/images/products/too-much-filling.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/samosa-960-6c9c870a83.webp": {
+    "source": "public/assets/images/products/samosa.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/too-much-filling-640-aac8d5c4c0.webp": {
+    "source": "public/assets/images/products/too-much-filling.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/worry-mouse-320-c11c5ca62a.webp": {
+    "source": "public/assets/images/products/worry-mouse.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/sunflower-960-aca6f22272.webp": {
+    "source": "public/assets/images/products/sunflower.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/yomari-320-d67e6d68c5.webp": {
+    "source": "public/assets/images/products/yomari.jpg",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/worry-mouse-640-c11c5ca62a.webp": {
+    "source": "public/assets/images/products/worry-mouse.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/too-much-filling-960-aac8d5c4c0.webp": {
+    "source": "public/assets/images/products/too-much-filling.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/yomari-640-d67e6d68c5.webp": {
+    "source": "public/assets/images/products/yomari.jpg",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/social/cozyclay-share-preview-320-8aa7847593.webp": {
+    "source": "public/assets/images/social/cozyclay-share-preview.png",
+    "width": 320,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/social/cozyclay-share-preview-640-8aa7847593.webp": {
+    "source": "public/assets/images/social/cozyclay-share-preview.png",
+    "width": 640,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/worry-mouse-960-c11c5ca62a.webp": {
+    "source": "public/assets/images/products/worry-mouse.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/social/cozyclay-share-preview-960-8aa7847593.webp": {
+    "source": "public/assets/images/social/cozyclay-share-preview.png",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  },
+  "public/assets/images/products/yomari-960-d67e6d68c5.webp": {
+    "source": "public/assets/images/products/yomari.jpg",
+    "width": 960,
+    "format": "webp",
+    "quality": 82,
+    "alphaQuality": 100,
+    "generatedBy": "cozy-image-optimizer-v1"
+  }
 }

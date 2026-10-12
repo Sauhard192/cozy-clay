@@ -1,186 +1,938 @@
 {
-  "category-earrings.png": [
+  "icons/image-icons/category-all.png": [
     {
-      "src": "/assets/optimized/category-earrings-200-901e51d485.webp",
-      "width": 200,
-      "bytes": 10550
-    },
-    {
-      "src": "/assets/optimized/category-earrings-400-6244497dd3.webp",
-      "width": 400,
-      "bytes": 29802
-    },
-    {
-      "src": "/assets/optimized/category-earrings-432-b80de5851a.webp",
-      "width": 432,
-      "bytes": 38588
-    }
-  ],
-  "category-fridge-magnets.png": [
-    {
-      "src": "/assets/optimized/category-fridge-magnets-200-b8e68a2a52.webp",
-      "width": 200,
-      "bytes": 2760
-    },
-    {
-      "src": "/assets/optimized/category-fridge-magnets-400-d42f960fd2.webp",
-      "width": 400,
-      "bytes": 7452
-    },
-    {
-      "src": "/assets/optimized/category-fridge-magnets-435-280cae549a.webp",
-      "width": 435,
-      "bytes": 8636
-    }
-  ],
-  "category-keychains.png": [
-    {
-      "src": "/assets/optimized/category-keychains-200-cd9635b8bb.webp",
-      "width": 200,
-      "bytes": 5504
-    },
-    {
-      "src": "/assets/optimized/category-keychains-400-f8bfaaa58e.webp",
-      "width": 400,
-      "bytes": 12828
-    },
-    {
-      "src": "/assets/optimized/category-keychains-432-9b717ac4cf.webp",
-      "width": 432,
-      "bytes": 14318
-    }
-  ],
-  "category-miniature.png": [
-    {
-      "src": "/assets/optimized/category-miniature-200-6cb68edadf.webp",
-      "width": 200,
-      "bytes": 10902
-    },
-    {
-      "src": "/assets/optimized/category-miniature-400-4f6938e168.webp",
-      "width": 400,
-      "bytes": 22684
-    },
-    {
-      "src": "/assets/optimized/category-miniature-432-447f3d303d.webp",
-      "width": 432,
-      "bytes": 24684
-    }
-  ],
-  "category-phone-charms.png": [
-    {
-      "src": "/assets/optimized/category-phone-charms-200-e1863baa63.webp",
-      "width": 200,
-      "bytes": 11008
-    },
-    {
-      "src": "/assets/optimized/category-phone-charms-400-c7680bc827.webp",
-      "width": 400,
-      "bytes": 27078
-    },
-    {
-      "src": "/assets/optimized/category-phone-charms-432-2986999f59.webp",
-      "width": 432,
-      "bytes": 30132
-    }
-  ],
-  "category-stickers.png": [
-    {
-      "src": "/assets/optimized/category-stickers-200-686c61a097.webp",
-      "width": 200,
-      "bytes": 14366
-    },
-    {
-      "src": "/assets/optimized/category-stickers-400-cae0144259.webp",
-      "width": 400,
-      "bytes": 47840
-    },
-    {
-      "src": "/assets/optimized/category-stickers-432-fbc2c84b06.webp",
-      "width": 432,
-      "bytes": 56458
-    }
-  ],
-  "category-worry-stones.png": [
-    {
-      "src": "/assets/optimized/category-worry-stones-200-31fd20e644.webp",
-      "width": 200,
-      "bytes": 11072
-    },
-    {
-      "src": "/assets/optimized/category-worry-stones-400-e01c636cce.webp",
-      "width": 400,
-      "bytes": 28824
-    },
-    {
-      "src": "/assets/optimized/category-worry-stones-432-81f9043332.webp",
-      "width": 432,
-      "bytes": 32428
-    }
-  ],
-  "hero-perfect-surprise.png": [
-    {
-      "src": "/assets/optimized/hero-perfect-surprise-240-fb34b26b28.webp",
-      "width": 240,
-      "bytes": 17952
-    },
-    {
-      "src": "/assets/optimized/hero-perfect-surprise-480-3f8d939a01.webp",
-      "width": 480,
-      "bytes": 45066
-    },
-    {
-      "src": "/assets/optimized/hero-perfect-surprise-720-d219bd031b.webp",
-      "width": 720,
-      "bytes": 72742
-    }
-  ],
-  "hero-made-for-you.png": [
-    {
-      "src": "/assets/optimized/hero-made-for-you-240-ee869d0e15.webp",
-      "width": 240,
-      "bytes": 10950
-    },
-    {
-      "src": "/assets/optimized/hero-made-for-you-480-1f8f830592.webp",
-      "width": 480,
-      "bytes": 22718
-    },
-    {
-      "src": "/assets/optimized/hero-made-for-you-720-9cc7b95f90.webp",
-      "width": 720,
-      "bytes": 35260
-    }
-  ],
-  "creator.webp": [
-    {
-      "src": "/assets/optimized/creator-360-b06b224bc6.webp",
-      "width": 360,
-      "bytes": 13850
-    },
-    {
-      "src": "/assets/optimized/creator-720-b17f2f30ae.webp",
-      "width": 720,
-      "bytes": 42090
-    }
-  ],
-  "logo.png": [
-    {
-      "src": "/assets/optimized/logo-96-2263ba4a82.webp",
+      "src": "/assets/icons/image-icons/category-all-96-5af33a3a41.webp",
       "width": 96,
-      "bytes": 1896
-    },
-    {
-      "src": "/assets/optimized/logo-144-21b052243e.webp",
-      "width": 144,
-      "bytes": 3036
+      "bytes": 2728
     }
   ],
-  "nepal.png": [
+  "icons/image-icons/category-earrings.png": [
     {
-      "src": "/assets/optimized/nepal-48-84ec57903e.webp",
-      "width": 48,
-      "bytes": 1354
+      "src": "/assets/icons/image-icons/category-earrings-96-235e71eacf.webp",
+      "width": 96,
+      "bytes": 3882
+    }
+  ],
+  "icons/image-icons/category-fridge-magnets.png": [
+    {
+      "src": "/assets/icons/image-icons/category-fridge-magnets-96-9549573850.webp",
+      "width": 96,
+      "bytes": 2642
+    }
+  ],
+  "icons/image-icons/category-key-chains.png": [
+    {
+      "src": "/assets/icons/image-icons/category-key-chains-96-9e23bc8f57.webp",
+      "width": 96,
+      "bytes": 3496
+    }
+  ],
+  "icons/image-icons/category-miniature.png": [
+    {
+      "src": "/assets/icons/image-icons/category-miniature-96-f3893932b7.webp",
+      "width": 96,
+      "bytes": 3028
+    }
+  ],
+  "icons/image-icons/category-phone-charm.png": [
+    {
+      "src": "/assets/icons/image-icons/category-phone-charm-96-18f9e48e05.webp",
+      "width": 96,
+      "bytes": 2414
+    }
+  ],
+  "icons/image-icons/category-stickers.png": [
+    {
+      "src": "/assets/icons/image-icons/category-stickers-96-d4320e2d59.webp",
+      "width": 96,
+      "bytes": 3056
+    }
+  ],
+  "icons/image-icons/category-worry-stones.png": [
+    {
+      "src": "/assets/icons/image-icons/category-worry-stones-96-b37f5a5029.webp",
+      "width": 96,
+      "bytes": 2728
+    }
+  ],
+  "images/brand/logo.png": [
+    {
+      "src": "/assets/images/brand/logo-240-7b465dab7e.webp",
+      "width": 240,
+      "bytes": 5206
+    }
+  ],
+  "images/brand/nepal-flag.png": [
+    {
+      "src": "/assets/images/brand/nepal-flag-240-85861f8ecd.webp",
+      "width": 240,
+      "bytes": 4236
+    }
+  ],
+  "images/categories/category-earrings.png": [
+    {
+      "src": "/assets/images/categories/category-earrings-320-cdb923b395.webp",
+      "width": 320,
+      "bytes": 19034
+    },
+    {
+      "src": "/assets/images/categories/category-earrings-432-cdb923b395.webp",
+      "width": 432,
+      "bytes": 34436
+    }
+  ],
+  "images/categories/category-fridge-magnets.png": [
+    {
+      "src": "/assets/images/categories/category-fridge-magnets-320-bae39c597c.webp",
+      "width": 320,
+      "bytes": 4666
+    },
+    {
+      "src": "/assets/images/categories/category-fridge-magnets-435-bae39c597c.webp",
+      "width": 435,
+      "bytes": 7474
+    }
+  ],
+  "images/categories/category-keychains.png": [
+    {
+      "src": "/assets/images/categories/category-keychains-320-ff0cad4d5c.webp",
+      "width": 320,
+      "bytes": 8820
+    },
+    {
+      "src": "/assets/images/categories/category-keychains-432-ff0cad4d5c.webp",
+      "width": 432,
+      "bytes": 12732
+    }
+  ],
+  "images/categories/category-miniature.png": [
+    {
+      "src": "/assets/images/categories/category-miniature-320-78fcfdca8f.webp",
+      "width": 320,
+      "bytes": 16420
+    },
+    {
+      "src": "/assets/images/categories/category-miniature-432-78fcfdca8f.webp",
+      "width": 432,
+      "bytes": 22634
+    }
+  ],
+  "images/categories/category-phone-charms.png": [
+    {
+      "src": "/assets/images/categories/category-phone-charms-320-c90730b3cc.webp",
+      "width": 320,
+      "bytes": 18496
+    },
+    {
+      "src": "/assets/images/categories/category-phone-charms-432-c90730b3cc.webp",
+      "width": 432,
+      "bytes": 27686
+    }
+  ],
+  "images/categories/category-stickers.png": [
+    {
+      "src": "/assets/images/categories/category-stickers-320-a8d5e56a28.webp",
+      "width": 320,
+      "bytes": 30052
+    },
+    {
+      "src": "/assets/images/categories/category-stickers-432-a8d5e56a28.webp",
+      "width": 432,
+      "bytes": 51688
+    }
+  ],
+  "images/categories/category-worry-stones.png": [
+    {
+      "src": "/assets/images/categories/category-worry-stones-320-77fbd22e09.webp",
+      "width": 320,
+      "bytes": 19502
+    },
+    {
+      "src": "/assets/images/categories/category-worry-stones-432-77fbd22e09.webp",
+      "width": 432,
+      "bytes": 29894
+    }
+  ],
+  "images/categories/earrings.webp": [
+    {
+      "src": "/assets/images/categories/earrings-320-924606b134.webp",
+      "width": 320,
+      "bytes": 16276
+    },
+    {
+      "src": "/assets/images/categories/earrings-640-924606b134.webp",
+      "width": 640,
+      "bytes": 48120
+    },
+    {
+      "src": "/assets/images/categories/earrings-720-924606b134.webp",
+      "width": 720,
+      "bytes": 81678
+    }
+  ],
+  "images/categories/fridge-magnets.webp": [
+    {
+      "src": "/assets/images/categories/fridge-magnets-320-88d71f1aa5.webp",
+      "width": 320,
+      "bytes": 4088
+    },
+    {
+      "src": "/assets/images/categories/fridge-magnets-640-88d71f1aa5.webp",
+      "width": 640,
+      "bytes": 10326
+    },
+    {
+      "src": "/assets/images/categories/fridge-magnets-725-88d71f1aa5.webp",
+      "width": 725,
+      "bytes": 14026
+    }
+  ],
+  "images/categories/miniature.webp": [
+    {
+      "src": "/assets/images/categories/miniature-320-4400667cc3.webp",
+      "width": 320,
+      "bytes": 15452
+    },
+    {
+      "src": "/assets/images/categories/miniature-640-4400667cc3.webp",
+      "width": 640,
+      "bytes": 33402
+    },
+    {
+      "src": "/assets/images/categories/miniature-720-4400667cc3.webp",
+      "width": 720,
+      "bytes": 41660
+    }
+  ],
+  "images/categories/stickers.webp": [
+    {
+      "src": "/assets/images/categories/stickers-320-cb73b30ed7.webp",
+      "width": 320,
+      "bytes": 25130
+    },
+    {
+      "src": "/assets/images/categories/stickers-640-cb73b30ed7.webp",
+      "width": 640,
+      "bytes": 70848
+    },
+    {
+      "src": "/assets/images/categories/stickers-720-cb73b30ed7.webp",
+      "width": 720,
+      "bytes": 108468
+    }
+  ],
+  "images/creator/apekshya-portrait.webp": [
+    {
+      "src": "/assets/images/creator/apekshya-portrait-320-fe1e1b9e15.webp",
+      "width": 320,
+      "bytes": 9500
+    },
+    {
+      "src": "/assets/images/creator/apekshya-portrait-640-fe1e1b9e15.webp",
+      "width": 640,
+      "bytes": 25608
+    },
+    {
+      "src": "/assets/images/creator/apekshya-portrait-720-fe1e1b9e15.webp",
+      "width": 720,
+      "bytes": 38772
+    }
+  ],
+  "images/hero/clay-charm.webp": [
+    {
+      "src": "/assets/images/hero/clay-charm-320-d2a2f91f9c.webp",
+      "width": 320,
+      "bytes": 7670
+    },
+    {
+      "src": "/assets/images/hero/clay-charm-640-d2a2f91f9c.webp",
+      "width": 640,
+      "bytes": 18312
+    },
+    {
+      "src": "/assets/images/hero/clay-charm-960-d2a2f91f9c.webp",
+      "width": 960,
+      "bytes": 29658
+    }
+  ],
+  "images/hero/dumpling-pair.webp": [
+    {
+      "src": "/assets/images/hero/dumpling-pair-320-a9a6dedf93.webp",
+      "width": 320,
+      "bytes": 8258
+    },
+    {
+      "src": "/assets/images/hero/dumpling-pair-640-a9a6dedf93.webp",
+      "width": 640,
+      "bytes": 16410
+    },
+    {
+      "src": "/assets/images/hero/dumpling-pair-960-a9a6dedf93.webp",
+      "width": 960,
+      "bytes": 25836
+    }
+  ],
+  "images/hero/hero-made-for-you.png": [
+    {
+      "src": "/assets/images/hero/hero-made-for-you-320-e57a8ba64e.webp",
+      "width": 320,
+      "bytes": 13594
+    },
+    {
+      "src": "/assets/images/hero/hero-made-for-you-640-e57a8ba64e.webp",
+      "width": 640,
+      "bytes": 28626
+    },
+    {
+      "src": "/assets/images/hero/hero-made-for-you-800-e57a8ba64e.webp",
+      "width": 800,
+      "bytes": 34336
+    }
+  ],
+  "images/hero/hero-perfect-surprise.png": [
+    {
+      "src": "/assets/images/hero/hero-perfect-surprise-320-59c6d959d0.webp",
+      "width": 320,
+      "bytes": 24282
+    },
+    {
+      "src": "/assets/images/hero/hero-perfect-surprise-640-59c6d959d0.webp",
+      "width": 640,
+      "bytes": 58938
+    },
+    {
+      "src": "/assets/images/hero/hero-perfect-surprise-801-59c6d959d0.webp",
+      "width": 801,
+      "bytes": 74674
+    }
+  ],
+  "images/hero/miniature-collection.webp": [
+    {
+      "src": "/assets/images/hero/miniature-collection-320-088973db9e.webp",
+      "width": 320,
+      "bytes": 30918
+    },
+    {
+      "src": "/assets/images/hero/miniature-collection-640-088973db9e.webp",
+      "width": 640,
+      "bytes": 75124
+    },
+    {
+      "src": "/assets/images/hero/miniature-collection-720-088973db9e.webp",
+      "width": 720,
+      "bytes": 105378
+    }
+  ],
+  "images/hero/painting-clay.webp": [
+    {
+      "src": "/assets/images/hero/painting-clay-320-caed3c4e07.webp",
+      "width": 320,
+      "bytes": 13392
+    },
+    {
+      "src": "/assets/images/hero/painting-clay-640-caed3c4e07.webp",
+      "width": 640,
+      "bytes": 28062
+    },
+    {
+      "src": "/assets/images/hero/painting-clay-715-caed3c4e07.webp",
+      "width": 715,
+      "bytes": 34586
+    }
+  ],
+  "images/hero/products-hero-dumplings.png": [
+    {
+      "src": "/assets/images/hero/products-hero-dumplings-320-86f06d1862.webp",
+      "width": 320,
+      "bytes": 17236
+    },
+    {
+      "src": "/assets/images/hero/products-hero-dumplings-640-86f06d1862.webp",
+      "width": 640,
+      "bytes": 34706
+    },
+    {
+      "src": "/assets/images/hero/products-hero-dumplings-702-86f06d1862.webp",
+      "width": 702,
+      "bytes": 26892
+    }
+  ],
+  "images/hero/products-hero-yomari.png": [
+    {
+      "src": "/assets/images/hero/products-hero-yomari-320-6cc2fc7e82.webp",
+      "width": 320,
+      "bytes": 16760
+    },
+    {
+      "src": "/assets/images/hero/products-hero-yomari-640-6cc2fc7e82.webp",
+      "width": 640,
+      "bytes": 35502
+    },
+    {
+      "src": "/assets/images/hero/products-hero-yomari-702-6cc2fc7e82.webp",
+      "width": 702,
+      "bytes": 27952
+    }
+  ],
+  "images/products/bear.jpg": [
+    {
+      "src": "/assets/images/products/bear-320-f7d161e830.webp",
+      "width": 320,
+      "bytes": 12836
+    },
+    {
+      "src": "/assets/images/products/bear-640-f7d161e830.webp",
+      "width": 640,
+      "bytes": 34928
+    },
+    {
+      "src": "/assets/images/products/bear-960-f7d161e830.webp",
+      "width": 960,
+      "bytes": 61664
+    }
+  ],
+  "images/products/buff-momo.jpg": [
+    {
+      "src": "/assets/images/products/buff-momo-320-b580c69f69.webp",
+      "width": 320,
+      "bytes": 19824
+    },
+    {
+      "src": "/assets/images/products/buff-momo-640-b580c69f69.webp",
+      "width": 640,
+      "bytes": 63714
+    },
+    {
+      "src": "/assets/images/products/buff-momo-960-b580c69f69.webp",
+      "width": 960,
+      "bytes": 119536
+    }
+  ],
+  "images/products/cookie.jpg": [
+    {
+      "src": "/assets/images/products/cookie-320-bc490bf2dd.webp",
+      "width": 320,
+      "bytes": 18976
+    },
+    {
+      "src": "/assets/images/products/cookie-640-bc490bf2dd.webp",
+      "width": 640,
+      "bytes": 58498
+    },
+    {
+      "src": "/assets/images/products/cookie-960-bc490bf2dd.webp",
+      "width": 960,
+      "bytes": 111256
+    }
+  ],
+  "images/products/couple-mini-me.jpg": [
+    {
+      "src": "/assets/images/products/couple-mini-me-320-826bfc1c48.webp",
+      "width": 320,
+      "bytes": 15212
+    },
+    {
+      "src": "/assets/images/products/couple-mini-me-640-826bfc1c48.webp",
+      "width": 640,
+      "bytes": 44286
+    },
+    {
+      "src": "/assets/images/products/couple-mini-me-960-826bfc1c48.webp",
+      "width": 960,
+      "bytes": 82272
+    }
+  ],
+  "images/products/couple-miniature.jpg": [
+    {
+      "src": "/assets/images/products/couple-miniature-320-51976504b2.webp",
+      "width": 320,
+      "bytes": 18578
+    },
+    {
+      "src": "/assets/images/products/couple-miniature-640-51976504b2.webp",
+      "width": 640,
+      "bytes": 57326
+    },
+    {
+      "src": "/assets/images/products/couple-miniature-960-51976504b2.webp",
+      "width": 960,
+      "bytes": 104364
+    }
+  ],
+  "images/products/cutie.jpg": [
+    {
+      "src": "/assets/images/products/cutie-320-1559535139.webp",
+      "width": 320,
+      "bytes": 16692
+    },
+    {
+      "src": "/assets/images/products/cutie-640-1559535139.webp",
+      "width": 640,
+      "bytes": 53640
+    },
+    {
+      "src": "/assets/images/products/cutie-960-1559535139.webp",
+      "width": 960,
+      "bytes": 104490
+    }
+  ],
+  "images/products/dumpling.jpg": [
+    {
+      "src": "/assets/images/products/dumpling-320-47f4ea1824.webp",
+      "width": 320,
+      "bytes": 11354
+    },
+    {
+      "src": "/assets/images/products/dumpling-640-47f4ea1824.webp",
+      "width": 640,
+      "bytes": 32446
+    },
+    {
+      "src": "/assets/images/products/dumpling-960-47f4ea1824.webp",
+      "width": 960,
+      "bytes": 56786
+    }
+  ],
+  "images/products/friends-time.jpg": [
+    {
+      "src": "/assets/images/products/friends-time-320-5e95812b7a.webp",
+      "width": 320,
+      "bytes": 18842
+    },
+    {
+      "src": "/assets/images/products/friends-time-640-5e95812b7a.webp",
+      "width": 640,
+      "bytes": 60324
+    },
+    {
+      "src": "/assets/images/products/friends-time-960-5e95812b7a.webp",
+      "width": 960,
+      "bytes": 117540
+    }
+  ],
+  "images/products/hungry-mind.jpg": [
+    {
+      "src": "/assets/images/products/hungry-mind-320-425774c2ac.webp",
+      "width": 320,
+      "bytes": 16082
+    },
+    {
+      "src": "/assets/images/products/hungry-mind-640-425774c2ac.webp",
+      "width": 640,
+      "bytes": 51542
+    },
+    {
+      "src": "/assets/images/products/hungry-mind-960-425774c2ac.webp",
+      "width": 960,
+      "bytes": 99244
+    }
+  ],
+  "images/products/kdrama-world.jpg": [
+    {
+      "src": "/assets/images/products/kdrama-world-320-e7f76edbed.webp",
+      "width": 320,
+      "bytes": 17406
+    },
+    {
+      "src": "/assets/images/products/kdrama-world-640-e7f76edbed.webp",
+      "width": 640,
+      "bytes": 60768
+    },
+    {
+      "src": "/assets/images/products/kdrama-world-960-e7f76edbed.webp",
+      "width": 960,
+      "bytes": 127986
+    }
+  ],
+  "images/products/lali.jpg": [
+    {
+      "src": "/assets/images/products/lali-320-2162c60a67.webp",
+      "width": 320,
+      "bytes": 15382
+    },
+    {
+      "src": "/assets/images/products/lali-640-2162c60a67.webp",
+      "width": 640,
+      "bytes": 42302
+    },
+    {
+      "src": "/assets/images/products/lali-960-2162c60a67.webp",
+      "width": 960,
+      "bytes": 76774
+    }
+  ],
+  "images/products/lucky.jpg": [
+    {
+      "src": "/assets/images/products/lucky-320-29a0e40c1d.webp",
+      "width": 320,
+      "bytes": 13618
+    },
+    {
+      "src": "/assets/images/products/lucky-640-29a0e40c1d.webp",
+      "width": 640,
+      "bytes": 37414
+    },
+    {
+      "src": "/assets/images/products/lucky-960-29a0e40c1d.webp",
+      "width": 960,
+      "bytes": 67524
+    }
+  ],
+  "images/products/mini-me-half-body.jpg": [
+    {
+      "src": "/assets/images/products/mini-me-half-body-320-2e7a8d1756.webp",
+      "width": 320,
+      "bytes": 12866
+    },
+    {
+      "src": "/assets/images/products/mini-me-half-body-640-2e7a8d1756.webp",
+      "width": 640,
+      "bytes": 36550
+    },
+    {
+      "src": "/assets/images/products/mini-me-half-body-960-2e7a8d1756.webp",
+      "width": 960,
+      "bytes": 65942
+    }
+  ],
+  "images/products/mini-me-head.jpg": [
+    {
+      "src": "/assets/images/products/mini-me-head-320-e73f7e9cb2.webp",
+      "width": 320,
+      "bytes": 12688
+    },
+    {
+      "src": "/assets/images/products/mini-me-head-640-e73f7e9cb2.webp",
+      "width": 640,
+      "bytes": 29128
+    },
+    {
+      "src": "/assets/images/products/mini-me-head-960-e73f7e9cb2.webp",
+      "width": 960,
+      "bytes": 45592
+    }
+  ],
+  "images/products/mini-me-mix-n-match-2.jpg": [
+    {
+      "src": "/assets/images/products/mini-me-mix-n-match-2-320-3456d948ba.webp",
+      "width": 320,
+      "bytes": 12054
+    },
+    {
+      "src": "/assets/images/products/mini-me-mix-n-match-2-640-3456d948ba.webp",
+      "width": 640,
+      "bytes": 34598
+    },
+    {
+      "src": "/assets/images/products/mini-me-mix-n-match-2-720-3456d948ba.webp",
+      "width": 720,
+      "bytes": 54252
+    }
+  ],
+  "images/products/mini-me-mix-n-match.jpg": [
+    {
+      "src": "/assets/images/products/mini-me-mix-n-match-320-590626a09e.webp",
+      "width": 320,
+      "bytes": 13254
+    },
+    {
+      "src": "/assets/images/products/mini-me-mix-n-match-640-590626a09e.webp",
+      "width": 640,
+      "bytes": 49032
+    },
+    {
+      "src": "/assets/images/products/mini-me-mix-n-match-960-590626a09e.webp",
+      "width": 960,
+      "bytes": 107664
+    }
+  ],
+  "images/products/mini-me.jpg": [
+    {
+      "src": "/assets/images/products/mini-me-320-96872c36cc.webp",
+      "width": 320,
+      "bytes": 15982
+    },
+    {
+      "src": "/assets/images/products/mini-me-640-96872c36cc.webp",
+      "width": 640,
+      "bytes": 34400
+    },
+    {
+      "src": "/assets/images/products/mini-me-960-96872c36cc.webp",
+      "width": 960,
+      "bytes": 55328
+    }
+  ],
+  "images/products/mini-vase.jpg": [
+    {
+      "src": "/assets/images/products/mini-vase-320-95ab451177.webp",
+      "width": 320,
+      "bytes": 20624
+    },
+    {
+      "src": "/assets/images/products/mini-vase-640-95ab451177.webp",
+      "width": 640,
+      "bytes": 72256
+    },
+    {
+      "src": "/assets/images/products/mini-vase-960-95ab451177.webp",
+      "width": 960,
+      "bytes": 141964
+    }
+  ],
+  "images/products/momo-fomo.jpg": [
+    {
+      "src": "/assets/images/products/momo-fomo-320-e56223f85d.webp",
+      "width": 320,
+      "bytes": 19286
+    },
+    {
+      "src": "/assets/images/products/momo-fomo-640-e56223f85d.webp",
+      "width": 640,
+      "bytes": 56284
+    },
+    {
+      "src": "/assets/images/products/momo-fomo-960-e56223f85d.webp",
+      "width": 960,
+      "bytes": 103448
+    }
+  ],
+  "images/products/momo-magnet.jpg": [
+    {
+      "src": "/assets/images/products/momo-magnet-320-d5de3d69f8.webp",
+      "width": 320,
+      "bytes": 11952
+    },
+    {
+      "src": "/assets/images/products/momo-magnet-640-d5de3d69f8.webp",
+      "width": 640,
+      "bytes": 25240
+    },
+    {
+      "src": "/assets/images/products/momo-magnet-960-d5de3d69f8.webp",
+      "width": 960,
+      "bytes": 40046
+    }
+  ],
+  "images/products/momo.jpg": [
+    {
+      "src": "/assets/images/products/momo-320-3371377cfd.webp",
+      "width": 320,
+      "bytes": 20686
+    },
+    {
+      "src": "/assets/images/products/momo-640-3371377cfd.webp",
+      "width": 640,
+      "bytes": 54242
+    },
+    {
+      "src": "/assets/images/products/momo-960-3371377cfd.webp",
+      "width": 960,
+      "bytes": 90822
+    }
+  ],
+  "images/products/mushroom.jpg": [
+    {
+      "src": "/assets/images/products/mushroom-320-a9edafe1f8.webp",
+      "width": 320,
+      "bytes": 12790
+    },
+    {
+      "src": "/assets/images/products/mushroom-640-a9edafe1f8.webp",
+      "width": 640,
+      "bytes": 39458
+    },
+    {
+      "src": "/assets/images/products/mushroom-960-a9edafe1f8.webp",
+      "width": 960,
+      "bytes": 69720
+    }
+  ],
+  "images/products/nepal-flag.jpg": [
+    {
+      "src": "/assets/images/products/nepal-flag-320-d4ac1e2426.webp",
+      "width": 320,
+      "bytes": 16652
+    },
+    {
+      "src": "/assets/images/products/nepal-flag-640-d4ac1e2426.webp",
+      "width": 640,
+      "bytes": 52984
+    },
+    {
+      "src": "/assets/images/products/nepal-flag-960-d4ac1e2426.webp",
+      "width": 960,
+      "bytes": 101842
+    }
+  ],
+  "images/products/paw-pal.jpg": [
+    {
+      "src": "/assets/images/products/paw-pal-320-aac8d5c4c0.webp",
+      "width": 320,
+      "bytes": 14258
+    },
+    {
+      "src": "/assets/images/products/paw-pal-640-aac8d5c4c0.webp",
+      "width": 640,
+      "bytes": 44264
+    },
+    {
+      "src": "/assets/images/products/paw-pal-960-aac8d5c4c0.webp",
+      "width": 960,
+      "bytes": 82986
+    }
+  ],
+  "images/products/pet-keychain.jpg": [
+    {
+      "src": "/assets/images/products/pet-keychain-320-d32a69562b.webp",
+      "width": 320,
+      "bytes": 13070
+    },
+    {
+      "src": "/assets/images/products/pet-keychain-640-d32a69562b.webp",
+      "width": 640,
+      "bytes": 35128
+    },
+    {
+      "src": "/assets/images/products/pet-keychain-960-d32a69562b.webp",
+      "width": 960,
+      "bytes": 59078
+    }
+  ],
+  "images/products/pet-miniature.jpg": [
+    {
+      "src": "/assets/images/products/pet-miniature-320-55eac6560e.webp",
+      "width": 320,
+      "bytes": 13286
+    },
+    {
+      "src": "/assets/images/products/pet-miniature-640-55eac6560e.webp",
+      "width": 640,
+      "bytes": 36616
+    },
+    {
+      "src": "/assets/images/products/pet-miniature-960-55eac6560e.webp",
+      "width": 960,
+      "bytes": 64348
+    }
+  ],
+  "images/products/phone-charm.jpg": [
+    {
+      "src": "/assets/images/products/phone-charm-320-8aece66f01.webp",
+      "width": 320,
+      "bytes": 18334
+    },
+    {
+      "src": "/assets/images/products/phone-charm-640-8aece66f01.webp",
+      "width": 640,
+      "bytes": 47314
+    },
+    {
+      "src": "/assets/images/products/phone-charm-960-8aece66f01.webp",
+      "width": 960,
+      "bytes": 79758
+    }
+  ],
+  "images/products/samosa.jpg": [
+    {
+      "src": "/assets/images/products/samosa-320-6c9c870a83.webp",
+      "width": 320,
+      "bytes": 12650
+    },
+    {
+      "src": "/assets/images/products/samosa-640-6c9c870a83.webp",
+      "width": 640,
+      "bytes": 35158
+    },
+    {
+      "src": "/assets/images/products/samosa-960-6c9c870a83.webp",
+      "width": 960,
+      "bytes": 62078
+    }
+  ],
+  "images/products/sunflower.jpg": [
+    {
+      "src": "/assets/images/products/sunflower-320-aca6f22272.webp",
+      "width": 320,
+      "bytes": 13748
+    },
+    {
+      "src": "/assets/images/products/sunflower-640-aca6f22272.webp",
+      "width": 640,
+      "bytes": 37672
+    },
+    {
+      "src": "/assets/images/products/sunflower-960-aca6f22272.webp",
+      "width": 960,
+      "bytes": 67146
+    }
+  ],
+  "images/products/too-much-filling.jpg": [
+    {
+      "src": "/assets/images/products/too-much-filling-320-aac8d5c4c0.webp",
+      "width": 320,
+      "bytes": 14258
+    },
+    {
+      "src": "/assets/images/products/too-much-filling-640-aac8d5c4c0.webp",
+      "width": 640,
+      "bytes": 44264
+    },
+    {
+      "src": "/assets/images/products/too-much-filling-960-aac8d5c4c0.webp",
+      "width": 960,
+      "bytes": 82986
+    }
+  ],
+  "images/products/worry-mouse.jpg": [
+    {
+      "src": "/assets/images/products/worry-mouse-320-c11c5ca62a.webp",
+      "width": 320,
+      "bytes": 11788
+    },
+    {
+      "src": "/assets/images/products/worry-mouse-640-c11c5ca62a.webp",
+      "width": 640,
+      "bytes": 36216
+    },
+    {
+      "src": "/assets/images/products/worry-mouse-960-c11c5ca62a.webp",
+      "width": 960,
+      "bytes": 64688
+    }
+  ],
+  "images/products/yomari.jpg": [
+    {
+      "src": "/assets/images/products/yomari-320-d67e6d68c5.webp",
+      "width": 320,
+      "bytes": 11508
+    },
+    {
+      "src": "/assets/images/products/yomari-640-d67e6d68c5.webp",
+      "width": 640,
+      "bytes": 32254
+    },
+    {
+      "src": "/assets/images/products/yomari-960-d67e6d68c5.webp",
+      "width": 960,
+      "bytes": 57360
+    }
+  ],
+  "images/social/cozyclay-share-preview.png": [
+    {
+      "src": "/assets/images/social/cozyclay-share-preview-320-8aa7847593.webp",
+      "width": 320,
+      "bytes": 7726
+    },
+    {
+      "src": "/assets/images/social/cozyclay-share-preview-640-8aa7847593.webp",
+      "width": 640,
+      "bytes": 19424
+    },
+    {
+      "src": "/assets/images/social/cozyclay-share-preview-960-8aa7847593.webp",
+      "width": 960,
+      "bytes": 32722
     }
   ]
 }

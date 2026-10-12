@@ -2,16 +2,16 @@
 
 Target: https://sauhard192.github.io/cozy-clay/
 
-Publishing is manual. The workflow does not run on pushes, and configuring these files does not publish the site.
+Pushes to main automatically run Publish GitHub Pages: install dependencies, optimize images, build the site and deploy dist. Manual workflow runs remain available. This local configuration takes effect after it is committed and pushed.
 
 ## Publish when ready
 
-1. Commit the intended project changes, including `.github/workflows/pages.yml`, and push them to the repository's default branch.
-2. In GitHub, open **Settings → Pages → Build and deployment** and select **GitHub Actions** as the source.
-3. Open **Actions → Publish GitHub Pages → Run workflow**, select the branch to publish, and confirm.
+1. In GitHub, open **Settings → Pages → Build and deployment** and select **GitHub Actions** as the source.
+2. Commit the intended project changes, including `.github/workflows/pages.yml`, and push them to main.
+3. Open **Actions → Publish GitHub Pages** to follow the automatically triggered deployment.
 4. Wait for the workflow to finish. The deployment link appears in its summary.
 
-Repeat step 3 whenever you want to publish an update. No `gh-pages` npm package or dedicated deployment branch is needed.
+Publish future updates by pushing to main. To publish manually, open **Actions → Publish GitHub Pages → Run workflow**, select the branch and confirm. No `gh-pages` npm package or dedicated deployment branch is needed.
 
 ## Local commands
 

@@ -117,7 +117,7 @@ export function HeroCollage() {
           <div className="photo-card__follow">
             <RevealImage
               artwork
-              {...getImageProps('hero-perfect-surprise.png', heroImageSizes)}
+              {...getImageProps('images/hero/hero-perfect-surprise.png', heroImageSizes)}
               loading="eager"
               decoding="async"
               alt="Perfect Surprise — a collection of hand-sculpted miniature people"
@@ -138,7 +138,7 @@ export function HeroCollage() {
           <div className="photo-card__follow">
             <RevealImage
               artwork
-              {...getImageProps('hero-made-for-you.png', heroImageSizes)}
+              {...getImageProps('images/hero/hero-made-for-you.png', heroImageSizes)}
               loading="eager"
               decoding="async"
               alt="Made specially for you — a tiny clay cow being painted by hand"

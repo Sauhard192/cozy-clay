@@ -18,7 +18,7 @@ export function CustomOrderPanel() {
           <span className="custom-order-panel__petal custom-order-panel__petal--small" aria-hidden="true" />
           <span className="custom-order-panel__petal custom-order-panel__petal--large" aria-hidden="true" />
           <div className="custom-order-panel__photos" aria-hidden="true">
-            {['products-hero-yomari.png', 'products-hero-dumplings.png'].map((image, index) => (
+            {['images/hero/products-hero-yomari.png', 'images/hero/products-hero-dumplings.png'].map((image, index) => (
               <RevealImage
                 key={image}
                 className={`custom-order-panel__photo custom-order-panel__photo--${index + 1}`}
@@ -32,8 +32,8 @@ export function CustomOrderPanel() {
             ))}
           </div>
         </div>
-        <img className="custom-order-panel__flower custom-order-panel__flower--left" src={siteUrl('/assets/asset/flower-3.svg')} width="65" height="102" alt="" aria-hidden="true" />
-        <img className="custom-order-panel__flower custom-order-panel__flower--right" src={siteUrl('/assets/asset/flower-2.svg')} width="65" height="102" alt="" aria-hidden="true" />
+        <img className="custom-order-panel__flower custom-order-panel__flower--left" src={siteUrl('/assets/flowers/flower-blue.svg')} width="65" height="102" alt="" aria-hidden="true" />
+        <img className="custom-order-panel__flower custom-order-panel__flower--right" src={siteUrl('/assets/flowers/flower-yellow.svg')} width="65" height="102" alt="" aria-hidden="true" />
       </section>
     </li>
   );

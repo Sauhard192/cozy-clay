@@ -21,7 +21,7 @@ export function CategoryCard({ category }: { category: CategoryCardContent }) {
         <h3 className="category-card__title">
           <img
             className="category-card__icon"
-            src={siteUrl(`/assets/icon/image-icons/${category.categoryIcon}`)}
+            src={siteUrl(`/assets/icons/image-icons/${category.categoryIcon}`)}
             alt=""
             width="32"
             height="32"
@@ -64,7 +64,7 @@ export function ProductCard({
             {product.tag === 'new' && (
               <img
                 className="product-card__badge-shape"
-                src={siteUrl('/assets/shapes/bookmark-tag-2.svg')}
+                src={siteUrl('/assets/shapes/tag-new.svg')}
                 alt=""
                 aria-hidden="true"
                 width="48"

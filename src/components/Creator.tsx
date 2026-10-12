@@ -63,7 +63,7 @@ export function Creator({ standalone = false }: { standalone?: boolean }) {
       </div>
       <img
         className="flower creator-flower creator-flower-left"
-        src={siteUrl('/assets/asset/flower-1.svg')}
+        src={siteUrl('/assets/flowers/flower-purple.svg')}
         alt=""
         aria-hidden="true"
         width="68"
@@ -71,7 +71,7 @@ export function Creator({ standalone = false }: { standalone?: boolean }) {
       />
       <img
         className="flower creator-flower creator-flower-right"
-        src={siteUrl('/assets/asset/flower-4.svg')}
+        src={siteUrl('/assets/flowers/flower-pink.svg')}
         alt=""
         aria-hidden="true"
         width="61"

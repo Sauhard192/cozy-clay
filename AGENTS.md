@@ -27,7 +27,7 @@ Use only relevant available skills: PDF for visual PDF reading, UI Design for sc
 - `src/components/`: Header/Announcement, StickyHeader, Creator, Carousel/cards, Primitives, CustomCursor, PanelPatterns, Motion and the persistent MusicToggle.
 - `src/hooks/useNavigation.ts`: client-side History navigation; `useInteractionSounds.ts`: alternating control-click feedback.
 - `src/utils/paths.ts`: deployment-aware URL construction and route normalization.
-- `vite.config.ts`, `scripts/prepare-pages.mjs`, `.github/workflows/pages.yml`, `GITHUB-PAGES.md`: local Pages configuration and manual publishing instructions.
+- `vite.config.ts`, `scripts/prepare-pages.mjs`, `.github/workflows/pages.yml`, `GITHUB-PAGES.md`: local Pages configuration and automatic/manual publishing instructions.
 - `src/content/products.json` / `products.ts`: editable catalogue and typed adapter for prices, sorting/filtering and bestsellers; keep a future CMS replacement at this boundary.
 - `src/content/site.ts`: typed local content, stable IDs, accessors and shared SitePage type. Keep content out of JSX so CMS replacement stays localized.
 - `src/content/images.ts` and `image-variants.json`: responsive image delivery.
@@ -58,7 +58,7 @@ Use `/` for every brand/resolved Home link, not #home or /#home. The Shelf and H
 
 Social links, including WhatsApp and the Instagram ShapeButton, use target=_blank with rel=noopener noreferrer. ShapeButton supports newTab. Keep email as mailto and internal navigation in the current tab. Preserve current content destinations and @cozyclay.np casing.
 
-Desktop nav marker: orange line-short.svg, centered 3.75rem by .5rem, shared sizing across active/hover/focus. Hover suppresses other markers and restores the current one on exit. Preserve aria-current and keyboard focus.
+Desktop nav marker: orange nav-underline.svg, centered 3.75rem by .5rem, shared sizing across active/hover/focus. Hover suppresses other markers and restores the current one on exit. Preserve aria-current and keyboard focus.
 
 Keep dialog focus trapping/restoration, Escape handling, body scroll lock and animated reverse dismissal before navigation. Header controls remain stationary during the menu surface reveal. Respect reduced motion and kill pending tweens during cleanup.
 
@@ -77,7 +77,7 @@ Keep dialog focus trapping/restoration, Escape handling, body scroll lock and an
 - Shared creator flowers are on Home and About, not About-only. Purple left/pink right; mobile shows pink only. Keep current viewport offsets, tilt and size.
 - About uses full-page yellow grid aligned to its header; creator surface stays cream. Mobile/tablet has 8rem clear space below the panel to footer scallop tips (margin includes fitted depth minus .125rem overlap); desktop top spacing is 3rem. Preserve mobile/tablet top spacing and desktop bottom spacing.
 - Say Hello is centered/stacked through tablet, 7/5 text/art split on desktop. Desktop has cream grid and side flowers; mobile/tablet have plain background and no side flowers.
-- Preserve supplied flowers.svg and its flowers-once.svg derivative. One 10-second playthrough at first 15% intersection, final state held, no replay on return; reduced motion jumps to the final state. Reserve aspect ratio to prevent layout shift.
+- Preserve supplied say-hello-flowers.svg and its say-hello-flowers-once.svg derivative. One 10-second playthrough at first 15% intersection, final state held, no replay on return; reduced motion jumps to the final state. Reserve aspect ratio to prevent layout shift.
 - Keep the footer illustrated logo circular with border-radius: 50% and object-fit: cover; preserve its existing responsive size and position.
 - Footer and creator use the shared layout-panel-padding-inline token for matching side padding on every page. It is calc(space-6 - border-width) on mobile/tablet and clamp(space-8, 4.5vw, space-16) on desktop. Preserve footer vertical spacing. Its line fills content width via the preserveAspectRatio=none derivative; keep whole top scallops.
 - Fine-pointer cursor keeps the 55ms response, click snap, size/color changes and native fallback. Support modal top-layer reparenting and reduced motion; clean up listeners, observers and frames.
@@ -86,7 +86,7 @@ Keep dialog focus trapping/restoration, Escape handling, body scroll lock and an
 
 Products opens directly to “Our Products,” a semantic h1 using the shared Heading-1 class, followed by category filters, sorting and the visible grid. SHOW_PRODUCTS_HERO=false in src/content/site.ts preserves the complete hero JSX, CSS and assets without rendering it. The same flag controls header overlay/spacer behavior. With the hero disabled, Products uses the standalone header, space-10 (2.5rem / 40px at the default root size) above the title and space-12 (3rem / 48px) below it. No scroll animation hides or reveals the grid; the previous hero and clearance pushed products below the initial screen. Keep the hero disabled unless requested. Its retained specifications below apply only when re-enabled.
 
-Use products.json for catalogue edits; products.ts is the future CMS adapter boundary. Keep 31 distinct records and stable IDs. Prices accept a number or { min, max }; format NRs ranges without collapsing equal endpoints. The selected sort option uses icon/check.svg via the shared Icon component. Sort Featured by JSON order, price by minimum, Newest by addedAt. Filters use canonical category IDs in the URL; retain scroll on same-page query updates and restore state on Back/Forward.
+Use products.json for catalogue edits; products.ts is the future CMS adapter boundary. Keep 32 records with stable unique IDs, including two Mini me (mix n match) stickers using different photos. Product images reference matching owner-supplied JPEGs under images/products/. Prices accept a number or { min, max }; format NRs ranges without collapsing equal endpoints. The selected sort option uses icons/check.svg via the shared Icon component. Sort Featured by JSON order, price by minimum, Newest by addedAt. Filters use canonical category IDs in the URL; retain scroll on same-page query updates and restore state on Back/Forward.
 
 Match Products PDFs and approved uniform 2/3/4-card grid. Blue flower-3 left +45deg and yellow flower-2 right -45deg remain at hero/viewport edges on all sizes, with Home's tablet/desktop size references. Reuse the shared masked/scalloped hero and separate overlaid header. Products hero uses the supplied complete products-hero-yomari.png and products-hero-dumplings.png assets. Preserve transparency, embedded cream frames, 702/738 proportions and overlapping placement, with left +15deg/right -15deg rotation; do not apply CSS shadows, photo masks, extra frames, image cropping or counter-rotation. Cards keep equal intrinsic heights and non-clickable product surfaces. New/Bestseller are mutually exclusive; Home hides badges and shows all bestsellers.
 
@@ -94,11 +94,17 @@ The Products grid includes one full-width custom-order panel after row two (4/6/
 
 ## Assets, content and remaining decisions
 
+Automatic local image optimization: scripts/optimize-images.mjs uses Sharp through imageOptimizerPlugin in vite.config.ts. Vite startup/buildStart prepares variants; the development watcher debounces added/replaced/deleted raster assets and products.json edits, serializes runs, and refreshes image-variants.json for the existing getImageProps adapter. JPEG/PNG/WebP/AVIF originals under public/assets get 320/640/960-width WebP variants (capped at source width), quality 82, preserved transparency and corrected EXIF orientation. Originals are retained; SVGs and animated rasters are preserved. Variants sit beside originals with width/content-hash names. Unchanged variants are reused; generated files are excluded from the watcher to prevent loops. Missing-source mappings are removed. Source additions only need the catalogue image path relative to public/assets; no manual srcSet editing is required. npm run images:optimize offers a manual pass. Builds are still opt-in; wiring this hook does not authorize running a build. Current product photos total about 2.5 MB for all 32 largest 960px variants, compared with 52.6 MB of original JPEGs.
+
+
+Asset folders: public/assets/images/{products,categories,hero,creator,brand,social} hold originals and existing optimized variants together by purpose; icons/image-icons holds category icons, flowers holds decorative/animated SVGs, shapes holds reusable masks/tags, and fonts/audio hold their respective files. Preserve generated width/hash suffixes. Catalogue image values and image-variants.json keys are paths relative to public/assets. The trusted inline Say Hello SVG stays bundled at src/assets/flowers/say-hello-flowers-interactive.svg for its raw import and interaction handling. Use descriptive filenames; update content, mappings, CSS, HTML and asset-manifest.json together when moving assets.
+
+
 Record copied/extracted/derived assets in asset-manifest.json; preserve original sources. Deliver raster derivatives through images.ts/srcSet/sizes. main.tsx preloads the first homepage hero image only when the initial route is Home, using the same responsive sizes as the image. Never preload homepage photos globally on unrelated routes. Lazy-load below-fold photos; About portrait is eager.
 
-Current category preparation time remains 6–7 days. Different times await user values. The catalogue uses user-supplied prices and temporary random photos, tags and dates. Preserve all range objects, including equal endpoints. Home displays every bestseller without badges; Products displays at most one New or Bestseller badge, never a popular tag. Product cards remain non-clickable. Promo text remains unchanged pending direction. Footer copyright derives the current calendar year automatically; do not hardcode its year. Say Hello copy corrections are approved; the footer's From my desk wording is correct.
+Current category preparation time remains 6–7 days. Different times await user values. The catalogue uses user-supplied prices and matching owner-supplied product photos; tags and dates remain temporary. Preserve all range objects, including equal endpoints. Home displays every bestseller without badges; Products displays at most one New or Bestseller badge, never a popular tag. Product cards remain non-clickable. Promo text remains unchanged pending direction. Footer copyright derives the current calendar year automatically; do not hardcode its year. Say Hello copy corrections are approved; the footer's From my desk wording is correct.
 
-CMS, ordering, final photos/tags/dates, custom cache setup and actual publication remain deferred. Do not invent unavailable product actions or replace supplied assets silently.
+CMS, ordering, final tags/dates, custom cache setup and actual publication remain deferred. Do not invent unavailable product actions or replace supplied assets silently.
 
 ## Loading and entrances
 
@@ -106,7 +112,7 @@ RevealImage handles photos and main artwork only; preserve its aspect-ratio fram
 
 ## Talk Soon interaction
 
-Say Hello uses the trusted inline flowers-interactive.svg derivative, retaining the original one-playthrough animation. The tag links to WhatsApp in a new tab, scales to 1.05 over 200ms on hover/focus, and shows a rounded brown tooltip with white WhatsApp text. On fine-pointer hover it follows the cursor with an 80ms exponential response, offset 16px right/below and flipped/clamped near viewport edges. Keyboard focus keeps it above the tag; reduced motion follows directly. Tracking stops when settled or on pointer exit and cleans up on unmount. Pointer exit retains the last cursor position throughout the fade; only keyboard entry restores the above-tag position. The tooltip is pointer-transparent in both modes to prevent edge-hover loops. Escape dismisses it; touch activates directly. Reduced motion skips scaling and the entrance wait. Preserve original SVGs.
+Say Hello uses the trusted inline say-hello-flowers-interactive.svg derivative, retaining the original one-playthrough animation. The tag links to WhatsApp in a new tab, scales to 1.05 over 200ms on hover/focus, and shows a rounded brown tooltip with white WhatsApp text. On fine-pointer hover it follows the cursor with an 80ms exponential response, offset 16px right/below and flipped/clamped near viewport edges. Keyboard focus keeps it above the tag; reduced motion follows directly. Tracking stops when settled or on pointer exit and cleans up on unmount. Pointer exit retains the last cursor position throughout the fade; only keyboard entry restores the above-tag position. The tooltip is pointer-transparent in both modes to prevent edge-hover loops. Escape dismisses it; touch activates directly. Reduced motion skips scaling and the entrance wait. Preserve original SVGs.
 
 ## Background music
 
@@ -118,7 +124,7 @@ The bottom-right button uses button-circle-fill.svg. The surface stays orange in
 
 ## GitHub Pages configuration
 
-The shared link-preview title in index.html (og:title) is “CozyClay — Handmade Little Joys”. This is separate from browser/page titles. The sharing image is the supplied homepage screenshot, copied unchanged to public/assets/share-preview.png (1113×712), with its absolute GitHub Pages URL, dimensions, type and alt text in index.html. Preserve the current sharing description pending user input.
+The shared link-preview title in index.html (og:title) is “CozyClay — Handmade Little Joys”. This is separate from browser/page titles. The sharing image is the supplied homepage screenshot, copied unchanged to public/assets/images/social/cozyclay-share-preview.png (1113×712), with its absolute GitHub Pages URL, dimensions, type and alt text in index.html. Preserve the current sharing description pending user input.
 
 Target: https://sauhard192.github.io/cozy-clay/. Vite mode github-pages uses /cozy-clay/; normal development and the regular build retain /. npm run build:pages type-checks, builds in that mode, then runs scripts/prepare-pages.mjs. npm run preview:pages previews that output at /cozy-clay/.
 
@@ -126,7 +132,7 @@ src/utils/paths.ts owns siteUrl for runtime image/audio/icon URLs and internal l
 
 scripts/prepare-pages.mjs copies the built index into about/index.html, say-hello/index.html and products/index.html, and writes .nojekyll. These are direct-route entries, not a custom server rewrite or a hash router; extend them when adding pages.
 
-.github/workflows/pages.yml uses Node 22, npm ci, the Pages build and GitHub's Pages artifact/deploy actions. It runs only through workflow_dispatch, never automatically on push, and uploads only dist. The user will commit/push, select GitHub Actions in Settings → Pages, and manually run Publish GitHub Pages. No gh-pages package, publishing branch or custom domain is configured. Setup did not push, modify GitHub settings or publish. Follow GITHUB-PAGES.md; do not trigger publication without authorization.
+.github/workflows/pages.yml uses Node 22, npm ci, the Pages build and GitHub's Pages artifact/deploy actions. It runs automatically on pushes to main and also supports workflow_dispatch; it uploads only dist. The user must select GitHub Actions in Settings → Pages. Once the workflow is committed and pushed, subsequent main pushes automatically optimize images, build and publish the site; manual Publish GitHub Pages runs remain available. No gh-pages package, publishing branch or custom domain is configured. Setup did not push, modify GitHub settings or publish. Follow GITHUB-PAGES.md; do not trigger publication without authorization.
 
 ## Commands and verification status
 

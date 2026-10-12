@@ -46,7 +46,7 @@
 }
 
 .creator-tag::before {
-  mask-image: url('/assets/shapes/bookmark-tag-3.svg');
+  mask-image: url('/assets/shapes/tag-meet-the-creator.svg');
 }
 
 .creator-tag {

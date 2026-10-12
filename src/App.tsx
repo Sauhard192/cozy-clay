@@ -62,7 +62,7 @@ function Collections() {
       >
         <img
           className="flower flower-sun"
-          src={siteUrl('/assets/asset/flower-2.svg')}
+          src={siteUrl('/assets/flowers/flower-yellow.svg')}
           alt=""
           width="192"
           height="192"
@@ -79,7 +79,7 @@ function Collections() {
         />
         <img
           className="flower flower-purple"
-          src={siteUrl('/assets/asset/flower-1.svg')}
+          src={siteUrl('/assets/flowers/flower-purple.svg')}
           alt=""
           width="192"
           height="192"
@@ -130,7 +130,7 @@ function Footer() {
             or for someone you love.
           </p>
           <img
-            {...getImageProps('logo.png', '4.5rem')}
+            {...getImageProps('images/brand/logo.png', '4.5rem')}
             width="72"
             height="72"
             alt="Cozy Clay"
@@ -160,7 +160,7 @@ function Footer() {
         <span className="made-in">
           Made in Nepal{' '}
           <img
-            {...getImageProps('nepal.png', '1.5rem')}
+            {...getImageProps('images/brand/nepal-flag.png', '1.5rem')}
             alt="Nepal flag"
             width="24"
             height="24"

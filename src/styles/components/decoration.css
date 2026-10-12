@@ -73,6 +73,6 @@
   inset: 0;
   z-index: -1;
   background: var(--color-decoration);
-  mask: url('/assets/shapes/bookmark-tag-1.svg') center / 100% 100% no-repeat;
+  mask: url('/assets/shapes/tag-handmade.svg') center / 100% 100% no-repeat;
 }
 

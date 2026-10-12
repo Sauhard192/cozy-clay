@@ -184,7 +184,7 @@
   pointer-events: none;
   transition: opacity var(--nav-underline-duration) ease-out,
     transform var(--nav-underline-duration) ease-out;
-  mask: url('/assets/shapes/line-short.svg') center / 100% 100% no-repeat;
+  mask: url('/assets/shapes/nav-underline.svg') center / 100% 100% no-repeat;
 }
 
 .desktop-nav a[aria-current],

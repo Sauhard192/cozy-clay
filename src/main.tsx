@@ -9,7 +9,7 @@ import { routePath } from './utils/paths';
 
 // Start the main photo while fonts prepare, only on the homepage.
 if (routePath(location.pathname) === '/') {
-  const photo = getImageProps('hero-perfect-surprise.png', heroImageSizes);
+  const photo = getImageProps('images/hero/hero-perfect-surprise.png', heroImageSizes);
   const preload = document.createElement('link');
   preload.rel = 'preload';
   preload.as = 'image';
