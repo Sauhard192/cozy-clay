@@ -53,7 +53,7 @@ export function ProductCard({
         <RevealImage
           className="collection-card__image"
           {...getImageProps(product.image, showBadge ? '(min-width: 1024px) 20vw, (min-width: 768px) 28vw, 44vw' : cardImageSizes)}
-          alt={product.imageAlt}
+          alt={product.name}
           width="300"
           height="300"
           loading="lazy"

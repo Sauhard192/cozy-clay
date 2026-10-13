@@ -8,7 +8,6 @@ export interface Product {
   categoryId: string;
   categoryName: string;
   image: string;
-  imageAlt: string;
   price: ProductPrice;
   addedAt: string;
   tag?: ProductTag;

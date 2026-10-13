@@ -7,7 +7,6 @@
       "categoryId": "sticker",
       "categoryName": "Sticker",
       "image": "images/products/momo-fomo.jpg",
-      "imageAlt": "Momo fomo — Sticker",
       "addedAt": "2026-09-14"
     },
     {
@@ -20,7 +19,6 @@
       "categoryId": "keychain",
       "categoryName": "Keychain",
       "image": "images/products/pet-keychain.jpg",
-      "imageAlt": "Pet keychain — Keychain",
       "addedAt": "2026-09-19",
       "tag": "bestseller"
     },
@@ -34,7 +32,6 @@
       "categoryId": "miniature",
       "categoryName": "Miniature",
       "image": "images/products/couple-miniature.jpg",
-      "imageAlt": "Couple Miniature — Miniature",
       "addedAt": "2026-09-17",
       "tag": "new"
     },
@@ -48,7 +45,6 @@
       "categoryId": "fridge-magnet",
       "categoryName": "Fridge Magnet",
       "image": "images/products/momo-magnet.jpg",
-      "imageAlt": "Momo Magnet — Fridge Magnet",
       "addedAt": "2026-09-20",
       "tag": "bestseller"
     },
@@ -59,7 +55,6 @@
       "categoryId": "sticker",
       "categoryName": "Sticker",
       "image": "images/products/buff-momo.jpg",
-      "imageAlt": "Buff momo — Sticker",
       "addedAt": "2026-09-22",
       "tag": "bestseller"
     },
@@ -70,7 +65,6 @@
       "categoryId": "worry-stone",
       "categoryName": "Worry Stone",
       "image": "images/products/paw-pal.jpg",
-      "imageAlt": "Paw pal — Worry Stone",
       "addedAt": "2026-09-01"
     },
     {
@@ -80,7 +74,6 @@
       "categoryId": "earrings",
       "categoryName": "Earrings",
       "image": "images/products/mushroom.jpg",
-      "imageAlt": "Mushroom — Earrings",
       "addedAt": "2026-09-24",
       "tag": "bestseller"
     },
@@ -94,7 +87,6 @@
       "categoryId": "keychain",
       "categoryName": "Keychain",
       "image": "images/products/momo.jpg",
-      "imageAlt": "Momo 😊 — Keychain",
       "addedAt": "2026-09-30"
     },
     {
@@ -104,7 +96,6 @@
       "categoryId": "sticker",
       "categoryName": "Sticker",
       "image": "images/products/hungry-mind.jpg",
-      "imageAlt": "Hungry mind — Sticker",
       "addedAt": "2026-09-19",
       "tag": "new"
     },
@@ -115,7 +106,6 @@
       "categoryId": "earrings",
       "categoryName": "Earrings",
       "image": "images/products/lali.jpg",
-      "imageAlt": "Lali ❤️ — Earrings",
       "addedAt": "2026-09-08"
     },
     {
@@ -125,7 +115,6 @@
       "categoryId": "sticker",
       "categoryName": "Sticker",
       "image": "images/products/cookie.jpg",
-      "imageAlt": "Cookie — Sticker",
       "addedAt": "2026-09-15",
       "tag": "new"
     },
@@ -136,7 +125,6 @@
       "categoryId": "keychain",
       "categoryName": "Keychain",
       "image": "images/products/mini-me-head.jpg",
-      "imageAlt": "Mini me head — Keychain",
       "addedAt": "2026-09-18"
     },
     {
@@ -146,7 +134,6 @@
       "categoryId": "keychain",
       "categoryName": "Keychain",
       "image": "images/products/mini-me-half-body.jpg",
-      "imageAlt": "Mini me (half body) — Keychain",
       "addedAt": "2026-09-20",
       "tag": "new"
     },
@@ -157,7 +144,6 @@
       "categoryId": "phone-charm",
       "categoryName": "Phone Charm",
       "image": "images/products/phone-charm.jpg",
-      "imageAlt": "Phone charm — Phone Charm",
       "addedAt": "2026-09-08"
     },
     {
@@ -167,7 +153,6 @@
       "categoryId": "miniature",
       "categoryName": "Miniature",
       "image": "images/products/pet-miniature.jpg",
-      "imageAlt": "Pet miniature — Miniature",
       "addedAt": "2026-09-05"
     },
     {
@@ -177,7 +162,6 @@
       "categoryId": "sticker",
       "categoryName": "Sticker",
       "image": "images/products/friends-time.jpg",
-      "imageAlt": "Friends time — Sticker",
       "addedAt": "2026-09-12"
     },
     {
@@ -187,7 +171,6 @@
       "categoryId": "keychain",
       "categoryName": "Keychain",
       "image": "images/products/couple-mini-me.jpg",
-      "imageAlt": "Couple mini me — Keychain",
       "addedAt": "2026-09-17",
       "tag": "bestseller"
     },
@@ -198,7 +181,6 @@
       "categoryId": "earrings",
       "categoryName": "Earrings",
       "image": "images/products/sunflower.jpg",
-      "imageAlt": "Sunflower 🌻 — Earrings",
       "addedAt": "2026-09-04",
       "tag": "new"
     },
@@ -209,7 +191,6 @@
       "categoryId": "sticker",
       "categoryName": "Sticker",
       "image": "images/products/mini-me-mix-n-match.jpg",
-      "imageAlt": "Mini me (mix n match) — Sticker",
       "addedAt": "2026-09-30"
     },
     {
@@ -219,7 +200,6 @@
       "categoryId": "fridge-magnet",
       "categoryName": "Fridge Magnet",
       "image": "images/products/mini-vase.jpg",
-      "imageAlt": "Mini vase — Fridge Magnet",
       "addedAt": "2026-09-07",
       "tag": "new"
     },
@@ -230,7 +210,6 @@
       "categoryId": "keychain",
       "categoryName": "Keychain",
       "image": "images/products/samosa.jpg",
-      "imageAlt": "Samosa — Keychain",
       "addedAt": "2026-09-25"
     },
     {
@@ -240,7 +219,6 @@
       "categoryId": "earrings",
       "categoryName": "Earrings",
       "image": "images/products/lucky.jpg",
-      "imageAlt": "Lucky — Earrings",
       "addedAt": "2026-09-22",
       "tag": "new"
     },
@@ -251,7 +229,6 @@
       "categoryId": "keychain",
       "categoryName": "Keychain",
       "image": "images/products/dumpling.jpg",
-      "imageAlt": "Dumpling — Keychain",
       "addedAt": "2026-09-29",
       "tag": "new"
     },
@@ -262,7 +239,6 @@
       "categoryId": "worry-stone",
       "categoryName": "Worry Stone",
       "image": "images/products/worry-mouse.jpg",
-      "imageAlt": "Worry mouse — Worry Stone",
       "addedAt": "2026-09-26"
     },
     {
@@ -272,7 +248,6 @@
       "categoryId": "sticker",
       "categoryName": "Sticker",
       "image": "images/products/nepal-flag.jpg",
-      "imageAlt": "Nepal flag — Sticker",
       "addedAt": "2026-09-12",
       "tag": "new"
     },
@@ -283,7 +258,6 @@
       "categoryId": "keychain",
       "categoryName": "Keychain",
       "image": "images/products/yomari.jpg",
-      "imageAlt": "Yomari — Keychain",
       "addedAt": "2026-09-16"
     },
     {
@@ -293,7 +267,6 @@
       "categoryId": "keychain",
       "categoryName": "Keychain",
       "image": "images/products/bear.jpg",
-      "imageAlt": "Bear 🤎 — Keychain",
       "addedAt": "2026-09-09",
       "tag": "bestseller"
     },
@@ -307,7 +280,6 @@
       "categoryId": "miniature",
       "categoryName": "Miniature",
       "image": "images/products/mini-me.jpg",
-      "imageAlt": "Mini me — Miniature",
       "addedAt": "2026-09-20"
     },
     {
@@ -317,7 +289,6 @@
       "categoryId": "sticker",
       "categoryName": "Sticker",
       "image": "images/products/kdrama-world.jpg",
-      "imageAlt": "Kdrama world — Sticker",
       "addedAt": "2026-09-13"
     },
     {
@@ -327,7 +298,6 @@
       "categoryId": "worry-stone",
       "categoryName": "Worry Stone",
       "image": "images/products/too-much-filling.jpg",
-      "imageAlt": "Too much filling — Worry Stone",
       "addedAt": "2026-09-20",
       "tag": "new"
     },
@@ -338,7 +308,6 @@
       "categoryId": "sticker",
       "categoryName": "Sticker",
       "image": "images/products/cutie.jpg",
-      "imageAlt": "Cutie — Sticker",
       "addedAt": "2026-09-15"
     },
     {
@@ -348,7 +317,6 @@
       "categoryId": "sticker",
       "categoryName": "Sticker",
       "image": "images/products/mini-me-mix-n-match-2.jpg",
-      "imageAlt": "Mini me (mix n match) — Sticker",
       "addedAt": "2026-10-12"
     }
   ]
