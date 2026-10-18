@@ -1,3 +1,4 @@
+import { customOrderMessage, whatsappUrl } from '../utils/orders';
 import { siteUrl } from '../utils/paths';
 import { getSiteContent } from '../content/site';
 import { getImageProps } from '../content/images';
@@ -10,10 +11,18 @@ export function CustomOrderPanel() {
     <li className="custom-order-slot">
       <section className="custom-order-panel" aria-labelledby="custom-order-title">
         <div className="custom-order-panel__surface">
+          <a
+            className="custom-order-panel__mobile-link"
+            href={whatsappUrl(customOrderMessage)}
+            target="_blank"
+            rel="noopener noreferrer"
+            tabIndex={-1}
+            aria-hidden="true"
+          />
           <div className="custom-order-panel__copy">
             <h2 id="custom-order-title">{content.titleFirst}{' '}{content.titleSecond}</h2>
             <p>{content.description}</p>
-            <button type="button" className="custom-order-panel__button" disabled>{content.buttonLabel}</button>
+            <a className="custom-order-panel__button" href={whatsappUrl(customOrderMessage)} target="_blank" rel="noopener noreferrer">{content.buttonLabel}</a>
           </div>
           <span className="custom-order-panel__petal custom-order-panel__petal--small" aria-hidden="true" />
           <span className="custom-order-panel__petal custom-order-panel__petal--large" aria-hidden="true" />

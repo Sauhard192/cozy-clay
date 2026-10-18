@@ -18,3 +18,5 @@
 @import './pages/about.css';
 @import './pages/say-hello.css';
 @import './components/cursor.css';
+
+@import './components/order-dialog.css';

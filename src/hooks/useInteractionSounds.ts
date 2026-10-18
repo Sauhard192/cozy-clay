@@ -66,20 +66,17 @@ export function useInteractionSounds(enabled: RefObject<boolean>) {
         /* Feedback must never block the control. */
       });
     };
-    const hide = () => {
-      if (document.hidden) silence();
-    };
+    // Let short click feedback finish when an external link opens a new tab.
+    // Hidden tabs cannot start new sounds; explicit mute and cleanup still stop them.
     document.addEventListener('pointerdown', down, true);
     document.addEventListener('pointermove', move, true);
     document.addEventListener('pointercancel', cancel, true);
     document.addEventListener('click', click, true);
-    document.addEventListener('visibilitychange', hide);
     return () => {
       document.removeEventListener('pointerdown', down, true);
       document.removeEventListener('pointermove', move, true);
       document.removeEventListener('pointercancel', cancel, true);
       document.removeEventListener('click', click, true);
-      document.removeEventListener('visibilitychange', hide);
       silence();
       players.current.forEach((audio) => {
         audio.removeAttribute('src');

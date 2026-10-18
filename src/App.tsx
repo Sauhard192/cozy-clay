@@ -1,3 +1,4 @@
+import { OrderProvider } from './components/OrderDialog';
 import { HeroCollage } from './components/HeroCollage';
 import { siteUrl } from './utils/paths';
 import { SHOW_PRODUCTS_HERO } from './content/site';
@@ -204,7 +205,7 @@ export default function App() {
       );
   }, [page]);
   return (
-    <>
+    <OrderProvider>
       <a className="skip-link" href="#main">
         Skip to content
       </a>
@@ -233,6 +234,6 @@ export default function App() {
       <PanelPatterns key={`patterns-${page}`} />
       <Motion key={`motion-${page}`} />
       <MusicToggle />
-    </>
+    </OrderProvider>
   );
 }

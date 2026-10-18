@@ -44,6 +44,18 @@
   --color-surface-vanilla: var(--color-vanilla-300);
   --color-surface-card: var(--color-white);
   --color-decoration: var(--color-yellow-500);
+
+  --order-product-image-size: clamp(8rem, 20vw, 10rem);
+  --order-quantity-button-size: 2.75rem;
+  --order-note-focus-border-width: calc(2 * var(--border-width));
+  --color-order-surface: var(--color-surface-page);
+  --color-order-border: var(--color-orange-500);
+  --color-order-muted: var(--color-brown-500);
+  --color-order-soft-border: var(--color-brown-300);
+  --color-order-divider: var(--color-vanilla-300);
+  --color-order-backdrop: color-mix(in srgb, #000000 80%, transparent);
+  --layout-order-max-width: 42rem;
+  
   --color-focus: var(--color-brown-800);
   --color-action-secondary: var(--color-text-primary);
   --color-products-filter-surface: color-mix(in srgb, var(--color-surface-green) 24%, var(--color-surface-page));

@@ -27,7 +27,8 @@ const products: CategoryCardContent[] = [
 ];
 const categories: Category[] = products.map(p => ({ id: p.categoryId, name: p.name, productId: p.id }));
 const site = {
-  announcement: 'Use(DASHAINTIME) Dashain Discount: 5% off on all items .',
+  publicUrl: 'https://sauhard192.github.io/cozy-clay/',
+  announcement: 'Dashain: 5% off · Code: DASHAINTIME',
   navigation: [ { label: 'Home', href: '#home' }, { label: 'The Shelf', href: '/products' }, { label: 'About Me', href: '/about' }, { label: 'Say Hello', href: '/say-hello' } ],
   hero: { eyebrow: 'Hand made • From Bhaktapur', titleFirst: 'Welcome to', titleSecond: 'Cozy Corner.', description: 'Story of creativity and personal expression.' },
   productsHero: { eyebrow: 'The Complete Collection', titleFirst: 'Things for', titleSecond: 'Your Corner.', description: 'Small-batch clay pieces made to bring a little more joy to the everyday.' },
@@ -47,7 +48,7 @@ const site = {
     instagramHandle: '@cozyclay.np',
   },
   contact: {
-    email: 'apekshyashrestha12@gmail.com', whatsapp: 'https://wa.link/mxolfd',
+    email: 'apekshyashrestha12@gmail.com', whatsapp: 'https://wa.link/mxolfd', whatsappNumber: '9779846940324',
     socials: [
       { label: 'Instagram', icon: 'instagram', href: 'https://www.instagram.com/cozyclay.np/' },
       { label: 'Facebook', icon: 'facebook', href: 'https://www.facebook.com/profile.php?id=61565341070527' },

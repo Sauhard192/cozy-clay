@@ -1,3 +1,4 @@
+import { useProductOrder } from './OrderDialog';
 import { RevealImage } from './RevealImage';
 import { siteUrl } from '../utils/paths';
 import { getImageProps, cardImageSizes } from '../content/images';
@@ -47,6 +48,7 @@ export function ProductCard({
   product: Product;
   showBadge?: boolean;
 }) {
+  const openOrder = useProductOrder();
   return (
     <li className="collection-card product-card">
       <div className="product-card__photo">
@@ -82,6 +84,7 @@ export function ProductCard({
       <p className="product-card__price">
         {formatPrice(product.price)}
       </p>
+      <button type="button" className="product-card__order" aria-label={`Order ${product.name}`} aria-haspopup="dialog" onClick={() => openOrder(product)} />
     </li>
   );
 }

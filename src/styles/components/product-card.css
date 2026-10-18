@@ -84,3 +84,17 @@
   margin-top: auto;
 }
 
+
+/* The transparent native button makes the complete card keyboard operable. */
+.product-card {
+  position: relative;
+}
+
+.product-card__order {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  padding: 0;
+  border-radius: inherit;
+  background: transparent;
+}

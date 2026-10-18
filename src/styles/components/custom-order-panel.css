@@ -1,4 +1,4 @@
-/* A full-width catalogue interlude; the action remains intentionally inactive. */
+/* A full-width catalogue interlude; the action opens a WhatsApp custom-order inquiry. */
 .custom-order-slot {
   grid-column: 1 / -1;
   min-width: 0;
@@ -17,6 +17,20 @@
   border-radius: var(--radius-panel);
   background: var(--color-custom-order-surface);
   box-shadow: var(--shadow-paper);
+}
+
+/* Mobile taps cover the panel; the visible button remains the keyboard link. */
+.custom-order-panel__mobile-link {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+}
+
+@media (min-width: 768px) {
+  .custom-order-panel__mobile-link {
+    display: none;
+  }
 }
 
 .custom-order-panel__surface::before {
@@ -62,7 +76,7 @@
   font-weight: var(--font-weight-bold);
   color: var(--color-custom-order-button-text);
   background: transparent;
-  cursor: default;
+  cursor: pointer;
   transition: transform var(--motion-duration-release) var(--motion-ease-squish);
 }
 
@@ -208,4 +222,9 @@
   .custom-order-panel__button:hover {
     transform: none;
   }
+}
+
+.custom-order-panel__button:active {
+  transform: scale(.93, .89);
+  transition-duration: var(--motion-duration-press);
 }
