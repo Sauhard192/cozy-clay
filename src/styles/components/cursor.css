@@ -71,6 +71,10 @@
   opacity: 1;
 }
 
+.custom-cursor.is-order-contrast .custom-cursor__shape {
+  background: var(--color-cursor-order-contrast);
+}
+
 @keyframes cursor-rotate {
   to { transform: rotate(360deg); }
 }

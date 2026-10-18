@@ -1,5 +1,6 @@
 /* Order inquiry — mobile first; tablet layout begins at 768px. */
 .order-dialog {
+  --order-dialog-max-height: calc(100dvh - var(--space-20));
   width: min(calc(100% - var(--space-12)), var(--layout-order-max-width));
   max-height: none;
   margin: auto;
@@ -15,12 +16,45 @@
 }
 
 .order-dialog__surface {
-  max-height: calc(100dvh - var(--space-20));
-  overflow: auto;
-  overscroll-behavior: contain;
+  max-height: var(--order-dialog-max-height);
+  overflow: hidden;
   border: var(--border-width) solid var(--color-order-border);
   border-radius: var(--radius-panel);
   background: var(--color-order-surface);
+}
+
+/* Keep the scrolling track inside the rounded surface, below the outside close button. */
+.order-dialog__scroll {
+  max-height: calc(var(--order-dialog-max-height) - 2 * var(--border-width));
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-order-scrollbar-thumb) var(--color-order-scrollbar-track);
+}
+
+.order-dialog__scroll::-webkit-scrollbar {
+  width: var(--space-2);
+}
+
+.order-dialog__scroll::-webkit-scrollbar-track {
+  margin-block: var(--radius-panel);
+  background: var(--color-order-scrollbar-track);
+  border-radius: var(--radius-pill);
+}
+
+.order-dialog__scroll::-webkit-scrollbar-thumb {
+  border: var(--border-width) solid var(--color-order-scrollbar-track);
+  border-radius: var(--radius-pill);
+  background: var(--color-order-scrollbar-thumb);
+}
+
+.order-dialog__scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--color-order-scrollbar-thumb-hover);
+}
+
+.order-dialog__scroll::-webkit-scrollbar-button {
+  display: none;
 }
 
 .order-dialog::backdrop {

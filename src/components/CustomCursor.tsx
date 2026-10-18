@@ -90,6 +90,14 @@ export function CustomCursor() {
     const updateHover = () => {
       const target = document.elementFromPoint(targetX, targetY);
       const control = target?.closest(interactive);
+      const orderDialog = document.querySelector('dialog.order-dialog[open]');
+      cursor.classList.toggle(
+        'is-order-contrast',
+        Boolean(orderDialog && (
+          target?.closest('.order-dialog__close') ||
+          !target?.closest('.order-dialog__surface')
+        )),
+      );
       cursor.classList.toggle(
         'is-on-dark',
         Boolean(target?.closest('.footer-panel, .mobile-menu')) ||

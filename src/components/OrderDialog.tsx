@@ -48,31 +48,33 @@ function OrderDialog({ product, onClose }: { product: Product; onClose: () => vo
       onClick={(event) => { if (backdropPress.current && outside(event.clientX, event.clientY)) onClose(); backdropPress.current = false; }}>
       <button type="button" className="icon-button order-dialog__close" aria-label="Close Order" onClick={onClose} autoFocus><Icon name="close" /></button>
       <div className="order-dialog__surface">
-        <header className="order-dialog__header">
-          <h2 id="order-title">Your Order</h2>
-          <p id="order-description">Review your order and add a note before continuing to WhatsApp.</p>
-        </header>
-        <div className="order-dialog__body">
-          <div className="order-dialog__product">
-            <img className="order-dialog__photo" {...getImageProps(product.image, '6.5rem')} width="128" height="128" alt={product.name} decoding="async" />
-            <div className="order-dialog__info">
-              <div className="order-dialog__details"><h3>{product.name}</h3><p>{formatPrice(product.price)}</p></div>
-              <div className="order-dialog__quantity" role="group" aria-label="Quantity">
-                <button type="button" className="order-dialog__step" aria-label="Decrease Quantity" disabled={quantity === 1} onClick={() => setQuantity(value => value - 1)}><Icon name="minus" /></button>
-                <output aria-live="polite" aria-label="Selected quantity">{quantity}</output>
-                <button type="button" className="order-dialog__step" aria-label="Increase Quantity" disabled={quantity === 99} onClick={() => setQuantity(value => value + 1)}><Icon name="plus" /></button>
+        <div className="order-dialog__scroll">
+          <header className="order-dialog__header">
+            <h2 id="order-title">Your Order</h2>
+            <p id="order-description">Review your order and add a note before continuing to WhatsApp.</p>
+          </header>
+          <div className="order-dialog__body">
+            <div className="order-dialog__product">
+              <img className="order-dialog__photo" {...getImageProps(product.image, '6.5rem')} width="128" height="128" alt={product.name} decoding="async" />
+              <div className="order-dialog__info">
+                <div className="order-dialog__details"><h3>{product.name}</h3><p>{formatPrice(product.price)}</p></div>
+                <div className="order-dialog__quantity" role="group" aria-label="Quantity">
+                  <button type="button" className="order-dialog__step" aria-label="Decrease Quantity" disabled={quantity === 1} onClick={() => setQuantity(value => value - 1)}><Icon name="minus" /></button>
+                  <output aria-live="polite" aria-label="Selected quantity">{quantity}</output>
+                  <button type="button" className="order-dialog__step" aria-label="Increase Quantity" disabled={quantity === 99} onClick={() => setQuantity(value => value + 1)}><Icon name="plus" /></button>
+                </div>
               </div>
             </div>
+            <label className="sr-only" htmlFor="order-note">Customization details, questions, or a note</label>
+            <textarea id="order-note" className="order-dialog__note" value={note} onChange={event => setNote(event.target.value)} placeholder="Add customization details, questions, or a note…" maxLength={2000} />
+            <p className="order-dialog__total" aria-live="polite">Total: <strong>{formatPrice(quantityPrice(product.price, quantity))}</strong></p>
+            {typeof product.price === 'object' && <p className="order-dialog__confirmation">Final price confirmed on WhatsApp.</p>}
           </div>
-          <label className="sr-only" htmlFor="order-note">Customization details, questions, or a note</label>
-          <textarea id="order-note" className="order-dialog__note" value={note} onChange={event => setNote(event.target.value)} placeholder="Add customization details, questions, or a note…" maxLength={2000} />
-          <p className="order-dialog__total" aria-live="polite">Total: <strong>{formatPrice(quantityPrice(product.price, quantity))}</strong></p>
-          {typeof product.price === 'object' && <p className="order-dialog__confirmation">Final price confirmed on WhatsApp.</p>}
+          <footer className="order-dialog__actions">
+            <a className="primary-button order-dialog__send" href={whatsappUrl(orderMessage(product, quantity, note))} target="_blank" rel="noopener noreferrer">Send on WhatsApp</a>
+            <button type="button" className="primary-button primary-button-outline order-dialog__cancel" onClick={onClose}>Cancel</button>
+          </footer>
         </div>
-        <footer className="order-dialog__actions">
-          <a className="primary-button order-dialog__send" href={whatsappUrl(orderMessage(product, quantity, note))} target="_blank" rel="noopener noreferrer">Send on WhatsApp</a>
-          <button type="button" className="primary-button primary-button-outline order-dialog__cancel" onClick={onClose}>Cancel</button>
-        </footer>
       </div>
     </dialog>, document.body,
   );
