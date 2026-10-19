@@ -40,6 +40,7 @@ export function Products({ search }: { search: string }) {
     ].filter(Boolean).join(' '),
   } as CSSProperties;
   const [sortOpen, setSortOpen] = useState(false);
+  const categoryFilters = useRef<HTMLDivElement>(null);
   const sortControl = useRef<HTMLDivElement>(null);
   const sortTrigger = useRef<HTMLButtonElement>(null);
 
@@ -51,6 +52,43 @@ export function Products({ search }: { search: string }) {
     document.addEventListener('pointerdown', outside);
     return () => document.removeEventListener('pointerdown', outside);
   }, [sortOpen]);
+
+  useEffect(() => {
+    const filters = categoryFilters.current;
+    if (!filters) return;
+    const mobile = window.matchMedia('(max-width: 767px)');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const alignSelected = () => {
+      if (!mobile.matches) return;
+      const selected = filters.querySelector<HTMLButtonElement>('[aria-pressed="true"]');
+      if (!selected) return;
+      const styles = getComputedStyle(filters);
+      const inset = parseFloat(styles.paddingLeft);
+      const endInset = parseFloat(styles.paddingRight);
+      const bounds = filters.getBoundingClientRect();
+      const pill = selected.getBoundingClientRect();
+      const start = filters.scrollLeft + pill.left - bounds.left - inset;
+      const maxScroll = Math.max(0, filters.scrollWidth - filters.clientWidth);
+      let left = filters.scrollLeft;
+      if (start <= maxScroll) {
+        left = Math.max(0, start);
+      } else if (pill.left < bounds.left + inset) {
+        left = Math.max(0, start);
+      } else if (pill.right > bounds.left + filters.clientWidth - endInset) {
+        left = Math.min(maxScroll, filters.scrollLeft + pill.right - bounds.left - filters.clientWidth + endInset);
+      }
+      if (Math.abs(left - filters.scrollLeft) < 1) return;
+      filters.scrollTo({ left, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
+    };
+    alignSelected();
+    const observer = new ResizeObserver(alignSelected);
+    observer.observe(filters);
+    mobile.addEventListener('change', alignSelected);
+    return () => {
+      observer.disconnect();
+      mobile.removeEventListener('change', alignSelected);
+    };
+  }, [category]);
 
   function update(key: string, value: string) {
     const next = new URLSearchParams(search);
@@ -97,7 +135,7 @@ export function Products({ search }: { search: string }) {
       <section className="products-catalogue" aria-label="Products">
         {!SHOW_PRODUCTS_HERO && <h1 className="products-catalogue__title heading-1">Our Products</h1>}
         <div className="products-toolbar">
-          <div className="category-filters" role="group" aria-label="Filter products by category">
+          <div className="category-filters" ref={categoryFilters} role="group" aria-label="Filter products by category">
             <button className="category-filter" aria-pressed={category === 'all'} onClick={() => update('category', 'all')}>
               <img src={siteUrl('/assets/icons/image-icons/category-all.png')} alt="" width="32" height="32" />All
             </button>

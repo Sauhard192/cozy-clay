@@ -174,7 +174,7 @@
   display: block;
   width: 100%;
   min-height: 9rem;
-  resize: vertical;
+  resize: none;
   margin-top: var(--space-8);
   padding: var(--space-3);
   border: var(--border-width) solid var(--color-order-border);
