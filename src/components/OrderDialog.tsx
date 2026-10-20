@@ -4,6 +4,7 @@ import { createPortal } from 'react-dom';
 import type { Product } from '../content/products';
 import { formatPrice } from '../content/products';
 import { getImageProps } from '../content/images';
+import { getCategoryProducts } from '../content/site';
 import { orderMessage, quantityPrice, whatsappUrl } from '../utils/orders';
 import { Icon } from './Primitives';
 
@@ -21,6 +22,7 @@ export function OrderProvider({ children }: { children: ReactNode }) {
 }
 
 function OrderDialog({ product, onClose }: { product: Product; onClose: () => void }) {
+  const preparationTime = getCategoryProducts().find(category => category.categoryId === product.categoryId)?.preparationTime;
   const dialog = useRef<HTMLDialogElement>(null);
   const [quantity, setQuantity] = useState(1);
   const [note, setNote] = useState('');
@@ -57,7 +59,11 @@ function OrderDialog({ product, onClose }: { product: Product; onClose: () => vo
             <div className="order-dialog__product">
               <img className="order-dialog__photo" {...getImageProps(product.image, '6.5rem')} width="128" height="128" alt={product.name} decoding="async" />
               <div className="order-dialog__info">
-                <div className="order-dialog__details"><h3>{product.name}</h3><p>{formatPrice(product.price)}</p></div>
+                <div className="order-dialog__details">
+                  <h3>{product.name}</h3>
+                  {preparationTime && <p className="order-dialog__preparation"><Icon name="clock" /><span><span className="sr-only">Preparation time: </span>{preparationTime}</span></p>}
+                  <p>{formatPrice(product.price)}</p>
+                </div>
                 <div className="order-dialog__quantity" role="group" aria-label="Quantity">
                   <button type="button" className="order-dialog__step" aria-label="Decrease Quantity" disabled={quantity === 1} onClick={() => setQuantity(value => value - 1)}><Icon name="minus" /></button>
                   <output aria-live="polite" aria-label="Selected quantity">{quantity}</output>

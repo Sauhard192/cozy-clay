@@ -134,6 +134,22 @@
   margin-top: var(--space-1);
 }
 
+.order-dialog__preparation {
+  /* Compensate for the clock artwork’s 2-unit inset in its 24-unit viewBox. */
+  margin-left: calc(-1.25rem / 12);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-accent-green);
+  font-size: var(--font-size-small);
+}
+
+.order-dialog__preparation .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
 .order-dialog__quantity {
   display: flex;
   align-items: center;
