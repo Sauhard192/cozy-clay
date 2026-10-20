@@ -130,9 +130,10 @@ export default function MusicToggle() {
   }, []);
 
   useEffect(() => {
-    // Move only the portal host into the modal top layer; the audio stays mounted.
+    // Keep the sound button below order dialogs; menu dialogs retain sound controls.
     const place = () => {
-      const parent = document.querySelector('dialog[open]') || document.body;
+      const orderOpen = document.querySelector('dialog.order-dialog[open]');
+      const parent = (!orderOpen && document.querySelector('dialog[open]')) || document.body;
       if (host.parentElement !== parent) parent.appendChild(host);
     };
     place();

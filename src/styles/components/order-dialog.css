@@ -125,18 +125,24 @@
 }
 
 .order-dialog__details h3 {
-  font-size: var(--font-size-title);
+  font-size: var(--font-size-smaller-heading);
   line-height: var(--line-height-title);
-  }
+}
 
 .order-dialog__details p {
   font-weight: var(--font-weight-bold);
   margin-top: var(--space-1);
 }
 
+.order-dialog__metadata {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: var(--space-4);
+}
+
+.order-dialog__category,
 .order-dialog__preparation {
-  /* Compensate for the clock artwork’s 2-unit inset in its 24-unit viewBox. */
-  margin-left: calc(-1.25rem / 12);
   display: flex;
   align-items: center;
   gap: var(--space-2);
@@ -246,6 +252,107 @@
   background: var(--color-order-soft-border);
 }
 
+.order-dialog__content {
+  display: contents;
+}
+
+/* The previous compact mobile design is saved in .backups/order-dialog-before-stacked-mobile. */
+@media (max-width: 767px) {
+  .order-dialog {
+    --order-dialog-max-height: calc(100dvh - var(--space-8));
+    width: 100%;
+    max-width: 100%;
+    margin: auto 0 0;
+  }
+
+  .order-dialog[open] {
+    animation: order-sheet-enter var(--motion-duration-page-enter) var(--motion-ease-reveal);
+  }
+
+  .order-dialog__surface {
+    border: 0;
+    border-radius: var(--radius-panel) var(--radius-panel) 0 0;
+  }
+
+  .order-dialog__scroll {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .order-dialog__content {
+    display: block;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-order-scrollbar-thumb) var(--color-order-scrollbar-track);
+  }
+
+  .order-dialog__close {
+    top: var(--space-3);
+    right: var(--space-3);
+  }
+
+  .order-dialog__product {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-4);
+  }
+
+  .order-dialog__photo {
+    width: 100%;
+    height: auto;
+    max-height: 32dvh;
+    aspect-ratio: 4 / 3;
+    border: var(--border-width) solid var(--color-surface-card);
+  }
+
+  .order-dialog__details .order-dialog__unit-price {
+    margin-top: var(--space-4);
+  }
+
+  .order-dialog__metadata {
+    column-gap: var(--space-3);
+  }
+
+  .order-dialog__body {
+    border-bottom: 0;
+  }
+
+  .order-dialog__actions {
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-4) var(--space-3);
+    padding-bottom: calc(var(--space-4) + env(safe-area-inset-bottom, 0px));
+    border-top: var(--border-width) dashed var(--color-order-divider);
+    background: var(--color-order-surface);
+  }
+
+  .order-dialog__actions .order-dialog__cancel {
+    order: -1;
+    width: auto;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .order-dialog__actions .order-dialog__send {
+    width: auto;
+    flex: 2;
+    min-width: 0;
+  }
+}
+
+@keyframes order-sheet-enter {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 @media (min-width: 768px) {
   .order-dialog__header,
   .order-dialog__body,
@@ -256,11 +363,6 @@
   .order-dialog__header p {
     max-width: 26rem;
     font-size: var(--font-size-body);
-  }
-
-  .order-dialog__details h3 {
-  font-size: var(--font-size-small-heading);
-  line-height: var(--line-height-title);
   }
 
   .order-dialog__product {
@@ -307,6 +409,10 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .order-dialog[open] {
+    animation: none;
+  }
+
   .order-dialog__step,
   .custom-order-panel__button {
     transition: none;

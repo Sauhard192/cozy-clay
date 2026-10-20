@@ -78,6 +78,15 @@
   margin-bottom: var(--space-4);
 }
 
+
+@media (max-width: 767px) {
+  .product-card h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
 .product-card .product-card__price {
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-bold);

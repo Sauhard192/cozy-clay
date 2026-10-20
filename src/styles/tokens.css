@@ -85,6 +85,8 @@
   --font-size-display: clamp(3.25rem, 2rem + 6.154vw, 4rem);
   --font-size-section-heading: clamp(2.5rem, 2.5rem + 1.961vw, 3.5rem);
   --font-size-small-heading: 2rem;
+  --font-size-smaller-heading: 1.5rem;
+  --font-size-subheading: 1rem;
   --font-size-subheading: 1rem;
   --font-size-title: clamp(1.125rem, 1.015rem + .49vw, 1.25rem);
   --font-size-subtitle: 1rem;
