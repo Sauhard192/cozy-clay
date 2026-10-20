@@ -65,6 +65,7 @@
 .order-dialog__body,
 .order-dialog__actions {
   padding: var(--space-6) var(--space-5);
+  padding-top: var(--space-4);
 }
 
 .order-dialog__header {
@@ -283,6 +284,7 @@
   .order-dialog__content {
     display: block;
     min-height: 0;
+    overflow-x: hidden;
     overflow-y: auto;
     overscroll-behavior: contain;
     scrollbar-width: thin;
@@ -290,7 +292,8 @@
   }
 
   .order-dialog__close {
-    top: var(--space-3);
+    /* Match the center of the title line, accounting for header padding. */
+    top: calc(var(--space-6) + (var(--font-size-small-heading) * var(--line-height-title) - max(var(--button-min-height), 2.75rem)) / 2);
     right: var(--space-3);
   }
 
