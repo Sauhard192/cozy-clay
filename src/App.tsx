@@ -206,9 +206,6 @@ export default function App() {
   }, [page]);
   return (
     <OrderProvider>
-      <a className="skip-link" href="#main">
-        Skip to content
-      </a>
       <StickyHeader key={`header-${page}`} page={page} />
       <div
         className={`page-frame ${page === 'home' || (page === 'products' && SHOW_PRODUCTS_HERO) ? 'page-frame--hero' : ''}`}
