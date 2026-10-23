@@ -69,19 +69,12 @@
 }
 
 .order-dialog__header {
-  position: relative;
+  position: static;
   padding-right: var(--space-16);
 }
 
 .order-dialog__header h2 {
   font-size: var(--font-size-small-heading);
-  line-height: var(--line-height-title);
-}
-
-.order-dialog__header p {
-  margin-top: var(--space-2);
-  color: var(--color-order-muted);
-  font-size: var(--font-size-small);
   line-height: var(--line-height-title);
 }
 
@@ -184,7 +177,6 @@
   border: var(--border-width) solid var(--color-order-border);
   border-radius: 45% 48% 42% 46%;
   background: transparent;
-  transition: transform var(--motion-duration-release) var(--motion-ease-squish);
 }
 
 .order-dialog__step:disabled {
@@ -260,6 +252,7 @@
 /* The previous compact mobile design is saved in .backups/order-dialog-before-stacked-mobile. */
 @media (max-width: 767px) {
   .order-dialog {
+    --order-quantity-button-size: var(--button-action-visible-height);
     --order-dialog-max-height: calc(100dvh - var(--space-8));
     width: 100%;
     max-width: 100%;
@@ -291,10 +284,16 @@
     scrollbar-color: var(--color-order-scrollbar-thumb) var(--color-order-scrollbar-track);
   }
 
+  .order-dialog__header {
+    position: relative;
+  }
+
   .order-dialog__close {
     /* Match the center of the title line, accounting for header padding. */
-    top: calc(var(--space-6) + (var(--font-size-small-heading) * var(--line-height-title) - max(var(--button-min-height), 2.75rem)) / 2);
+    top: calc(var(--space-4) + (var(--font-size-small-heading) * var(--line-height-title) - var(--button-icon-size)) / 2);
     right: var(--space-3);
+    background: transparent;
+    color: var(--color-text-primary);
   }
 
   .order-dialog__product {
@@ -312,10 +311,26 @@
 
   .order-dialog__details .order-dialog__unit-price {
     margin-top: var(--space-4);
+    font-size: var(--font-size-smaller-heading);
+  }
+
+  .order-dialog__details h3 {
+    font-size: var(--font-size-small-heading);
+  }
+
+  .order-dialog__category,
+  .order-dialog__preparation {
+    font-size: var(--font-size-body);
   }
 
   .order-dialog__metadata {
     column-gap: var(--space-3);
+  }
+
+  .order-dialog__quantity {
+    /* Optical alignment of the rounded outline with the text above. */
+    margin-left: calc(-1 * var(--border-width));
+    gap: var(--space-3);
   }
 
   .order-dialog__body {
@@ -363,11 +378,6 @@
     padding: var(--space-8) var(--space-10);
   }
 
-  .order-dialog__header p {
-    max-width: 26rem;
-    font-size: var(--font-size-body);
-  }
-
   .order-dialog__product {
     grid-template-columns: var(--order-product-image-size) minmax(0, 1fr);
     align-items: center;
@@ -400,29 +410,15 @@
   }
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .order-dialog__step:not(:disabled):hover {
-    transform: scale(1.04);
-  }
-}
-
-.order-dialog__step:not(:disabled):active {
-  transform: scale(.93, .89);
-  transition-duration: var(--motion-duration-press);
-}
-
 @media (prefers-reduced-motion: reduce) {
   .order-dialog[open] {
     animation: none;
   }
 
-  .order-dialog__step,
   .custom-order-panel__button {
     transition: none;
   }
 
-  .order-dialog__step:not(:disabled):hover,
-  .order-dialog__step:not(:disabled):active,
   .custom-order-panel__button:active {
     transform: none;
   }

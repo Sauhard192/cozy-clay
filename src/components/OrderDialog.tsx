@@ -77,17 +77,16 @@ function OrderDialog({ product, onClose }: { product: Product; onClose: () => vo
     return x < bounds.left || x > bounds.right || y < bounds.top || y > bounds.bottom;
   }
   return createPortal(
-    <dialog ref={dialog} className="order-dialog" aria-labelledby="order-title" aria-describedby="order-description"
+    <dialog ref={dialog} className="order-dialog" aria-labelledby="order-title"
       onCancel={(event) => { event.preventDefault(); onClose(); }}
       onPointerDown={(event) => { backdropPress.current = outside(event.clientX, event.clientY); }}
       onClick={(event) => { if (backdropPress.current && outside(event.clientX, event.clientY)) onClose(); backdropPress.current = false; }}>
-      <button type="button" className="icon-button order-dialog__close" aria-label="Close Order" onClick={onClose} autoFocus><Icon name="close" /></button>
       <div className="order-dialog__surface">
         <div className="order-dialog__scroll">
           <div className="order-dialog__content">
           <header className="order-dialog__header">
+            <button type="button" className="icon-button order-dialog__close" aria-label="Close Order" onClick={onClose} autoFocus><Icon name="close" /></button>
             <h2 id="order-title">Your Order</h2>
-            <p id="order-description">Review your order and add a note before continuing to WhatsApp.</p>
           </header>
           <div className="order-dialog__body">
             <div className="order-dialog__product">

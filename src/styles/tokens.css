@@ -46,7 +46,7 @@
   --color-decoration: var(--color-yellow-500);
 
   --order-product-image-size: clamp(8rem, 20vw, 10rem);
-  --order-quantity-button-size: 2.75rem;
+  --order-quantity-button-size: 3rem;
   --order-note-focus-border-width: calc(2 * var(--border-width));
   --color-cursor-order-contrast: var(--color-white);
   --color-order-surface: var(--color-surface-page);
@@ -170,6 +170,10 @@
   --product-badge-height: 2rem;
 
   --button-min-height: 3rem;
+  --button-icon-size: var(--button-min-height);
+  --button-icon-glyph-size: 1.75rem;
+  --button-mask-overhang: var(--space-2);
+  --button-action-visible-height: calc(max(var(--button-min-height), var(--font-size-button) * var(--line-height-button) + 2 * var(--space-2)) + 2 * var(--button-mask-overhang));
   --button-primary-width: 12rem;
 
   --icon-size: 1.25rem;
