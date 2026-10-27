@@ -134,7 +134,7 @@
   --layout-panel-padding-inline: calc(var(--space-6) - var(--border-width));
   --layout-page-inset: .75rem;
   --layout-content-inset: 1.5rem;
-  --layout-max-width: 100rem;
+  --layout-max-width: 90rem;
   --layout-columns: 4;
   --layout-grid-gap: var(--space-4);
   --scallop-count: 5;
@@ -244,6 +244,8 @@
   :root {
     --font-size-display: clamp(3rem, 1.633rem + 3.848vw, 5rem);
     --layout-panel-padding-inline: clamp(var(--space-8), 4.5vw, var(--space-16));
+    --layout-page-inset: var(--space-8);
+    --layout-content-inset: clamp(3.5rem, calc(8.9vw + .5rem), 8.5rem);
     --layout-columns: 12;
     --scallop-count: 9;
   }
